@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:oak_wood"
+    },
+    "P": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:oak_anvil"
+  }
+}

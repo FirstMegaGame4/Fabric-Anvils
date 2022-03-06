@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricanvils",
+  "version": "0.0.1-alpha",
+
+  "name": "Fabric Anvils",
+  "description": "",
+  "icon": "assets/fabricanvils/icon.png",
+
+  "authors": [
+    "FirstMegaGame4"
+  ],
+
+  "contact": {
+    "sources": "https://github.com/FirstMegaGame4/Fabric-Anvils"
+  },
+
+  "license": "All Rights Reserved",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.firstmegagame4.fabricanvils.FabricAnvilsMain"
+    ],
+    "client": [
+      "fr.firstmegagame4.fabricanvils.FabricAnvilsClient"
+    ]
+  },
+  "mixins": [
+    "fabricanvils.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+  }
+}

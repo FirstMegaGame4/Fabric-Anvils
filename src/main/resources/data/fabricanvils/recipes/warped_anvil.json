@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:warped_hyphae"
+    },
+    "P": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:warped_anvil"
+  }
+}

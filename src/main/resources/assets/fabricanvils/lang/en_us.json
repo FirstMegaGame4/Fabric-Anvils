@@ -1,0 +1,12 @@
+{
+  "itemGroup.fabricanvils.anvils": "Fabric Anvils",
+
+  "block.fabricanvils.oak_anvil": "Oak Anvil",
+  "block.fabricanvils.spruce_anvil": "Spruce Anvil",
+  "block.fabricanvils.birch_anvil": "Birch Anvil",
+  "block.fabricanvils.jungle_anvil": "Jungle Anvil",
+  "block.fabricanvils.acacia_anvil": "Acacia anvil",
+  "block.fabricanvils.dark_oak_anvil": "Dark Oak Anvil",
+  "block.fabricanvils.crimson_anvil": "Crimson Anvil",
+  "block.fabricanvils.warped_anvil": "Warped Anvil"
+}

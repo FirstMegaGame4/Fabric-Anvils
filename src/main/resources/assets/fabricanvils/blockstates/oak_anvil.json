@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "fabricanvils:block/oak_anvil", "uvlock": true },
+    "facing=east":  { "model": "fabricanvils:block/oak_anvil", "y":  90, "uvlock": true },
+    "facing=south": { "model": "fabricanvils:block/oak_anvil", "y": 180, "uvlock": true },
+    "facing=west":  { "model": "fabricanvils:block/oak_anvil", "y": 270, "uvlock": true }
+  }
+}
