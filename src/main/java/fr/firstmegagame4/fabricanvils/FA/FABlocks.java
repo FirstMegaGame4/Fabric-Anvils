@@ -1,6 +1,7 @@
 package fr.firstmegagame4.fabricanvils.FA;
 
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
+import fr.firstmegagame4.fabricanvils.anvils.StoneAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.WoodAnvil;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -123,6 +124,21 @@ public class FABlocks {
                     SoundEvents.BLOCK_WOOD_FALL
             )));
     public static final BlockItem WARPED_ANVIL_ITEM = new BlockItem(WARPED_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block STONE_ANVIL = new StoneAnvil(FabricBlockSettings.of(Material.STONE)
+            .hardness(3.0F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_STONE_BREAK,
+                    SoundEvents.BLOCK_STONE_STEP,
+                    SoundEvents.BLOCK_STONE_PLACE,
+                    SoundEvents.BLOCK_STONE_HIT,
+                    SoundEvents.BLOCK_STONE_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem STONE_ANVIL_ITEM = new BlockItem(STONE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
 }

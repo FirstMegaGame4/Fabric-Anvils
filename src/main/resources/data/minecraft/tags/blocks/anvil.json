@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "fabricanvils:oak_anvil",
+    "fabricanvils:spruce_anvil",
+    "fabricanvils:birch_anvil",
+    "fabricanvils:jungle_anvil",
+    "fabricanvils:acacia_anvil",
+    "fabricanvils:dark_oak_anvil",
+    "fabricanvils:crimson_anvil",
+    "fabricanvils:warped_anvil",
+    "fabricanvils:stone_anvil"
+  ]
+}

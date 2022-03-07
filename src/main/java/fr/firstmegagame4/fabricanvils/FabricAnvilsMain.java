@@ -36,6 +36,8 @@ public class FabricAnvilsMain implements ModInitializer {
 		registerBlock("crimson_anvil", FABlocks.CRIMSON_ANVIL_ITEM, FABlocks.CRIMSON_ANVIL);
 		registerBlock("warped_anvil", FABlocks.WARPED_ANVIL_ITEM, FABlocks.WARPED_ANVIL);
 
+		registerBlock("stone_anvil", FABlocks.STONE_ANVIL_ITEM, FABlocks.STONE_ANVIL);
+
 	}
 
 	public void registerItem(String itemId, Item item) {

@@ -1,0 +1,11 @@
+{
+  "parent": "fabricanvils:block/template_stone_anvil",
+  "textures": {
+    "top_up": "fabricanvils:block/stone_anvil/top",
+    "top_down": "fabricanvils:block/stone_anvil/top",
+    "top_small_side": "fabricanvils:block/stone_anvil/top_small_side",
+    "top_large_side": "fabricanvils:block/stone_anvil/top_large_side",
+    "particle": "block/cobblestone",
+    "body": "block/cobblestone"
+  }
+}
