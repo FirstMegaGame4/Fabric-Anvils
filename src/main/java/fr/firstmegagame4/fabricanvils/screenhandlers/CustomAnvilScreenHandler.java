@@ -31,7 +31,7 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
         this.context.run((world, pos) -> {
             BlockState blockState = world.getBlockState(pos);
             if (!player.getAbilities().creativeMode && blockState.isIn(BlockTags.ANVIL) && player.getRandom().nextFloat() < chanceBreak) {
-                BlockState blockState2 = AnvilBlock.getLandingState(blockState);
+                BlockState blockState2 = this.getLandingState(blockState);
                 if (blockState2 == null) {
                     world.removeBlock(pos, false);
                     world.playSound(null, pos, breakSound, SoundCategory.BLOCKS, 10F, 1F);
@@ -44,6 +44,10 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
             }
 
         });
+    }
+
+    public BlockState getLandingState(BlockState blockState) {
+        return AnvilBlock.getLandingState(blockState);
     }
 
 }

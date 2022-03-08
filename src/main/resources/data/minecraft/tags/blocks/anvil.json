@@ -9,6 +9,9 @@
     "fabricanvils:dark_oak_anvil",
     "fabricanvils:crimson_anvil",
     "fabricanvils:warped_anvil",
-    "fabricanvils:stone_anvil"
+    "fabricanvils:stone_anvil",
+    "fabricanvils:golden_anvil",
+    "fabricanvils:damaged_golden_anvil",
+    "fabricanvils:copper_anvil"
   ]
 }

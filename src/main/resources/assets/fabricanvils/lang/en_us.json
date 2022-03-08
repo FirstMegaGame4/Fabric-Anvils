@@ -10,5 +10,9 @@
   "block.fabricanvils.crimson_anvil": "Crimson Anvil",
   "block.fabricanvils.warped_anvil": "Warped Anvil",
 
-  "block.fabricanvils.stone_anvil": "Stone Anvil"
+  "block.fabricanvils.stone_anvil": "Stone Anvil",
+  "block.fabricanvils.golden_anvil": "Golden Anvil",
+  "block.fabricanvils.damaged_golden_anvil": "Damaged Golden Anvil",
+
+  "block.fabricanvils.copper_anvil": "Copper Anvil"
 }

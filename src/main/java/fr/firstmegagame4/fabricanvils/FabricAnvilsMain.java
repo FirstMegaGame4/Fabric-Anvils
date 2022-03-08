@@ -37,6 +37,10 @@ public class FabricAnvilsMain implements ModInitializer {
 		registerBlock("warped_anvil", FABlocks.WARPED_ANVIL_ITEM, FABlocks.WARPED_ANVIL);
 
 		registerBlock("stone_anvil", FABlocks.STONE_ANVIL_ITEM, FABlocks.STONE_ANVIL);
+		registerBlock("golden_anvil", FABlocks.GOLDEN_ANVIL_ITEM, FABlocks.GOLDEN_ANVIL);
+		registerBlock("damaged_golden_anvil", FABlocks.DAMAGED_GOLDEN_ANVIL_ITEM, FABlocks.DAMAGED_GOLDEN_ANVIL);
+
+		registerBlock("copper_anvil", FABlocks.COPPER_ANVIL_ITEM, FABlocks.COPPER_ANVIL);
 
 	}
 

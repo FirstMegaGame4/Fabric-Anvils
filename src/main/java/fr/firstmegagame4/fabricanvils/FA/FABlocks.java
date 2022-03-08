@@ -1,6 +1,8 @@
 package fr.firstmegagame4.fabricanvils.FA;
 
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
+import fr.firstmegagame4.fabricanvils.anvils.CopperAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.GoldenAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.StoneAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.WoodAnvil;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -138,6 +140,51 @@ public class FABlocks {
             ))
             .requiresTool());
     public static final BlockItem STONE_ANVIL_ITEM = new BlockItem(STONE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block GOLDEN_ANVIL = new GoldenAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(4.0F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_METAL_BREAK,
+                    SoundEvents.BLOCK_METAL_STEP,
+                    SoundEvents.BLOCK_METAL_PLACE,
+                    SoundEvents.BLOCK_METAL_HIT,
+                    SoundEvents.BLOCK_METAL_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem GOLDEN_ANVIL_ITEM = new BlockItem(GOLDEN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_GOLDEN_ANVIL = new GoldenAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(4.0F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_METAL_BREAK,
+                    SoundEvents.BLOCK_METAL_STEP,
+                    SoundEvents.BLOCK_METAL_PLACE,
+                    SoundEvents.BLOCK_METAL_HIT,
+                    SoundEvents.BLOCK_METAL_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem DAMAGED_GOLDEN_ANVIL_ITEM = new BlockItem(DAMAGED_GOLDEN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block COPPER_ANVIL = new CopperAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(4.0F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_COPPER_BREAK,
+                    SoundEvents.BLOCK_COPPER_STEP,
+                    SoundEvents.BLOCK_COPPER_PLACE,
+                    SoundEvents.BLOCK_COPPER_HIT,
+                    SoundEvents.BLOCK_COPPER_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem COPPER_ANVIL_ITEM = new BlockItem(COPPER_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
 }
