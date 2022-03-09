@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
-import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.StoneAnvilScreenHandler;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
@@ -39,7 +39,7 @@ public class StoneAnvil extends AnvilBlock {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new StoneAnvilScreenHandler(
                 SoundEvents.BLOCK_STONE_PLACE,
                 SoundEvents.BLOCK_STONE_BREAK,
                 0.40F,

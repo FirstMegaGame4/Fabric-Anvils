@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "fabricanvils:stone_anvil",
-    "fabricanvils:golden_anvil",
-    "fabricanvils:damaged_golden_anvil",
-    "fabricanvils:copper_anvil",
     "fabricanvils:diamond_anvil",
     "fabricanvils:chipped_diamond_anvil",
     "fabricanvils:damaged_diamond_anvil"

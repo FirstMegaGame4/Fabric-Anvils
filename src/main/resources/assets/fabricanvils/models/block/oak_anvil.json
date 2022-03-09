@@ -1,5 +1,5 @@
 {
-  "parent": "fabricanvils:block/template_wood_anvil",
+  "parent": "fabricanvils:block/template_wooden_anvil",
   "textures": {
     "top": "block/oak_log",
     "particle": "block/oak_planks",

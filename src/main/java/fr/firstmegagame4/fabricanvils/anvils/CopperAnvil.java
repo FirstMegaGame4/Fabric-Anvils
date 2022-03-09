@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
-import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CopperAnvilScreenHandler;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
@@ -38,7 +38,7 @@ public class CopperAnvil extends AnvilBlock {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CopperAnvilScreenHandler(
                 SoundEvents.BLOCK_COPPER_PLACE,
                 SoundEvents.BLOCK_COPPER_BREAK,
                 0.25F,

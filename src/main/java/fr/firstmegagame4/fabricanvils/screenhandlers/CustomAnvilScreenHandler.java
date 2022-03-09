@@ -2,6 +2,7 @@ package fr.firstmegagame4.fabricanvils.screenhandlers;
 
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
@@ -15,12 +16,18 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
     public static float chanceBreak;
     public static SoundEvent forgeSound;
     public static SoundEvent breakSound;
+    public static int xpLimit;
 
     public CustomAnvilScreenHandler(SoundEvent forgeSound, SoundEvent breakSound, float chanceBreak, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
         super(syncId, inventory, context);
         CustomAnvilScreenHandler.forgeSound = forgeSound;
         CustomAnvilScreenHandler.breakSound = breakSound;
         CustomAnvilScreenHandler.chanceBreak = chanceBreak;
+        this.context.run(((world, blockPos) -> {
+            if (!world.getBlockState(blockPos).isOf(Blocks.ANVIL)) {
+                CustomAnvilScreenHandler.xpLimit = this.getXPLimit();
+            }
+        }));
     }
 
     protected void onTakeOutput(PlayerEntity player, ItemStack stack) {
@@ -48,6 +55,10 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
 
     public BlockState getLandingState(BlockState blockState) {
         return AnvilBlock.getLandingState(blockState);
+    }
+
+    public int getXPLimit() {
+        return 40;
     }
 
 }
