@@ -1,7 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
 import fr.firstmegagame4.fabricanvils.screenhandlers.StoneAnvilScreenHandler;
-import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -9,16 +8,11 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class StoneAnvil extends AnvilBlock {
-
-    private static final Text TITLE;
+public class StoneAnvil extends BaseAnvil {
 
     public StoneAnvil(Settings settings) {
         super(settings);
@@ -48,10 +42,6 @@ public class StoneAnvil extends AnvilBlock {
                 ScreenHandlerContext.create(world, pos)),
                 TITLE
         );
-    }
-
-    static {
-        TITLE = new TranslatableText("container.repair");
     }
 
 }

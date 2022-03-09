@@ -8,15 +8,11 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class WoodenAnvil extends AnvilBlock {
-
-    private static final Text TITLE;
+public class WoodenAnvil extends BaseAnvil {
 
     public WoodenAnvil(Settings settings) {
         super(settings);
@@ -46,10 +42,6 @@ public class WoodenAnvil extends AnvilBlock {
                 ScreenHandlerContext.create(world, pos)),
                 TITLE
         );
-    }
-
-    static {
-        TITLE = new TranslatableText("container.repair");
     }
 
 }

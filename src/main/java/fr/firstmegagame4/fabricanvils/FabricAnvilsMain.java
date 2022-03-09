@@ -19,7 +19,7 @@ public class FabricAnvilsMain implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("fabricanvils");
 	public static final ItemGroup FABRICANVILS_GROUP = FabricItemGroupBuilder.build(
 			new Identifier(FAUtils.modIndentifier, "anvils"),
-			() -> new ItemStack(FABlocks.OAK_ANVIL_ITEM)
+			() -> new ItemStack(FABlocks.BIRCH_ANVIL_ITEM)
 	);
 
 	@Override
@@ -46,6 +46,10 @@ public class FabricAnvilsMain implements ModInitializer {
 		registerBlock("diamond_anvil", FABlocks.DIAMOND_ANVIL_ITEM, FABlocks.DIAMOND_ANVIL);
 		registerBlock("chipped_diamond_anvil", FABlocks.CHIPPED_DIAMOND_ANVIL_ITEM, FABlocks.CHIPPED_DIAMOND_ANVIL);
 		registerBlock("damaged_diamond_anvil", FABlocks.DAMAGED_DIAMOND_ANVIL_ITEM, FABlocks.DAMAGED_DIAMOND_ANVIL);
+
+		registerBlock("netherite_anvil", FABlocks.NETHERITE_ANVIL_ITEM, FABlocks.NETHERITE_ANVIL);
+		registerBlock("chipped_netherite_anvil", FABlocks.CHIPPED_NETHERITE_ANVIL_ITEM, FABlocks.CHIPPED_NETHERITE_ANVIL);
+		registerBlock("damaged_netherite_anvil", FABlocks.DAMAGED_NETHERITE_ANVIL_ITEM, FABlocks.DAMAGED_NETHERITE_ANVIL);
 
 	}
 

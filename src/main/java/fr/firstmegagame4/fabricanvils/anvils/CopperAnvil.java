@@ -1,7 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
 import fr.firstmegagame4.fabricanvils.screenhandlers.CopperAnvilScreenHandler;
-import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -9,15 +8,11 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CopperAnvil extends AnvilBlock {
-
-    private static final Text TITLE;
+public class CopperAnvil extends BaseAnvil {
 
     public CopperAnvil(Settings settings) {
         super(settings);
@@ -47,10 +42,6 @@ public class CopperAnvil extends AnvilBlock {
                 ScreenHandlerContext.create(world, pos)),
                 TITLE
         );
-    }
-
-    static {
-        TITLE = new TranslatableText("container.repair");
     }
 
 }

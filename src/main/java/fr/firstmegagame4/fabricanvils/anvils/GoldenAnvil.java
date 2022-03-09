@@ -2,7 +2,6 @@ package fr.firstmegagame4.fabricanvils.anvils;
 
 import fr.firstmegagame4.fabricanvils.FA.FABlocks;
 import fr.firstmegagame4.fabricanvils.screenhandlers.GoldenAnvilScreenHandler;
-import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -10,15 +9,11 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class GoldenAnvil extends AnvilBlock {
-
-    private static final Text TITLE;
+public class GoldenAnvil extends BaseAnvil {
 
     public GoldenAnvil(Settings settings) {
         super(settings);
@@ -31,6 +26,8 @@ public class GoldenAnvil extends AnvilBlock {
     @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         world.playSound(null, pos, SoundEvents.BLOCK_METAL_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        BlockState newBlockState = GoldenAnvil.getLandingState(fallingBlockEntity.getBlockState());
+        if (newBlockState != null) world.setBlockState(pos, newBlockState);
     }
 
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
@@ -56,10 +53,6 @@ public class GoldenAnvil extends AnvilBlock {
             return FABlocks.DAMAGED_GOLDEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
-    }
-
-    static {
-        TITLE = new TranslatableText("container.repair");
     }
 
 }

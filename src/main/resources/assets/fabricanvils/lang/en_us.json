@@ -19,5 +19,9 @@
 
   "block.fabricanvils.diamond_anvil": "Diamond Anvil",
   "block.fabricanvils.chipped_diamond_anvil": "Chipped Diamond Anvil",
-  "block.fabricanvils.damaged_diamond_anvil": "Damaged Diamond Anvil"
+  "block.fabricanvils.damaged_diamond_anvil": "Damaged Diamond Anvil",
+
+  "block.fabricanvils.netherite_anvil": "Netherite Anvil",
+  "block.fabricanvils.chipped_netherite_anvil": "Chipped Netherite Anvil",
+  "block.fabricanvils.damaged_netherite_anvil": "Damaged Netherite Anvil"
 }

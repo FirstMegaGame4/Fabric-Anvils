@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "fabricanvils:diamond_anvil"
+  },
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+  "result": {
+    "item": "fabricanvils:netherite_anvil"
+  }
+}

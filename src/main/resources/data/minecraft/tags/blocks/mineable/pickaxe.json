@@ -7,6 +7,9 @@
     "fabricanvils:copper_anvil",
     "fabricanvils:diamond_anvil",
     "fabricanvils:chipped_diamond_anvil",
-    "fabricanvils:damaged_diamond_anvil"
+    "fabricanvils:damaged_diamond_anvil",
+    "fabricanvils:netherite_anvil",
+    "fabricanvils:chipped_netherite_anvil",
+    "fabricanvils:damaged_netherite_anvil"
   ]
 }

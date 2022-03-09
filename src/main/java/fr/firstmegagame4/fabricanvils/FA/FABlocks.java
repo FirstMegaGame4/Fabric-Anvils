@@ -229,4 +229,52 @@ public class FABlocks {
     public static final BlockItem DAMAGED_DIAMOND_ANVIL_ITEM = new BlockItem(DAMAGED_DIAMOND_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+    public static final Block NETHERITE_ANVIL = new NetheriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(50.0F)
+            .resistance(1200F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_STEP,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_HIT,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem NETHERITE_ANVIL_ITEM = new BlockItem(NETHERITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_NETHERITE_ANVIL = new NetheriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(50.0F)
+            .resistance(1200F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_STEP,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_HIT,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem CHIPPED_NETHERITE_ANVIL_ITEM = new BlockItem(CHIPPED_NETHERITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_NETHERITE_ANVIL = new NetheriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(50.0F)
+            .resistance(1200F)
+            .sounds(new BlockSoundGroup(
+                    1F,
+                    1F,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_STEP,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_HIT,
+                    SoundEvents.BLOCK_NETHERITE_BLOCK_FALL
+            ))
+            .requiresTool());
+    public static final BlockItem DAMAGED_NETHERITE_ANVIL_ITEM = new BlockItem(DAMAGED_NETHERITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
 }
