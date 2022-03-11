@@ -9,8 +9,8 @@ public class FATags {
     public static final TagKey<Block> FABRICANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "fabricanvils"));
     public static final TagKey<Block> WOODEN_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "wooden_anvils"));
     public static final TagKey<Block> STONE_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "stone_anvils"));
-    public static final TagKey<Block> GOLDEN_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "golden_anvils"));
-    public static final TagKey<Block> COPPER_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "copper_anvils"));
-    public static final TagKey<Block> DIAMOND_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "diamond_anvils"));
-    public static final TagKey<Block> NETHERITE_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "netherite_anvils"));
+    public static final TagKey<Block> GOLDEN_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "minecraft/golden_anvils"));
+    public static final TagKey<Block> COPPER_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "minecraft/copper_anvils"));
+    public static final TagKey<Block> DIAMOND_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "minecraft/diamond_anvils"));
+    public static final TagKey<Block> NETHERITE_ANVILS = TagKey.of(Registry.BLOCK_KEY, new Identifier("fabricanvils", "minecraft/netherite_anvils"));
 }

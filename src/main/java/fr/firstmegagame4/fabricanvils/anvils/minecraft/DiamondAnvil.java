@@ -1,7 +1,8 @@
-package fr.firstmegagame4.fabricanvils.anvils;
+package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.FA.FABlocks;
-import fr.firstmegagame4.fabricanvils.screenhandlers.NetheriteAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
+import fr.firstmegagame4.fabricanvils.anvils.BaseAnvil;
+import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.DiamondAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -13,19 +14,20 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class NetheriteAnvil extends BaseAnvil {
+public class DiamondAnvil extends BaseAnvil {
 
-    public NetheriteAnvil(Settings settings) {
+    public DiamondAnvil(Settings settings) {
         super(settings);
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        world.playSound(null, pos, SoundEvents.BLOCK_METAL_PLACE, SoundCategory.BLOCKS, 10F, 1F);
     }
 
+    @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE, SoundCategory.BLOCKS, 10F, 1F);
-        BlockState newBlockState = NetheriteAnvil.getLandingState(fallingBlockEntity.getBlockState());
+        world.playSound(null, pos, SoundEvents.BLOCK_METAL_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        BlockState newBlockState = DiamondAnvil.getLandingState(fallingBlockEntity.getBlockState());
         if (newBlockState != null) world.setBlockState(pos, newBlockState);
     }
 
@@ -35,10 +37,10 @@ public class NetheriteAnvil extends BaseAnvil {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new NetheriteAnvilScreenHandler(
-                SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE,
-                SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK,
-                0.03F,
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new DiamondAnvilScreenHandler(
+                SoundEvents.BLOCK_METAL_PLACE,
+                SoundEvents.BLOCK_METAL_BREAK,
+                0.06F,
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -48,11 +50,11 @@ public class NetheriteAnvil extends BaseAnvil {
 
     @Nullable
     public static BlockState getLandingState(BlockState fallingState) {
-        if (fallingState.isOf(FABlocks.NETHERITE_ANVIL)) {
-            return FABlocks.CHIPPED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(FAMinecraftBlocks.DIAMOND_ANVIL)) {
+            return FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FABlocks.CHIPPED_NETHERITE_ANVIL)) {
-            return FABlocks.DAMAGED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL)) {
+            return FAMinecraftBlocks.DAMAGED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

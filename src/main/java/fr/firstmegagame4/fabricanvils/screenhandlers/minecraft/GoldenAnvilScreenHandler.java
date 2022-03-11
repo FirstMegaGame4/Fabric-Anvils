@@ -1,6 +1,7 @@
-package fr.firstmegagame4.fabricanvils.screenhandlers;
+package fr.firstmegagame4.fabricanvils.screenhandlers.minecraft;
 
-import fr.firstmegagame4.fabricanvils.anvils.GoldenAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.minecraft.GoldenAnvil;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandlerContext;

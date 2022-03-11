@@ -1,5 +1,6 @@
-package fr.firstmegagame4.fabricanvils.screenhandlers;
+package fr.firstmegagame4.fabricanvils.screenhandlers.minecraft;
 
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.sound.SoundEvent;

@@ -1,6 +1,7 @@
-package fr.firstmegagame4.fabricanvils.anvils;
+package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.screenhandlers.CopperAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.anvils.BaseAnvil;
+import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.CopperAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;

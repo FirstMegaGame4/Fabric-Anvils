@@ -1,5 +1,6 @@
 package fr.firstmegagame4.fabricanvils.screenhandlers;
 
+import fr.firstmegagame4.fabricanvils.FA.FATags;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -9,7 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.*;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
-import net.minecraft.tag.BlockTags;
 
 public class CustomAnvilScreenHandler extends AnvilScreenHandler {
 
@@ -37,7 +37,7 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
 
         this.context.run((world, pos) -> {
             BlockState blockState = world.getBlockState(pos);
-            if (!player.getAbilities().creativeMode && blockState.isIn(BlockTags.ANVIL) && player.getRandom().nextFloat() < chanceBreak) {
+            if (!player.getAbilities().creativeMode && blockState.isIn(FATags.FABRICANVILS) && player.getRandom().nextFloat() < chanceBreak) {
                 BlockState blockState2 = this.getLandingState(blockState);
                 if (blockState2 == null) {
                     world.removeBlock(pos, false);

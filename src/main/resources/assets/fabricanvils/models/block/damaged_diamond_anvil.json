@@ -1,7 +1,7 @@
 {
   "parent": "block/template_anvil",
   "textures": {
-    "top": "fabricanvils:block/vanilla/diamond_anvil/damaged_diamond",
+    "top": "fabricanvils:block/minecraft/diamond_anvil/damaged_diamond",
     "particle": "block/diamond_block",
     "body": "block/diamond_block"
   }

@@ -1,7 +1,7 @@
 {
   "parent": "block/template_anvil",
   "textures": {
-    "top": "fabricanvils:block/vanilla/golden_anvil/damaged_gold",
+    "top": "fabricanvils:block/minecraft/golden_anvil/damaged_gold",
     "particle": "block/gold_block",
     "body": "block/gold_block"
   }

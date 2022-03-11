@@ -1,7 +1,8 @@
-package fr.firstmegagame4.fabricanvils.anvils;
+package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.FA.FABlocks;
-import fr.firstmegagame4.fabricanvils.screenhandlers.DiamondAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
+import fr.firstmegagame4.fabricanvils.anvils.BaseAnvil;
+import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.GoldenAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -13,9 +14,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class DiamondAnvil extends BaseAnvil {
+public class GoldenAnvil extends BaseAnvil {
 
-    public DiamondAnvil(Settings settings) {
+    public GoldenAnvil(Settings settings) {
         super(settings);
     }
 
@@ -26,20 +27,20 @@ public class DiamondAnvil extends BaseAnvil {
     @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         world.playSound(null, pos, SoundEvents.BLOCK_METAL_PLACE, SoundCategory.BLOCKS, 10F, 1F);
-        BlockState newBlockState = DiamondAnvil.getLandingState(fallingBlockEntity.getBlockState());
+        BlockState newBlockState = GoldenAnvil.getLandingState(fallingBlockEntity.getBlockState());
         if (newBlockState != null) world.setBlockState(pos, newBlockState);
     }
 
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
-        entity.setHurtEntities(3.0F, 50);
+        entity.setHurtEntities(1.50F, 30);
     }
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new DiamondAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new GoldenAnvilScreenHandler(
                 SoundEvents.BLOCK_METAL_PLACE,
                 SoundEvents.BLOCK_METAL_BREAK,
-                0.06F,
+                1F,
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -49,11 +50,8 @@ public class DiamondAnvil extends BaseAnvil {
 
     @Nullable
     public static BlockState getLandingState(BlockState fallingState) {
-        if (fallingState.isOf(FABlocks.DIAMOND_ANVIL)) {
-            return FABlocks.CHIPPED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
-        }
-        else if (fallingState.isOf(FABlocks.CHIPPED_DIAMOND_ANVIL)) {
-            return FABlocks.DAMAGED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(FAMinecraftBlocks.GOLDEN_ANVIL)) {
+            return FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

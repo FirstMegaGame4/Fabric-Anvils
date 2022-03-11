@@ -6,7 +6,8 @@
   "mixins": [
     "AnvilMixin",
     "AnvilScreenHandlerMixin",
-    "AnvilScreenMixin"
+    "AnvilScreenMixin",
+    "FallingBlockEntityMixin"
   ],
   "client": [
   ],
