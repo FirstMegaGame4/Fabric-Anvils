@@ -1,6 +1,7 @@
 package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
 import fr.firstmegagame4.fabricanvils.anvils.BaseAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.InferiorMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.CopperAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
@@ -8,36 +9,33 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CopperAnvil extends BaseAnvil {
+public class CopperAnvil extends InferiorMetalAnvil {
 
     public CopperAnvil(Settings settings) {
         super(settings);
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_COPPER_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_COPPER_PLACE);
     }
 
     @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_COPPER_PLACE, SoundCategory.BLOCKS, 10F, 1F);
-    }
-
-    protected void configureFallingBlockEntity(FallingBlockEntity entity) {
-        entity.setHurtEntities(1.75F, 30);
+        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_COPPER_PLACE);
     }
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
         return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CopperAnvilScreenHandler(
-                SoundEvents.BLOCK_COPPER_PLACE,
-                SoundEvents.BLOCK_COPPER_BREAK,
-                0.25F,
+                this.getForgeSound(),
+                this.getBreakSound(),
+                this.getChanceBreak(),
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -45,4 +43,13 @@ public class CopperAnvil extends BaseAnvil {
         );
     }
 
+    @Override
+    public SoundEvent getForgeSound() {
+        return SoundEvents.BLOCK_COPPER_PLACE;
+    }
+
+    @Override
+    public SoundEvent getBreakSound() {
+        return SoundEvents.BLOCK_COPPER_PLACE;
+    }
 }

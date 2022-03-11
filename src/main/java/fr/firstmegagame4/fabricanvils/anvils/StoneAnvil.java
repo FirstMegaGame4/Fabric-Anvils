@@ -7,6 +7,7 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -19,12 +20,12 @@ public class StoneAnvil extends BaseAnvil {
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_STONE_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_STONE_PLACE);
     }
 
     @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        world.playSound(null, pos, SoundEvents.BLOCK_STONE_PLACE, SoundCategory.BLOCKS, 10F, 1F);
+        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_STONE_PLACE);
     }
 
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
@@ -34,9 +35,9 @@ public class StoneAnvil extends BaseAnvil {
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
         return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new StoneAnvilScreenHandler(
-                SoundEvents.BLOCK_STONE_PLACE,
-                SoundEvents.BLOCK_STONE_BREAK,
-                0.40F,
+                this.getForgeSound(),
+                this.getBreakSound(),
+                this.getChanceBreak(),
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -44,4 +45,15 @@ public class StoneAnvil extends BaseAnvil {
         );
     }
 
+    public SoundEvent getForgeSound() {
+        return SoundEvents.BLOCK_STONE_PLACE;
+    }
+
+    public SoundEvent getBreakSound() {
+        return SoundEvents.BLOCK_STONE_BREAK;
+    }
+
+    public float getChanceBreak() {
+        return 0.40F;
+    }
 }
