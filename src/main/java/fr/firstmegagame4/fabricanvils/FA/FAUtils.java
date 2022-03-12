@@ -9,10 +9,13 @@ public class FAUtils {
 
     public static String modIndentifier = "fabricanvils";
 
+    public static Identifier FAIdentifier(String path) {
+        return new Identifier(modIndentifier, path);
+    }
+
     public static void registerBlock(String blockId, BlockItem blockItem, Block block) {
-        Identifier identifier = new Identifier(FAUtils.modIndentifier, blockId);
-        Registry.register(Registry.BLOCK, identifier, block);
-        Registry.register(Registry.ITEM, identifier, blockItem);
+        Registry.register(Registry.BLOCK, FAIdentifier(blockId), block);
+        Registry.register(Registry.ITEM, FAIdentifier(blockId), blockItem);
     }
 
     public static void registerAnvil(String blockId, BlockItem blockItem, Block block) {

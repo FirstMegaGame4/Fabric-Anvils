@@ -1,13 +1,13 @@
 package fr.firstmegagame4.fabricanvils.screenhandlers.minecraft;
 
 import fr.firstmegagame4.fabricanvils.anvils.minecraft.GoldenAnvil;
-import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.FragileMetalAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.sound.SoundEvent;
 
-public class GoldenAnvilScreenHandler extends CustomAnvilScreenHandler {
+public class GoldenAnvilScreenHandler extends FragileMetalAnvilScreenHandler {
 
     public GoldenAnvilScreenHandler(SoundEvent forgeSound, SoundEvent breakSound, float chanceBreak, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
         super(forgeSound, breakSound, chanceBreak, syncId, inventory, context);
@@ -18,8 +18,4 @@ public class GoldenAnvilScreenHandler extends CustomAnvilScreenHandler {
         return GoldenAnvil.getLandingState(blockState);
     }
 
-    @Override
-    public int getXPLimit() {
-        return 100;
-    }
 }

@@ -4,15 +4,15 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.sound.SoundEvent;
 
-public class WoodenAnvilScreenHandler extends CustomAnvilScreenHandler {
+public class SuperiorMetalAnvilScreenHandler extends MetalAnvilScreenHandler {
 
-    public WoodenAnvilScreenHandler(SoundEvent forgeSound, SoundEvent breakSound, float chanceBreak, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
+    public SuperiorMetalAnvilScreenHandler(SoundEvent forgeSound, SoundEvent breakSound, float chanceBreak, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
         super(forgeSound, breakSound, chanceBreak, syncId, inventory, context);
     }
 
     @Override
     public int getXPLimit() {
-        return 10;
+        return 80;
     }
 
 }

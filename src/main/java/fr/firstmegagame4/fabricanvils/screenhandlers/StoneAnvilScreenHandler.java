@@ -14,4 +14,5 @@ public class StoneAnvilScreenHandler extends CustomAnvilScreenHandler {
     public int getXPLimit() {
         return 20;
     }
+
 }

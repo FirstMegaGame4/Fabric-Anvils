@@ -36,13 +36,43 @@ public class FallingBlockEntityMixin {
 
     @Inject(method = "handleFallDamage", at = @At("TAIL"))
     private void addFabricAnvilsTag(float fallDistance, float damageMultiplier, DamageSource damageSource, CallbackInfoReturnable<Boolean> cir) {
+
         float i0 = (float) MathHelper.ceil(fallDistance - 1.0F);
         float f0 = Math.min(MathHelper.floor(i0 * this.fallHurtAmount), this.fallHurtMax);
-        boolean bl0 = this.block.isIn(FATags.FABRICANVILS);
 
-        if (bl0 && f0 > 0.0F && new Random().nextFloat() < 0.05F + i0 * 0.05F) {
-            this.destroyedOnLanding = true;
+        boolean isFabricAnvils = this.block.isIn(FATags.FABRICANVILS);
+        float metalAnvilDamage = 0.05F;
+        float woodenAnvilDamage = metalAnvilDamage * 8.33F;
+        float stoneAnvilDamage = metalAnvilDamage * 3.33F;
+        float fragileAnvilDamage = metalAnvilDamage * 8.33F;
+        float inferiorAnvilDamage = metalAnvilDamage * 2.08F;
+        float superiorAnvilDamage = metalAnvilDamage / 2.00F;
+        float advancedAnvilDamage = metalAnvilDamage / 4.00F;
+
+        if (isFabricAnvils) {
+            if (this.block.isIn(FATags.WOODEN_ANVILS) && f0 > 0.0F && new Random().nextFloat() < woodenAnvilDamage + i0 * woodenAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.STONE_ANVILS) && f0 > 0.0F && new Random().nextFloat() < stoneAnvilDamage + i0 * stoneAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.FRAGILE_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < fragileAnvilDamage + i0 * fragileAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.INFERIOR_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < inferiorAnvilDamage + i0 * inferiorAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < metalAnvilDamage + i0 * metalAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.SUPERIOR_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < superiorAnvilDamage + i0 * superiorAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
+            else if (this.block.isIn(FATags.ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < advancedAnvilDamage + i0 * advancedAnvilDamage) {
+                this.destroyedOnLanding = true;
+            }
         }
+
     }
 
 }
