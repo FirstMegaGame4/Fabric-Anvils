@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fabricanvils:golden_anvil",
-    "fabricanvils:damaged_golden_anvil",
-    "fabricanvils:copper_anvil"
+    "#fabricanvils:fragile_metal_anvils",
+    "#fabricanvils:inferior_metal_anvils",
+    "#fabricanvils:metal_anvils"
   ]
 }

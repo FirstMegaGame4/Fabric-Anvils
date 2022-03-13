@@ -92,6 +92,20 @@ public class FAMinecraftBlocks {
     public static final BlockItem COPPER_ANVIL_ITEM = new BlockItem(COPPER_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+    public static final Block CHIPPED_COPPER_ANVIL = new CopperAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(4.0F)
+            .sounds(BlockSoundGroup.COPPER)
+            .requiresTool());
+    public static final BlockItem CHIPPED_COPPER_ANVIL_ITEM = new BlockItem(CHIPPED_COPPER_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_COPPER_ANVIL = new CopperAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(4.0F)
+            .sounds(BlockSoundGroup.COPPER)
+            .requiresTool());
+    public static final BlockItem DAMAGED_COPPER_ANVIL_ITEM = new BlockItem(DAMAGED_COPPER_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
     public static final Block DIAMOND_ANVIL = new DiamondAnvil(FabricBlockSettings.of(Material.METAL)
             .hardness(5.0F)
             .sounds(BlockSoundGroup.METAL)
@@ -137,30 +151,38 @@ public class FAMinecraftBlocks {
     public static final BlockItem DAMAGED_NETHERITE_ANVIL_ITEM = new BlockItem(DAMAGED_NETHERITE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+
+
+    public static void registerMinecraftAnvil(String blockId, BlockItem blockItem, Block block) {
+        FAUtils.registerAnvil("minecraft", blockId, blockItem, block);
+    }
+
     public static void register() {
-        FAUtils.registerAnvil("oak_anvil", FAMinecraftBlocks.OAK_ANVIL_ITEM, FAMinecraftBlocks.OAK_ANVIL);
-        FAUtils.registerAnvil("spruce_anvil", FAMinecraftBlocks.SPRUCE_ANVIL_ITEM, FAMinecraftBlocks.SPRUCE_ANVIL);
-        FAUtils.registerAnvil("birch_anvil", FAMinecraftBlocks.BIRCH_ANVIL_ITEM, FAMinecraftBlocks.BIRCH_ANVIL);
-        FAUtils.registerAnvil("jungle_anvil", FAMinecraftBlocks.JUNGLE_ANVIL_ITEM, FAMinecraftBlocks.JUNGLE_ANVIL);
-        FAUtils.registerAnvil("acacia_anvil", FAMinecraftBlocks.ACACIA_ANVIL_ITEM, FAMinecraftBlocks.ACACIA_ANVIL);
-        FAUtils.registerAnvil("dark_oak_anvil", FAMinecraftBlocks.DARK_OAK_ANVIL_ITEM, FAMinecraftBlocks.DARK_OAK_ANVIL);
-        FAUtils.registerAnvil("crimson_anvil", FAMinecraftBlocks.CRIMSON_ANVIL_ITEM, FAMinecraftBlocks.CRIMSON_ANVIL);
-        FAUtils.registerAnvil("warped_anvil", FAMinecraftBlocks.WARPED_ANVIL_ITEM, FAMinecraftBlocks.WARPED_ANVIL);
+        registerMinecraftAnvil("oak_anvil", OAK_ANVIL_ITEM, OAK_ANVIL);
+        registerMinecraftAnvil("spruce_anvil", SPRUCE_ANVIL_ITEM, SPRUCE_ANVIL);
+        registerMinecraftAnvil("birch_anvil", BIRCH_ANVIL_ITEM, BIRCH_ANVIL);
+        registerMinecraftAnvil("jungle_anvil", JUNGLE_ANVIL_ITEM, JUNGLE_ANVIL);
+        registerMinecraftAnvil("acacia_anvil", ACACIA_ANVIL_ITEM, ACACIA_ANVIL);
+        registerMinecraftAnvil("dark_oak_anvil", DARK_OAK_ANVIL_ITEM, DARK_OAK_ANVIL);
+        registerMinecraftAnvil("crimson_anvil", CRIMSON_ANVIL_ITEM, CRIMSON_ANVIL);
+        registerMinecraftAnvil("warped_anvil", WARPED_ANVIL_ITEM, WARPED_ANVIL);
 
-        FAUtils.registerAnvil("stone_anvil", FAMinecraftBlocks.STONE_ANVIL_ITEM, FAMinecraftBlocks.STONE_ANVIL);
+        registerMinecraftAnvil("stone_anvil", STONE_ANVIL_ITEM, STONE_ANVIL);
 
-        FAUtils.registerAnvil("golden_anvil", FAMinecraftBlocks.GOLDEN_ANVIL_ITEM, FAMinecraftBlocks.GOLDEN_ANVIL);
-        FAUtils.registerAnvil("damaged_golden_anvil", FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL_ITEM, FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL);
+        registerMinecraftAnvil("golden_anvil", GOLDEN_ANVIL_ITEM, GOLDEN_ANVIL);
+        registerMinecraftAnvil("damaged_golden_anvil", DAMAGED_GOLDEN_ANVIL_ITEM, DAMAGED_GOLDEN_ANVIL);
 
-        FAUtils.registerAnvil("copper_anvil", FAMinecraftBlocks.COPPER_ANVIL_ITEM, FAMinecraftBlocks.COPPER_ANVIL);
+        registerMinecraftAnvil("copper_anvil", COPPER_ANVIL_ITEM, COPPER_ANVIL);
+        registerMinecraftAnvil("chipped_copper_anvil", CHIPPED_COPPER_ANVIL_ITEM, CHIPPED_COPPER_ANVIL);
+        registerMinecraftAnvil("damaged_copper_anvil", DAMAGED_COPPER_ANVIL_ITEM, DAMAGED_COPPER_ANVIL);
 
-        FAUtils.registerAnvil("diamond_anvil", FAMinecraftBlocks.DIAMOND_ANVIL_ITEM, FAMinecraftBlocks.DIAMOND_ANVIL);
-        FAUtils.registerAnvil("chipped_diamond_anvil", FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL_ITEM, FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL);
-        FAUtils.registerAnvil("damaged_diamond_anvil", FAMinecraftBlocks.DAMAGED_DIAMOND_ANVIL_ITEM, FAMinecraftBlocks.DAMAGED_DIAMOND_ANVIL);
+        registerMinecraftAnvil("diamond_anvil", DIAMOND_ANVIL_ITEM, DIAMOND_ANVIL);
+        registerMinecraftAnvil("chipped_diamond_anvil", CHIPPED_DIAMOND_ANVIL_ITEM, CHIPPED_DIAMOND_ANVIL);
+        registerMinecraftAnvil("damaged_diamond_anvil", DAMAGED_DIAMOND_ANVIL_ITEM, DAMAGED_DIAMOND_ANVIL);
 
-        FAUtils.registerAnvil("netherite_anvil", FAMinecraftBlocks.NETHERITE_ANVIL_ITEM, FAMinecraftBlocks.NETHERITE_ANVIL);
-        FAUtils.registerAnvil("chipped_netherite_anvil", FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL_ITEM, FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL);
-        FAUtils.registerAnvil("damaged_netherite_anvil", FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL_ITEM, FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL);
+        registerMinecraftAnvil("netherite_anvil", NETHERITE_ANVIL_ITEM, NETHERITE_ANVIL);
+        registerMinecraftAnvil("chipped_netherite_anvil", CHIPPED_NETHERITE_ANVIL_ITEM, CHIPPED_NETHERITE_ANVIL);
+        registerMinecraftAnvil("damaged_netherite_anvil", DAMAGED_NETHERITE_ANVIL_ITEM, DAMAGED_NETHERITE_ANVIL);
     }
 
 }

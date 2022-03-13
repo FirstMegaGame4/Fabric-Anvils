@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:birch_wood"
+    },
+    "P": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:minecraft/birch_anvil"
+  }
+}

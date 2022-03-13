@@ -1,10 +1,12 @@
 package fr.firstmegagame4.fabricanvils.mixin;
 
 import fr.firstmegagame4.fabricanvils.FA.FATags;
+import fr.firstmegagame4.fabricanvils.anvils.MetalAnvil;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -16,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Random;
 
 @Mixin(FallingBlockEntity.class)
-public class FallingBlockEntityMixin {
+public abstract class FallingBlockEntityMixin {
 
     @Shadow private boolean hurtEntities;
     @Shadow private BlockState block;
@@ -49,30 +51,37 @@ public class FallingBlockEntityMixin {
         float superiorAnvilDamage = metalAnvilDamage / 2.00F;
         float advancedAnvilDamage = metalAnvilDamage / 4.00F;
 
+        MetalAnvil.destroyByFalling = false;
+
         if (isFabricAnvils) {
             if (this.block.isIn(FATags.WOODEN_ANVILS) && f0 > 0.0F && new Random().nextFloat() < woodenAnvilDamage + i0 * woodenAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.STONE_ANVILS) && f0 > 0.0F && new Random().nextFloat() < stoneAnvilDamage + i0 * stoneAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.FRAGILE_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < fragileAnvilDamage + i0 * fragileAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.INFERIOR_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < inferiorAnvilDamage + i0 * inferiorAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < metalAnvilDamage + i0 * metalAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.SUPERIOR_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < superiorAnvilDamage + i0 * superiorAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < advancedAnvilDamage + i0 * advancedAnvilDamage) {
-                this.destroyedOnLanding = true;
+                this.setDestroyedOnFalling();
             }
         }
 
+    }
+
+    private void setDestroyedOnFalling() {
+        MetalAnvil.destroyByFalling = true;
+        this.destroyedOnLanding = true;
     }
 
 }

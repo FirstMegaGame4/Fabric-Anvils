@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "fabricanvils:golden_anvil",
-    "fabricanvils:damaged_golden_anvil"
+    "fabricanvils:minecraft/golden_anvil",
+    "fabricanvils:minecraft/damaged_golden_anvil"
   ]
 }

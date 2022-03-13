@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:crimson_hyphae"
+    },
+    "P": {
+      "item": "minecraft:crimson_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:minecraft/crimson_anvil"
+  }
+}

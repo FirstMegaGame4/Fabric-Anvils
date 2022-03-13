@@ -20,7 +20,7 @@ public class DiamondAnvil extends SuperiorMetalAnvil {
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         super.onDestroyedOnLanding(world, pos, fallingBlockEntity);
-        this.damageAnvil(world, pos, DiamondAnvil.getLandingState(fallingBlockEntity.getBlockState()));
+        this.damageAnvil(world, pos, fallingBlockEntity, DiamondAnvil.getLandingState(fallingBlockEntity.getBlockState()));
     }
 
     @Nullable

@@ -19,15 +19,6 @@ public class StoneAnvil extends BaseAnvil {
         super(settings);
     }
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_STONE_PLACE);
-    }
-
-    @Override
-    public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_STONE_PLACE);
-    }
-
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
         entity.setHurtEntities(1.50F, 30);
     }

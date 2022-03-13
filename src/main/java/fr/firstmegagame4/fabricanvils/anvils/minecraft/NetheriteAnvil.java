@@ -20,13 +20,9 @@ public class NetheriteAnvil extends AdvancedMetalAnvil {
         super(settings);
     }
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE);
-    }
-
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE);
-        this.damageAnvil(world, pos, NetheriteAnvil.getLandingState(fallingBlockEntity.getBlockState()));
+        super.onDestroyedOnLanding(world, pos, fallingBlockEntity);
+        this.damageAnvil(world, pos, fallingBlockEntity, NetheriteAnvil.getLandingState(fallingBlockEntity.getBlockState()));
     }
 
     @Nullable

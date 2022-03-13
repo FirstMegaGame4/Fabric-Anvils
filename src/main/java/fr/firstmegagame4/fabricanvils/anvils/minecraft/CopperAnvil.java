@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.anvils.BaseAnvil;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.InferiorMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.CopperAnvilScreenHandler;
 import net.minecraft.block.BlockState;
@@ -8,7 +8,6 @@ import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -21,13 +20,9 @@ public class CopperAnvil extends InferiorMetalAnvil {
         super(settings);
     }
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_COPPER_PLACE);
-    }
-
-    @Override
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_COPPER_PLACE);
+        super.onDestroyedOnLanding(world, pos, fallingBlockEntity);
+        this.damageAnvil(world, pos, fallingBlockEntity, CopperAnvil.getLandingState(fallingBlockEntity.getBlockState()));
     }
 
     @Nullable
@@ -52,4 +47,16 @@ public class CopperAnvil extends InferiorMetalAnvil {
     public SoundEvent getBreakSound() {
         return SoundEvents.BLOCK_COPPER_PLACE;
     }
+
+    @Nullable
+    public static BlockState getLandingState(BlockState fallingState) {
+        if (fallingState.isOf(FAMinecraftBlocks.COPPER_ANVIL)) {
+            return FAMinecraftBlocks.CHIPPED_COPPER_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        }
+        else if (fallingState.isOf(FAMinecraftBlocks.CHIPPED_COPPER_ANVIL)) {
+            return FAMinecraftBlocks.DAMAGED_COPPER_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        }
+        else return null;
+    }
+
 }

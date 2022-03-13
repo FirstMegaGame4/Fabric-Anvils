@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_anvil",
+  "textures": {
+    "top": "block/weathered_copper",
+    "particle": "block/weathered_copper",
+    "body": "block/weathered_copper"
+  }
+}

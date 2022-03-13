@@ -1,27 +1,29 @@
 {
   "itemGroup.fabricanvils.anvils": "Fabric Anvils",
 
-  "block.fabricanvils.oak_anvil": "Oak Anvil",
-  "block.fabricanvils.spruce_anvil": "Spruce Anvil",
-  "block.fabricanvils.birch_anvil": "Birch Anvil",
-  "block.fabricanvils.jungle_anvil": "Jungle Anvil",
-  "block.fabricanvils.acacia_anvil": "Acacia anvil",
-  "block.fabricanvils.dark_oak_anvil": "Dark Oak Anvil",
-  "block.fabricanvils.crimson_anvil": "Crimson Anvil",
-  "block.fabricanvils.warped_anvil": "Warped Anvil",
+  "block.fabricanvils.minecraft.oak_anvil": "Oak Anvil",
+  "block.fabricanvils.minecraft.spruce_anvil": "Spruce Anvil",
+  "block.fabricanvils.minecraft.birch_anvil": "Birch Anvil",
+  "block.fabricanvils.minecraft.jungle_anvil": "Jungle Anvil",
+  "block.fabricanvils.minecraft.acacia_anvil": "Acacia anvil",
+  "block.fabricanvils.minecraft.dark_oak_anvil": "Dark Oak Anvil",
+  "block.fabricanvils.minecraft.crimson_anvil": "Crimson Anvil",
+  "block.fabricanvils.minecraft.warped_anvil": "Warped Anvil",
 
-  "block.fabricanvils.stone_anvil": "Stone Anvil",
+  "block.fabricanvils.minecraft.stone_anvil": "Stone Anvil",
 
-  "block.fabricanvils.golden_anvil": "Golden Anvil",
-  "block.fabricanvils.damaged_golden_anvil": "Damaged Golden Anvil",
+  "block.fabricanvils.minecraft.golden_anvil": "Golden Anvil",
+  "block.fabricanvils.minecraft.damaged_golden_anvil": "Damaged Golden Anvil",
 
-  "block.fabricanvils.copper_anvil": "Copper Anvil",
+  "block.fabricanvils.minecraft.copper_anvil": "Copper Anvil",
+  "block.fabricanvils.minecraft.chipped_copper_anvil": "Chipped Copper Anvil",
+  "block.fabricanvils.minecraft.damaged_copper_anvil": "Damaged Copper Anvil",
 
-  "block.fabricanvils.diamond_anvil": "Diamond Anvil",
-  "block.fabricanvils.chipped_diamond_anvil": "Chipped Diamond Anvil",
-  "block.fabricanvils.damaged_diamond_anvil": "Damaged Diamond Anvil",
+  "block.fabricanvils.minecraft.diamond_anvil": "Diamond Anvil",
+  "block.fabricanvils.minecraft.chipped_diamond_anvil": "Chipped Diamond Anvil",
+  "block.fabricanvils.minecraft.damaged_diamond_anvil": "Damaged Diamond Anvil",
 
-  "block.fabricanvils.netherite_anvil": "Netherite Anvil",
-  "block.fabricanvils.chipped_netherite_anvil": "Chipped Netherite Anvil",
-  "block.fabricanvils.damaged_netherite_anvil": "Damaged Netherite Anvil"
+  "block.fabricanvils.minecraft.netherite_anvil": "Netherite Anvil",
+  "block.fabricanvils.minecraft.chipped_netherite_anvil": "Chipped Netherite Anvil",
+  "block.fabricanvils.minecraft.damaged_netherite_anvil": "Damaged Netherite Anvil"
 }

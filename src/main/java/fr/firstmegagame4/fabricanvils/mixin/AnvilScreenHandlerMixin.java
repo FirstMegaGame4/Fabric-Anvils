@@ -1,6 +1,7 @@
 package fr.firstmegagame4.fabricanvils.mixin;
 
 import fr.firstmegagame4.fabricanvils.FA.FATags;
+import fr.firstmegagame4.fabricanvils.FabricAnvilsClient;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.screen.AnvilScreenHandler;
@@ -19,6 +20,12 @@ public class AnvilScreenHandlerMixin {
     }
     @ModifyConstant(method = "updateResult", constant = @Constant(intValue = 40))
     private int xpLimit(int value) {
+        if (FabricAnvilsClient.xpLimitOnClient) return FabricAnvilsClient.anvilXpLimit;
         return CustomAnvilScreenHandler.xpLimit;
+    }
+    @ModifyConstant(method = "updateResult", constant = @Constant(intValue = 39))
+    private int xpLimitWhenRenaming(int value) {
+        if (FabricAnvilsClient.xpLimitOnClient) return FabricAnvilsClient.anvilXpLimit - 1;
+        return CustomAnvilScreenHandler.xpLimit - 1;
     }
 }

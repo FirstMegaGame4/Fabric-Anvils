@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "fabricanvils:diamond_anvil",
-    "fabricanvils:chipped_diamond_anvil",
-    "fabricanvils:damaged_diamond_anvil"
+    "#fabricanvils:superior_metal_anvils"
   ]
 }

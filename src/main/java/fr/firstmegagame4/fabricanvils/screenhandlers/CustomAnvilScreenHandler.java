@@ -1,13 +1,19 @@
 package fr.firstmegagame4.fabricanvils.screenhandlers;
 
 import fr.firstmegagame4.fabricanvils.FA.FATags;
+import fr.firstmegagame4.fabricanvils.FA.FAUtils;
+import fr.firstmegagame4.fabricanvils.FabricAnvilsClient;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.*;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 
@@ -24,10 +30,25 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
         CustomAnvilScreenHandler.breakSound = breakSound;
         CustomAnvilScreenHandler.chanceBreak = chanceBreak;
         this.context.run(((world, blockPos) -> {
-            if (!world.getBlockState(blockPos).isOf(Blocks.ANVIL)) {
+            if (world.getBlockState(blockPos).isIn(FATags.FABRICANVILS)) {
                 CustomAnvilScreenHandler.xpLimit = this.getXPLimit();
             }
         }));
+    }
+
+    @Override
+    public void updateResult() {
+        this.context.run(((world, blockPos) -> {
+            if (!world.isClient) {
+                PacketByteBuf buf = PacketByteBufs.create();
+                buf.writeInt(CustomAnvilScreenHandler.xpLimit);
+                ServerPlayNetworking.send((ServerPlayerEntity) this.player, FAUtils.FAIdentifier("anvilxplimit"), buf);
+            }
+            else {
+                FabricAnvilsClient.xpLimitOnClient = false;
+            }
+        }));
+        super.updateResult();
     }
 
     protected void onTakeOutput(PlayerEntity player, ItemStack stack) {

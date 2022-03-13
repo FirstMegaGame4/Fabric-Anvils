@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:jungle_wood"
+    },
+    "P": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:minecraft/jungle_anvil"
+  }
+}

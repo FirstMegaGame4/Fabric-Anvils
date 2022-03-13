@@ -20,11 +20,11 @@ public class BaseAnvil extends AnvilBlock {
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_METAL_PLACE);
+        this.playLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockState).getPlaceSound());
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_METAL_PLACE);
+        this.playDestroyLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockEntity.getBlockState()).getBreakSound());
     }
 
     protected void playLandingAnvilSound(World world, BlockPos pos, SoundEvent soundEvent) {

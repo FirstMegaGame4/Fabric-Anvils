@@ -19,14 +19,6 @@ public class WoodenAnvil extends BaseAnvil {
         super(settings);
     }
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, SoundEvents.BLOCK_WOOD_PLACE);
-    }
-
-    public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, SoundEvents.BLOCK_WOOD_PLACE);
-    }
-
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
         entity.setHurtEntities(1.0F, 20);
     }

@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "fabricanvils:oak_anvil",
-    "fabricanvils:spruce_anvil",
-    "fabricanvils:birch_anvil",
-    "fabricanvils:jungle_anvil",
-    "fabricanvils:acacia_anvil",
-    "fabricanvils:dark_oak_anvil",
-    "fabricanvils:crimson_anvil",
-    "fabricanvils:warped_anvil"
+    "fabricanvils:minecraft/oak_anvil",
+    "fabricanvils:minecraft/spruce_anvil",
+    "fabricanvils:minecraft/birch_anvil",
+    "fabricanvils:minecraft/jungle_anvil",
+    "fabricanvils:minecraft/acacia_anvil",
+    "fabricanvils:minecraft/dark_oak_anvil",
+    "fabricanvils:minecraft/crimson_anvil",
+    "fabricanvils:minecraft/warped_anvil"
   ]
 }
