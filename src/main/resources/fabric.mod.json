@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fabricanvils",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "name": "Fabric Anvils",
   "description": "This mod add many new types of anvils !",
@@ -15,7 +15,7 @@
     "sources": "https://github.com/FirstMegaGame4/Fabric-Anvils"
   },
 
-  "license": "All Rights Reserved",
+  "license": "LGPL-3.0 License",
 
   "environment": "*",
   "entrypoints": {
