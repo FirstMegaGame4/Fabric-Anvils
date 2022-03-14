@@ -18,4 +18,4 @@ Here are the FabricAnvils anvils, made with minecraft materials:
 In the future, FabricAnvils will have anvils with materials coming from other mods, like BYG, Unearthed etc...
 
 ## Can I use this mod in my Fabric modpack?
-### Yes you can, but with the unmodified mod.
+### Yes you can.
