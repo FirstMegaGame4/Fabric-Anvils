@@ -5,7 +5,10 @@
 
 ## Links :
 ### Modrinth: https://modrinth.com/mod/fabric-anvils
-**Curseborge: https://www.curseforge.com/minecraft/mc-mods/fabric-anvils**
+### CurseForge: https://www.curseforge.com/minecraft/mc-mods/fabric-anvils
+
+## Discord Server :
+https://discord.gg/GP3Hswvt8K
 
 ## Mod Description
 
