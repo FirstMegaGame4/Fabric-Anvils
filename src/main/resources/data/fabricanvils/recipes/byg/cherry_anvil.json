@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "byg:cherry_wood"
+    },
+    "P": {
+      "item": "byg:cherry_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/cherry_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg"
+      ]
+    }
+  ]
+}

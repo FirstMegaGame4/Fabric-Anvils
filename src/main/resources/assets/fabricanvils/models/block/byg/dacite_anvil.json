@@ -1,0 +1,11 @@
+{
+  "parent": "fabricanvils:block/template_stone_anvil",
+  "textures": {
+    "top_up": "byg:block/dacite",
+    "top_down": "byg:block/dacite",
+    "top_small_side": "byg:block/dacite",
+    "top_large_side": "byg:block/dacite",
+    "body": "byg:block/dacite_cobblestone",
+    "particle": "byg:block/dacite_cobblestone"
+  }
+}

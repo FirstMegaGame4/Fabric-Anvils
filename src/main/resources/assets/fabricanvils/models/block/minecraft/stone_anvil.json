@@ -5,7 +5,7 @@
     "top_down": "fabricanvils:block/minecraft/stone_anvil/top",
     "top_small_side": "fabricanvils:block/minecraft/stone_anvil/top_small_side",
     "top_large_side": "fabricanvils:block/minecraft/stone_anvil/top_large_side",
-    "particle": "block/cobblestone",
-    "body": "block/cobblestone"
+    "body": "block/cobblestone",
+    "particle": "block/cobblestone"
   }
 }

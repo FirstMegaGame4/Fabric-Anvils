@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    " C ",
+    "CCC"
+  ],
+  "key": {
+    "D": {
+      "item": "byg:dacite"
+    },
+    "C": {
+      "item": "byg:dacite_cobblestone"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/dacite_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg"
+      ]
+    }
+  ]
+}

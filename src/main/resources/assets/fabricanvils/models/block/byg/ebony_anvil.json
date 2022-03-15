@@ -1,0 +1,8 @@
+{
+  "parent": "fabricanvils:block/template_wooden_anvil",
+  "textures": {
+    "top": "byg:block/ebony_log",
+    "particle": "byg:block/ebony_planks",
+    "body": "byg:block/ebony_planks"
+  }
+}

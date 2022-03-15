@@ -25,5 +25,19 @@
 
   "block.fabricanvils.minecraft.netherite_anvil": "Netherite Anvil",
   "block.fabricanvils.minecraft.chipped_netherite_anvil": "Chipped Netherite Anvil",
-  "block.fabricanvils.minecraft.damaged_netherite_anvil": "Damaged Netherite Anvil"
+  "block.fabricanvils.minecraft.damaged_netherite_anvil": "Damaged Netherite Anvil",
+
+  "block.fabricanvils.byg.aspen_anvil": "Aspen Anvil",
+  "block.fabricanvils.byg.baobab_anvil": "Baobab Anvil",
+  "block.fabricanvils.byg.blue_enchanted_anvil": "Blue Enchanted Anvil",
+  "block.fabricanvils.byg.bulbis_anvil": "Bulbis Anvil",
+  "block.fabricanvils.byg.cherry_anvil": "Cherry Anvil",
+  "block.fabricanvils.byg.cika_anvil": "Cika Anvil",
+  "block.fabricanvils.byg.cypress_anvil": "Cypress Anvil",
+  "block.fabricanvils.byg.ebony_anvil": "Ebony Anvil",
+  "block.fabricanvils.byg.ether_anvil": "Ether Anvil",
+  "block.fabricanvils.byg.fir_anvil": "Fir Anvil",
+  "block.fabricanvils.byg.green_enchanted_anvil": "Green Enchanted Anvil",
+
+  "block.fabricanvils.byg.dacite_anvil": "Dacite Anvil"
 }

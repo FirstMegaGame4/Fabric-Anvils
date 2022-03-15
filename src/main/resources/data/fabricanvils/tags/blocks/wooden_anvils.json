@@ -8,6 +8,50 @@
     "fabricanvils:minecraft/acacia_anvil",
     "fabricanvils:minecraft/dark_oak_anvil",
     "fabricanvils:minecraft/crimson_anvil",
-    "fabricanvils:minecraft/warped_anvil"
+    "fabricanvils:minecraft/warped_anvil",
+    {
+      "id": "fabricanvils:byg/aspen_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/baobab_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/blue_enchanted_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/bulbis_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/cherry_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/cika_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/cypress_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/ebony_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/ether_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/fir_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/green_enchanted_anvil",
+      "required": false
+    }
   ]
 }

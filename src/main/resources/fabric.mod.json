@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fabricanvils",
-  "version": "1.0.1",
+  "version": "1.1.0",
 
   "name": "Fabric Anvils",
   "description": "This mod add many new types of anvils !",
@@ -37,5 +37,6 @@
     "java": ">=17"
   },
   "suggests": {
+    "byg": "1.18.2"
   }
 }
