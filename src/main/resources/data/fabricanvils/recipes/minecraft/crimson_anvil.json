@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WWW",
+    "HHH",
     " P ",
     "PPP"
   ],
   "key": {
-    "W": {
+    "H": {
       "item": "minecraft:crimson_hyphae"
     },
     "P": {

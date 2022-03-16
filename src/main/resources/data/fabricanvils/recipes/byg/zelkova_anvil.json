@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "item": "byg:zelkova_wood"
+    },
+    "P": {
+      "item": "byg:zelkova_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/zelkova_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg"
+      ]
+    }
+  ]
+}

@@ -52,6 +52,78 @@
     {
       "id": "fabricanvils:byg/green_enchanted_anvil",
       "required": false
+    },
+    {
+      "id": "fabricanvils:byg/holly_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/imparius_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/jacaranda_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/lament_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/mahogany_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/mangrove_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/maple_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/nightshade_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/palm_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/pine_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/rainbow_eucalyptus_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/redwood_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/skyris_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/willow_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/witch_hazel_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/zelkova_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/sythian_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/embur_anvil",
+      "required": false
     }
   ]
 }

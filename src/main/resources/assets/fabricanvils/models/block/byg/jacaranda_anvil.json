@@ -1,0 +1,8 @@
+{
+  "parent": "fabricanvils:block/template_wooden_anvil",
+  "textures": {
+    "top": "byg:block/jacaranda_log",
+    "particle": "byg:block/jacaranda_planks",
+    "body": "byg:block/jacaranda_planks"
+  }
+}

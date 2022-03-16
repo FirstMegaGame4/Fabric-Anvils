@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HHH",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "H": {
+      "item": "byg:imparius_hyphae"
+    },
+    "P": {
+      "item": "byg:imparius_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/imparius_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg"
+      ]
+    }
+  ]
+}
