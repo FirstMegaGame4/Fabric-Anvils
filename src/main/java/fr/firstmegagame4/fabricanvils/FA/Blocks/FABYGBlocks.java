@@ -4,6 +4,7 @@ import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
 import fr.firstmegagame4.fabricanvils.anvils.StoneAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.WoodenAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.byg.PendoriteAnvil;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -12,17 +13,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 
 public class FABYGBlocks {
-
-    /// Wooden BYG Anvils not implemented yet:
-    /// Pine
-    /// Rainbow Eucalyptus
-    /// Redwood
-    /// Skyris
-    /// Willow
-    /// Witch Hazel
-    /// Zelkova
-    /// Sythian
-    /// Embur
 
     public static final Block ASPEN_ANVIL = new WoodenAnvil(FabricBlockSettings.of(Material.WOOD)
             .hardness(3.0F)
@@ -72,10 +62,10 @@ public class FABYGBlocks {
     public static final BlockItem EBONY_ANVIL_ITEM = new BlockItem(EBONY_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-    public static final Block ETHER_ANVIL = new WoodenAnvil(FabricBlockSettings.of(Material.WOOD)
+    public static final Block ETHER_WOODEN_ANVIL = new WoodenAnvil(FabricBlockSettings.of(Material.WOOD)
             .hardness(3.0F)
             .sounds(BlockSoundGroup.WOOD));
-    public static final BlockItem ETHER_ANVIL_ITEM = new BlockItem(ETHER_ANVIL,
+    public static final BlockItem ETHER_WOODEN_ANVIL_ITEM = new BlockItem(ETHER_WOODEN_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
     public static final Block FIR_ANVIL = new WoodenAnvil(FabricBlockSettings.of(Material.WOOD)
@@ -205,42 +195,83 @@ public class FABYGBlocks {
     public static final BlockItem DACITE_ANVIL_ITEM = new BlockItem(DACITE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-    public static void registerBYGAnvil(String blockId, BlockItem blockItem, Block block) {
-        FAUtils.registerAnvil("byg", blockId, blockItem, block);
+    public static final Block SCORIA_ANVIL = new StoneAnvil(FabricBlockSettings.of(Material.STONE)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.STONE)
+            .requiresTool());
+    public static final BlockItem SCORIA_ANVIL_ITEM = new BlockItem(SCORIA_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block ETHER_STONE_ANVIL = new StoneAnvil(FabricBlockSettings.of(Material.STONE)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.STONE)
+            .requiresTool());
+    public static final BlockItem ETHER_STONE_ANVIL_ITEM = new BlockItem(ETHER_STONE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static void registerBYGAnvil(String blockId, Block block, BlockItem blockItem) {
+        FAUtils.registerAnvil("byg", blockId, block, blockItem);
     }
 
-    public static void register() {
-        registerBYGAnvil("aspen_anvil", ASPEN_ANVIL_ITEM, ASPEN_ANVIL);
-        registerBYGAnvil("baobab_anvil", BAOBAB_ANVIL_ITEM, BAOBAB_ANVIL);
-        registerBYGAnvil("blue_enchanted_anvil", BLUE_ENCHANTED_ANVIL_ITEM, BLUE_ENCHANTED_ANVIL);
-        registerBYGAnvil("bulbis_anvil", BULBIS_ANVIL_ITEM, BULBIS_ANVIL);
-        registerBYGAnvil("cherry_anvil", CHERRY_ANVIL_ITEM, CHERRY_ANVIL);
-        registerBYGAnvil("cika_anvil", CIKA_ANVIL_ITEM, CIKA_ANVIL);
-        registerBYGAnvil("cypress_anvil", CYPRESS_ANVIL_ITEM, CYPRESS_ANVIL);
-        registerBYGAnvil("ebony_anvil", EBONY_ANVIL_ITEM, EBONY_ANVIL);
-        registerBYGAnvil("ether_anvil", ETHER_ANVIL_ITEM, ETHER_ANVIL);
-        registerBYGAnvil("fir_anvil", FIR_ANVIL_ITEM, FIR_ANVIL);
-        registerBYGAnvil("green_enchanted_anvil", GREEN_ENCHANTED_ANVIL_ITEM, GREEN_ENCHANTED_ANVIL);
-        registerBYGAnvil("holly_anvil", HOLLY_ANVIL_ITEM, HOLLY_ANVIL);
-        registerBYGAnvil("imparius_anvil", IMPARIUS_ANVIL_ITEM, IMPARIUS_ANVIL);
-        registerBYGAnvil("jacaranda_anvil", JACARANDA_ANVIL_ITEM, JACARANDA_ANVIL);
-        registerBYGAnvil("lament_anvil", LAMENT_ANVIL_ITEM, LAMENT_ANVIL);
-        registerBYGAnvil("mahogany_anvil", MAHOGANY_ANVIL_ITEM, MAHOGANY_ANVIL);
-        registerBYGAnvil("mangrove_anvil", MANGROVE_ANVIL_ITEM, MANGROVE_ANVIL);
-        registerBYGAnvil("maple_anvil", MAPLE_ANVIL_ITEM, MAPLE_ANVIL);
-        registerBYGAnvil("nightshade_anvil", NIGHTSHADE_ANVIL_ITEM, NIGHTSHADE_ANVIL);
-        registerBYGAnvil("palm_anvil", PALM_ANVIL_ITEM, PALM_ANVIL);
-        registerBYGAnvil("pine_anvil", PINE_ANVIL_ITEM, PINE_ANVIL);
-        registerBYGAnvil("rainbow_eucalyptus_anvil", RAINBOW_EUCALYPTUS_ANVIL_ITEM, RAINBOW_EUCALYPTUS_ANVIL);
-        registerBYGAnvil("redwood_anvil", REDWOOD_ANVIL_ITEM, REDWOOD_ANVIL);
-        registerBYGAnvil("skyris_anvil", SKYRIS_ANVIL_ITEM, SKYRIS_ANVIL);
-        registerBYGAnvil("willow_anvil", WILLOW_ANVIL_ITEM, WILLOW_ANVIL);
-        registerBYGAnvil("witch_hazel_anvil", WITCH_HAZEL_ANVIL_ITEM, WITCH_HAZEL_ANVIL);
-        registerBYGAnvil("zelkova_anvil", ZELKOVA_ANVIL_ITEM, ZELKOVA_ANVIL);
-        registerBYGAnvil("sythian_anvil", SYTHIAN_ANVIL_ITEM, SYTHIAN_ANVIL);
-        registerBYGAnvil("embur_anvil", EMBUR_ANVIL_ITEM, EMBUR_ANVIL);
+    public static final Block PENDORITE_ANVIL = new PendoriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem PENDORITE_ANVIL_ITEM = new BlockItem(PENDORITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-        registerBYGAnvil("dacite_anvil", DACITE_ANVIL_ITEM, DACITE_ANVIL);
+    public static final Block CHIPPED_PENDORITE_ANVIL = new PendoriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_PENDORITE_ANVIL_ITEM = new BlockItem(CHIPPED_PENDORITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_PENDORITE_ANVIL = new PendoriteAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_PENDORITE_ANVIL_ITEM = new BlockItem(DAMAGED_PENDORITE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static void register() {
+        registerBYGAnvil("aspen_anvil", ASPEN_ANVIL, ASPEN_ANVIL_ITEM);
+        registerBYGAnvil("baobab_anvil", BAOBAB_ANVIL, BAOBAB_ANVIL_ITEM);
+        registerBYGAnvil("blue_enchanted_anvil", BLUE_ENCHANTED_ANVIL, BLUE_ENCHANTED_ANVIL_ITEM);
+        registerBYGAnvil("bulbis_anvil", BULBIS_ANVIL, BULBIS_ANVIL_ITEM);
+        registerBYGAnvil("cherry_anvil", CHERRY_ANVIL, CHERRY_ANVIL_ITEM);
+        registerBYGAnvil("cika_anvil", CIKA_ANVIL, CIKA_ANVIL_ITEM);
+        registerBYGAnvil("cypress_anvil", CYPRESS_ANVIL, CYPRESS_ANVIL_ITEM);
+        registerBYGAnvil("ebony_anvil", EBONY_ANVIL, EBONY_ANVIL_ITEM);
+        registerBYGAnvil("ether_wooden_anvil", ETHER_WOODEN_ANVIL, ETHER_WOODEN_ANVIL_ITEM);
+        registerBYGAnvil("fir_anvil", FIR_ANVIL, FIR_ANVIL_ITEM);
+        registerBYGAnvil("green_enchanted_anvil", GREEN_ENCHANTED_ANVIL, GREEN_ENCHANTED_ANVIL_ITEM);
+        registerBYGAnvil("holly_anvil", HOLLY_ANVIL, HOLLY_ANVIL_ITEM);
+        registerBYGAnvil("imparius_anvil", IMPARIUS_ANVIL, IMPARIUS_ANVIL_ITEM);
+        registerBYGAnvil("jacaranda_anvil", JACARANDA_ANVIL, JACARANDA_ANVIL_ITEM);
+        registerBYGAnvil("lament_anvil", LAMENT_ANVIL, LAMENT_ANVIL_ITEM);
+        registerBYGAnvil("mahogany_anvil", MAHOGANY_ANVIL, MAHOGANY_ANVIL_ITEM);
+        registerBYGAnvil("mangrove_anvil", MANGROVE_ANVIL, MANGROVE_ANVIL_ITEM);
+        registerBYGAnvil("maple_anvil", MAPLE_ANVIL, MAPLE_ANVIL_ITEM);
+        registerBYGAnvil("nightshade_anvil", NIGHTSHADE_ANVIL, NIGHTSHADE_ANVIL_ITEM);
+        registerBYGAnvil("palm_anvil", PALM_ANVIL, PALM_ANVIL_ITEM);
+        registerBYGAnvil("pine_anvil", PINE_ANVIL, PINE_ANVIL_ITEM);
+        registerBYGAnvil("rainbow_eucalyptus_anvil", RAINBOW_EUCALYPTUS_ANVIL, RAINBOW_EUCALYPTUS_ANVIL_ITEM);
+        registerBYGAnvil("redwood_anvil", REDWOOD_ANVIL, REDWOOD_ANVIL_ITEM);
+        registerBYGAnvil("skyris_anvil", SKYRIS_ANVIL, SKYRIS_ANVIL_ITEM);
+        registerBYGAnvil("willow_anvil", WILLOW_ANVIL, WILLOW_ANVIL_ITEM);
+        registerBYGAnvil("witch_hazel_anvil", WITCH_HAZEL_ANVIL, WITCH_HAZEL_ANVIL_ITEM);
+        registerBYGAnvil("zelkova_anvil", ZELKOVA_ANVIL, ZELKOVA_ANVIL_ITEM);
+        registerBYGAnvil("sythian_anvil", SYTHIAN_ANVIL, SYTHIAN_ANVIL_ITEM);
+        registerBYGAnvil("embur_anvil", EMBUR_ANVIL, EMBUR_ANVIL_ITEM);
+
+        registerBYGAnvil("dacite_anvil", DACITE_ANVIL, DACITE_ANVIL_ITEM);
+        registerBYGAnvil("scoria_anvil", SCORIA_ANVIL, SCORIA_ANVIL_ITEM);
+        registerBYGAnvil("ether_stone_anvil", ETHER_STONE_ANVIL, ETHER_STONE_ANVIL_ITEM);
+
+        registerBYGAnvil("pendorite_anvil", PENDORITE_ANVIL, PENDORITE_ANVIL_ITEM);
+        registerBYGAnvil("chipped_pendorite_anvil", CHIPPED_PENDORITE_ANVIL, CHIPPED_PENDORITE_ANVIL_ITEM);
+        registerBYGAnvil("damaged_pendorite_anvil", DAMAGED_PENDORITE_ANVIL, DAMAGED_PENDORITE_ANVIL_ITEM);
     }
 
 }

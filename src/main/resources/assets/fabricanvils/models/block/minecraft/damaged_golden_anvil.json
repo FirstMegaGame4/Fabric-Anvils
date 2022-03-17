@@ -1,7 +1,7 @@
 {
-  "parent": "block/template_anvil",
+  "parent": "fabricanvils:block/template_fissured_anvil",
   "textures": {
-    "top": "fabricanvils:block/minecraft/golden_anvil/damaged_gold",
+    "top": "fabricanvils:block/minecraft/golden_anvil/damaged",
     "particle": "block/gold_block",
     "body": "block/gold_block"
   }

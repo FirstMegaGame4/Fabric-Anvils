@@ -5,6 +5,14 @@
     {
       "id": "fabricanvils:byg/dacite_anvil",
       "required": false
+    },
+    {
+      "id": "fabricanvils:byg/scoria_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/ether_stone_anvil",
+      "required": false
     }
   ]
 }

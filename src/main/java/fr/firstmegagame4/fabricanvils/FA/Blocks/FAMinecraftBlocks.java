@@ -153,36 +153,36 @@ public class FAMinecraftBlocks {
 
 
 
-    public static void registerMinecraftAnvil(String blockId, BlockItem blockItem, Block block) {
-        FAUtils.registerAnvil("minecraft", blockId, blockItem, block);
+    public static void registerMinecraftAnvil(String blockId, Block block, BlockItem blockItem) {
+        FAUtils.registerAnvil("minecraft", blockId, block, blockItem);
     }
 
     public static void register() {
-        registerMinecraftAnvil("oak_anvil", OAK_ANVIL_ITEM, OAK_ANVIL);
-        registerMinecraftAnvil("spruce_anvil", SPRUCE_ANVIL_ITEM, SPRUCE_ANVIL);
-        registerMinecraftAnvil("birch_anvil", BIRCH_ANVIL_ITEM, BIRCH_ANVIL);
-        registerMinecraftAnvil("jungle_anvil", JUNGLE_ANVIL_ITEM, JUNGLE_ANVIL);
-        registerMinecraftAnvil("acacia_anvil", ACACIA_ANVIL_ITEM, ACACIA_ANVIL);
-        registerMinecraftAnvil("dark_oak_anvil", DARK_OAK_ANVIL_ITEM, DARK_OAK_ANVIL);
-        registerMinecraftAnvil("crimson_anvil", CRIMSON_ANVIL_ITEM, CRIMSON_ANVIL);
-        registerMinecraftAnvil("warped_anvil", WARPED_ANVIL_ITEM, WARPED_ANVIL);
+        registerMinecraftAnvil("oak_anvil", OAK_ANVIL, OAK_ANVIL_ITEM);
+        registerMinecraftAnvil("spruce_anvil", SPRUCE_ANVIL, SPRUCE_ANVIL_ITEM);
+        registerMinecraftAnvil("birch_anvil", BIRCH_ANVIL, BIRCH_ANVIL_ITEM);
+        registerMinecraftAnvil("jungle_anvil", JUNGLE_ANVIL, JUNGLE_ANVIL_ITEM);
+        registerMinecraftAnvil("acacia_anvil", ACACIA_ANVIL, ACACIA_ANVIL_ITEM);
+        registerMinecraftAnvil("dark_oak_anvil", DARK_OAK_ANVIL, DARK_OAK_ANVIL_ITEM);
+        registerMinecraftAnvil("crimson_anvil", CRIMSON_ANVIL, CRIMSON_ANVIL_ITEM);
+        registerMinecraftAnvil("warped_anvil", WARPED_ANVIL, WARPED_ANVIL_ITEM);
 
-        registerMinecraftAnvil("stone_anvil", STONE_ANVIL_ITEM, STONE_ANVIL);
+        registerMinecraftAnvil("stone_anvil", STONE_ANVIL, STONE_ANVIL_ITEM);
 
-        registerMinecraftAnvil("golden_anvil", GOLDEN_ANVIL_ITEM, GOLDEN_ANVIL);
-        registerMinecraftAnvil("damaged_golden_anvil", DAMAGED_GOLDEN_ANVIL_ITEM, DAMAGED_GOLDEN_ANVIL);
+        registerMinecraftAnvil("golden_anvil", GOLDEN_ANVIL, GOLDEN_ANVIL_ITEM);
+        registerMinecraftAnvil("damaged_golden_anvil", DAMAGED_GOLDEN_ANVIL, DAMAGED_GOLDEN_ANVIL_ITEM);
 
-        registerMinecraftAnvil("copper_anvil", COPPER_ANVIL_ITEM, COPPER_ANVIL);
-        registerMinecraftAnvil("chipped_copper_anvil", CHIPPED_COPPER_ANVIL_ITEM, CHIPPED_COPPER_ANVIL);
-        registerMinecraftAnvil("damaged_copper_anvil", DAMAGED_COPPER_ANVIL_ITEM, DAMAGED_COPPER_ANVIL);
+        registerMinecraftAnvil("copper_anvil", COPPER_ANVIL, COPPER_ANVIL_ITEM);
+        registerMinecraftAnvil("chipped_copper_anvil", CHIPPED_COPPER_ANVIL, CHIPPED_COPPER_ANVIL_ITEM);
+        registerMinecraftAnvil("damaged_copper_anvil", DAMAGED_COPPER_ANVIL, DAMAGED_COPPER_ANVIL_ITEM);
 
-        registerMinecraftAnvil("diamond_anvil", DIAMOND_ANVIL_ITEM, DIAMOND_ANVIL);
-        registerMinecraftAnvil("chipped_diamond_anvil", CHIPPED_DIAMOND_ANVIL_ITEM, CHIPPED_DIAMOND_ANVIL);
-        registerMinecraftAnvil("damaged_diamond_anvil", DAMAGED_DIAMOND_ANVIL_ITEM, DAMAGED_DIAMOND_ANVIL);
+        registerMinecraftAnvil("diamond_anvil", DIAMOND_ANVIL, DIAMOND_ANVIL_ITEM);
+        registerMinecraftAnvil("chipped_diamond_anvil", CHIPPED_DIAMOND_ANVIL, CHIPPED_DIAMOND_ANVIL_ITEM);
+        registerMinecraftAnvil("damaged_diamond_anvil", DAMAGED_DIAMOND_ANVIL, DAMAGED_DIAMOND_ANVIL_ITEM);
 
-        registerMinecraftAnvil("netherite_anvil", NETHERITE_ANVIL_ITEM, NETHERITE_ANVIL);
-        registerMinecraftAnvil("chipped_netherite_anvil", CHIPPED_NETHERITE_ANVIL_ITEM, CHIPPED_NETHERITE_ANVIL);
-        registerMinecraftAnvil("damaged_netherite_anvil", DAMAGED_NETHERITE_ANVIL_ITEM, DAMAGED_NETHERITE_ANVIL);
+        registerMinecraftAnvil("netherite_anvil", NETHERITE_ANVIL, NETHERITE_ANVIL_ITEM);
+        registerMinecraftAnvil("chipped_netherite_anvil", CHIPPED_NETHERITE_ANVIL, CHIPPED_NETHERITE_ANVIL_ITEM);
+        registerMinecraftAnvil("damaged_netherite_anvil", DAMAGED_NETHERITE_ANVIL, DAMAGED_NETHERITE_ANVIL_ITEM);
     }
 
 }

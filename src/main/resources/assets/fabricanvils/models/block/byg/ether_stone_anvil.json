@@ -1,0 +1,11 @@
+{
+  "parent": "fabricanvils:block/template_stone_anvil",
+  "textures": {
+    "top_down": "byg:block/ether_stone",
+    "top_up": "byg:block/ether_stone",
+    "top_small_side": "byg:block/ether_stone",
+    "top_large_side": "byg:block/ether_stone",
+    "particle": "byg:block/cobbled_ether_stone",
+    "body": "byg:block/cobbled_ether_stone"
+  }
+}

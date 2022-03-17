@@ -1,0 +1,11 @@
+{
+  "parent": "fabricanvils:block/template_stone_anvil",
+  "textures": {
+    "top_up": "byg:block/scoria_stone",
+    "top_down": "byg:block/scoria_stone",
+    "top_small_side": "byg:block/scoria_stone",
+    "top_large_side": "byg:block/scoria_stone",
+    "body": "byg:block/scoria_cobblestone",
+    "particle": "byg:block/scoria_cobblestone"
+  }
+}

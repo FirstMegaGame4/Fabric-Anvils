@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " I ",
+    "III"
+  ],
+  "key": {
+    "B": {
+      "item": "byg:pendorite_block"
+    },
+    "I": {
+      "item": "byg:pendorite_ingot"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/pendorite_anvil"
+  }
+}

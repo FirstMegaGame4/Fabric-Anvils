@@ -1,7 +1,7 @@
 {
-  "parent": "block/template_anvil",
+  "parent": "fabricanvils:block/template_fissured_anvil",
   "textures": {
-    "top": "fabricanvils:block/minecraft/netherite_anvil/damaged_netherite",
+    "top": "fabricanvils:block/minecraft/netherite_anvil/damaged",
     "particle": "block/netherite_block",
     "body": "block/netherite_block"
   }

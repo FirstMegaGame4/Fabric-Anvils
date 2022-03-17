@@ -35,7 +35,7 @@
   "block.fabricanvils.byg.cika_anvil": "Cika Anvil",
   "block.fabricanvils.byg.cypress_anvil": "Cypress Anvil",
   "block.fabricanvils.byg.ebony_anvil": "Ebony Anvil",
-  "block.fabricanvils.byg.ether_anvil": "Ether Anvil",
+  "block.fabricanvils.byg.ether_wooden_anvil": "Ether Wooden Anvil",
   "block.fabricanvils.byg.fir_anvil": "Fir Anvil",
   "block.fabricanvils.byg.green_enchanted_anvil": "Green Enchanted Anvil",
   "block.fabricanvils.byg.holly_anvil": "Holly Anvil",
@@ -57,5 +57,11 @@
   "block.fabricanvils.byg.sythian_anvil": "Sythian Anvil",
   "block.fabricanvils.byg.embur_anvil": "Embur Anvil",
 
-  "block.fabricanvils.byg.dacite_anvil": "Dacite Anvil"
+  "block.fabricanvils.byg.dacite_anvil": "Dacite Anvil",
+  "block.fabricanvils.byg.scoria_anvil": "Scoria Anvil",
+  "block.fabricanvils.byg.ether_stone_anvil": "Ether Stone Anvil",
+
+  "block.fabricanvils.byg.pendorite_anvil": "Pendorite Anvil",
+  "block.fabricanvils.byg.chipped_pendorite_anvil": "Chipped Pendorite Anvil",
+  "block.fabricanvils.byg.damaged_pendorite_anvil": "Damaged Pendorite Anvil"
 }

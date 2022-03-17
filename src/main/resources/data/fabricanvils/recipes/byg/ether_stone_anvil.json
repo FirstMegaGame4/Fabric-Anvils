@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " C ",
+    "CCC"
+  ],
+  "key": {
+    "S": {
+      "item": "byg:ether_stone"
+    },
+    "C": {
+      "item": "byg:cobbled_ether_stone"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:byg/ether_stone_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg"
+      ]
+    }
+  ]
+}

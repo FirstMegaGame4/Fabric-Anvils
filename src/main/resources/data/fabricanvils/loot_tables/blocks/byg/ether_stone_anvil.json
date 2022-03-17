@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fabricanvils:byg/ether_anvil"
+          "name": "fabricanvils:byg/ether_stone_anvil"
         }
       ],
       "conditions": [

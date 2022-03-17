@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WWW",
-    " P ",
-    "PPP"
+    "SSS",
+    " C ",
+    "CCC"
   ],
   "key": {
-    "W": {
-      "item": "byg:ether_wood"
+    "S": {
+      "item": "byg:scoria_stone"
     },
-    "P": {
-      "item": "byg:ether_planks"
+    "C": {
+      "item": "byg:scoria_cobblestone"
     }
   },
   "result": {
-    "item": "fabricanvils:byg/ether_anvil"
+    "item": "fabricanvils:byg/scoria_anvil"
   },
   "fabric:load_conditions": [
     {

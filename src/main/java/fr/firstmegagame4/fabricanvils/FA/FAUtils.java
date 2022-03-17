@@ -17,13 +17,13 @@ public class FAUtils {
         return new Identifier(modIndentifier, path);
     }
 
-    public static void registerBlock(String blockId, BlockItem blockItem, Block block) {
+    public static void registerBlock(String blockId, Block block, BlockItem blockItem) {
         Registry.register(Registry.BLOCK, FAIdentifier(blockId), block);
         Registry.register(Registry.ITEM, FAIdentifier(blockId), blockItem);
     }
 
-    public static void registerAnvil(String origin, String blockId, BlockItem blockItem, Block block) {
-        registerBlock(origin + "/" + blockId, blockItem, block);
+    public static void registerAnvil(String origin, String blockId, Block block, BlockItem blockItem) {
+        registerBlock(origin + "/" + blockId, block, blockItem);
     }
 
 }

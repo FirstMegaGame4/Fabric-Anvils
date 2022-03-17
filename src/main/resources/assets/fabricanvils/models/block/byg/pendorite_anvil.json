@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_anvil",
+  "textures": {
+    "top": "byg:block/pendorite_block",
+    "particle": "byg:block/pendorite_block",
+    "body": "byg:block/pendorite_block"
+  }
+}
