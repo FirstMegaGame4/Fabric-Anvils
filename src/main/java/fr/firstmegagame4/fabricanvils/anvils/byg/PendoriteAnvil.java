@@ -1,7 +1,7 @@
 package fr.firstmegagame4.fabricanvils.anvils.byg;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FABYGBlocks;
-import fr.firstmegagame4.fabricanvils.anvils.MoreAdvancedMetalAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.EvenMoreAdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.byg.PendoriteAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class PendoriteAnvil extends MoreAdvancedMetalAnvil {
+public class PendoriteAnvil extends EvenMoreAdvancedMetalAnvil {
 
     public PendoriteAnvil(Settings settings) {
         super(settings);

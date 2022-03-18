@@ -210,9 +210,26 @@ public class FABYGBlocks {
     public static final BlockItem ETHER_STONE_ANVIL_ITEM = new BlockItem(ETHER_STONE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-    public static void registerBYGAnvil(String blockId, Block block, BlockItem blockItem) {
-        FAUtils.registerAnvil("byg", blockId, block, blockItem);
-    }
+    public static final Block AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem AMETRINE_ANVIL_ITEM = new BlockItem(AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem CHIPPED_AMETRINE_ANVIL_ITEM = new BlockItem(CHIPPED_AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem DAMAGED_AMETRINE_ANVIL_ITEM = new BlockItem(DAMAGED_AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
     public static final Block PENDORITE_ANVIL = new PendoriteAnvil(FabricBlockSettings.of(Material.METAL)
             .hardness(3.0F)
@@ -235,26 +252,9 @@ public class FABYGBlocks {
     public static final BlockItem DAMAGED_PENDORITE_ANVIL_ITEM = new BlockItem(DAMAGED_PENDORITE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-    public static final Block AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
-            .hardness(3.0F)
-            .sounds(BlockSoundGroup.GLASS)
-            .requiresTool());
-    public static final BlockItem AMETRINE_ANVIL_ITEM = new BlockItem(AMETRINE_ANVIL,
-            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
-
-    public static final Block CHIPPED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
-            .hardness(3.0F)
-            .sounds(BlockSoundGroup.GLASS)
-            .requiresTool());
-    public static final BlockItem CHIPPED_AMETRINE_ANVIL_ITEM = new BlockItem(CHIPPED_AMETRINE_ANVIL,
-            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
-
-    public static final Block DAMAGED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
-            .hardness(3.0F)
-            .sounds(BlockSoundGroup.GLASS)
-            .requiresTool());
-    public static final BlockItem DAMAGED_AMETRINE_ANVIL_ITEM = new BlockItem(DAMAGED_AMETRINE_ANVIL,
-            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+    public static void registerBYGAnvil(String blockId, Block block, BlockItem blockItem) {
+        FAUtils.registerAnvil("byg", blockId, block, blockItem);
+    }
 
     public static void register() {
         registerBYGAnvil("aspen_anvil", ASPEN_ANVIL, ASPEN_ANVIL_ITEM);
@@ -291,13 +291,14 @@ public class FABYGBlocks {
         registerBYGAnvil("scoria_anvil", SCORIA_ANVIL, SCORIA_ANVIL_ITEM);
         registerBYGAnvil("ether_stone_anvil", ETHER_STONE_ANVIL, ETHER_STONE_ANVIL_ITEM);
 
+        registerBYGAnvil("ametrine_anvil", AMETRINE_ANVIL, AMETRINE_ANVIL_ITEM);
+        registerBYGAnvil("chipped_ametrine_anvil", CHIPPED_AMETRINE_ANVIL, CHIPPED_AMETRINE_ANVIL_ITEM);
+        registerBYGAnvil("damaged_ametrine_anvil", DAMAGED_AMETRINE_ANVIL, DAMAGED_AMETRINE_ANVIL_ITEM);
+
         registerBYGAnvil("pendorite_anvil", PENDORITE_ANVIL, PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("chipped_pendorite_anvil", CHIPPED_PENDORITE_ANVIL, CHIPPED_PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("damaged_pendorite_anvil", DAMAGED_PENDORITE_ANVIL, DAMAGED_PENDORITE_ANVIL_ITEM);
 
-        registerBYGAnvil("ametrine_anvil", AMETRINE_ANVIL, AMETRINE_ANVIL_ITEM);
-        registerBYGAnvil("chipped_ametrine_anvil", CHIPPED_AMETRINE_ANVIL, CHIPPED_AMETRINE_ANVIL_ITEM);
-        registerBYGAnvil("damaged_ametrine_anvil", DAMAGED_AMETRINE_ANVIL, DAMAGED_AMETRINE_ANVIL_ITEM);
     }
 
 }

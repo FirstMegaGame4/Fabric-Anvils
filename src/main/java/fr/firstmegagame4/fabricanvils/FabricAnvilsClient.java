@@ -27,11 +27,11 @@ public class FabricAnvilsClient implements ClientModInitializer {
         FAUtils.setCutout(FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL);
 
         if (FabricLoader.getInstance().isModLoaded("byg")) {
-            FAUtils.setCutout(FABYGBlocks.CHIPPED_PENDORITE_ANVIL);
-            FAUtils.setCutout(FABYGBlocks.DAMAGED_PENDORITE_ANVIL);
-
             FAUtils.setCutout(FABYGBlocks.CHIPPED_AMETRINE_ANVIL);
             FAUtils.setCutout(FABYGBlocks.DAMAGED_AMETRINE_ANVIL);
+
+            FAUtils.setCutout(FABYGBlocks.CHIPPED_PENDORITE_ANVIL);
+            FAUtils.setCutout(FABYGBlocks.DAMAGED_PENDORITE_ANVIL);
 
             FAUtils.setTranslucent(FABYGBlocks.AMETRINE_ANVIL);
             FAUtils.setTranslucent(FABYGBlocks.CHIPPED_AMETRINE_ANVIL);

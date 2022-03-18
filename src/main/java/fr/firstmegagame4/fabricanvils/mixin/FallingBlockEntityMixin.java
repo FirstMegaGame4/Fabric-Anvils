@@ -6,7 +6,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -51,6 +50,7 @@ public abstract class FallingBlockEntityMixin {
         float superiorAnvilDamage = metalAnvilDamage / 2.00F;
         float advancedAnvilDamage = metalAnvilDamage / 4.00F;
         float moreAdvancedAnvilDamage = metalAnvilDamage / 8.00F;
+        float evenMoreAdvancedAnvilDamage = metalAnvilDamage / 16.00F;
 
         MetalAnvil.destroyByFalling = false;
 
@@ -77,6 +77,9 @@ public abstract class FallingBlockEntityMixin {
                 this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.MORE_ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < moreAdvancedAnvilDamage + i0 * moreAdvancedAnvilDamage) {
+                this.setDestroyedOnFalling();
+            }
+            else if (this.block.isIn(FATags.EVEN_MORE_ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < evenMoreAdvancedAnvilDamage + i0 + evenMoreAdvancedAnvilDamage) {
                 this.setDestroyedOnFalling();
             }
         }

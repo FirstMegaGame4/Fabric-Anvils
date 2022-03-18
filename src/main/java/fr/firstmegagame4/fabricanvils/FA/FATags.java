@@ -14,4 +14,5 @@ public class FATags {
     public static final TagKey<Block> SUPERIOR_METAL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("superior_metal_anvils"));
     public static final TagKey<Block> ADVANCED_METAL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("advanced_metal_anvils"));
     public static final TagKey<Block> MORE_ADVANCED_METAL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("more_advanced_metal_anvils"));
+    public static final TagKey<Block> EVEN_MORE_ADVANCED_METAL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("even_more_advanced_metal_anvils"));
 }
