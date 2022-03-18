@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#fabricanvils:advanced_metal_anvils"
+    "#fabricanvils:advanced_metal_anvils",
+    "#fabricanvils:more_advanced_metal_anvils"
   ]
 }

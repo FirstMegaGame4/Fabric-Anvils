@@ -50,6 +50,7 @@ public abstract class FallingBlockEntityMixin {
         float inferiorAnvilDamage = metalAnvilDamage * 2.08F;
         float superiorAnvilDamage = metalAnvilDamage / 2.00F;
         float advancedAnvilDamage = metalAnvilDamage / 4.00F;
+        float moreAdvancedAnvilDamage = metalAnvilDamage / 8.00F;
 
         MetalAnvil.destroyByFalling = false;
 
@@ -73,6 +74,9 @@ public abstract class FallingBlockEntityMixin {
                 this.setDestroyedOnFalling();
             }
             else if (this.block.isIn(FATags.ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < advancedAnvilDamage + i0 * advancedAnvilDamage) {
+                this.setDestroyedOnFalling();
+            }
+            else if (this.block.isIn(FATags.MORE_ADVANCED_METAL_ANVILS) && f0 > 0.0F && new Random().nextFloat() < moreAdvancedAnvilDamage + i0 * moreAdvancedAnvilDamage) {
                 this.setDestroyedOnFalling();
             }
         }

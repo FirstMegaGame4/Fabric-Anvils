@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_anvil",
+  "textures": {
+    "top": "byg:block/ametrine_block",
+    "particle": "byg:block/ametrine_block",
+    "body": "byg:block/ametrine_block"
+  }
+}

@@ -6,10 +6,8 @@ import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.render.RenderLayer;
 
 public class FabricAnvilsClient implements ClientModInitializer {
 
@@ -20,17 +18,24 @@ public class FabricAnvilsClient implements ClientModInitializer {
     @Environment(EnvType.CLIENT)
     public void onInitializeClient() {
 
-        BlockRenderLayerMap.INSTANCE.putBlock(FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL, RenderLayer.getCutout());
+        FAUtils.setCutout(FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL);
 
-        BlockRenderLayerMap.INSTANCE.putBlock(FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FAMinecraftBlocks.DAMAGED_DIAMOND_ANVIL, RenderLayer.getCutout());
+        FAUtils.setCutout(FAMinecraftBlocks.CHIPPED_DIAMOND_ANVIL);
+        FAUtils.setCutout(FAMinecraftBlocks.DAMAGED_DIAMOND_ANVIL);
 
-        BlockRenderLayerMap.INSTANCE.putBlock(FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL, RenderLayer.getCutout());
+        FAUtils.setCutout(FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL);
+        FAUtils.setCutout(FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL);
 
         if (FabricLoader.getInstance().isModLoaded("byg")) {
-            BlockRenderLayerMap.INSTANCE.putBlock(FABYGBlocks.CHIPPED_PENDORITE_ANVIL, RenderLayer.getCutout());
-            BlockRenderLayerMap.INSTANCE.putBlock(FABYGBlocks.DAMAGED_PENDORITE_ANVIL, RenderLayer.getCutout());
+            FAUtils.setCutout(FABYGBlocks.CHIPPED_PENDORITE_ANVIL);
+            FAUtils.setCutout(FABYGBlocks.DAMAGED_PENDORITE_ANVIL);
+
+            FAUtils.setCutout(FABYGBlocks.CHIPPED_AMETRINE_ANVIL);
+            FAUtils.setCutout(FABYGBlocks.DAMAGED_AMETRINE_ANVIL);
+
+            FAUtils.setTranslucent(FABYGBlocks.AMETRINE_ANVIL);
+            FAUtils.setTranslucent(FABYGBlocks.CHIPPED_AMETRINE_ANVIL);
+            FAUtils.setTranslucent(FABYGBlocks.DAMAGED_AMETRINE_ANVIL);
         }
 
         ClientPlayNetworking.registerGlobalReceiver(FAUtils.FAIdentifier("anvilxplimit"), (client, handler, buf, responseSender) -> {

@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#fabricanvils:minecraft/netherite_anvils",
-    {
-      "id": "#fabricanvils:byg/pendorite_anvils",
-      "required": false
-    }
+    "#fabricanvils:minecraft/netherite_anvils"
   ]
 }

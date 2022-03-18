@@ -1,0 +1,8 @@
+{
+  "parent": "fabricanvils:block/template_fissured_anvil",
+  "textures": {
+    "top": "fabricanvils:block/byg/ametrine_anvil/chipped",
+    "particle": "byg:block/ametrine_block",
+    "body": "byg:block/ametrine_block"
+  }
+}

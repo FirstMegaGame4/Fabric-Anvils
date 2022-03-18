@@ -4,6 +4,7 @@ import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
 import fr.firstmegagame4.fabricanvils.anvils.StoneAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.WoodenAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.byg.AmetrineAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.byg.PendoriteAnvil;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -234,6 +235,27 @@ public class FABYGBlocks {
     public static final BlockItem DAMAGED_PENDORITE_ANVIL_ITEM = new BlockItem(DAMAGED_PENDORITE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+    public static final Block AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem AMETRINE_ANVIL_ITEM = new BlockItem(AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem CHIPPED_AMETRINE_ANVIL_ITEM = new BlockItem(CHIPPED_AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_AMETRINE_ANVIL = new AmetrineAnvil(FabricBlockSettings.of(Material.GLASS)
+            .hardness(3.0F)
+            .sounds(BlockSoundGroup.GLASS)
+            .requiresTool());
+    public static final BlockItem DAMAGED_AMETRINE_ANVIL_ITEM = new BlockItem(DAMAGED_AMETRINE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
     public static void register() {
         registerBYGAnvil("aspen_anvil", ASPEN_ANVIL, ASPEN_ANVIL_ITEM);
         registerBYGAnvil("baobab_anvil", BAOBAB_ANVIL, BAOBAB_ANVIL_ITEM);
@@ -272,6 +294,10 @@ public class FABYGBlocks {
         registerBYGAnvil("pendorite_anvil", PENDORITE_ANVIL, PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("chipped_pendorite_anvil", CHIPPED_PENDORITE_ANVIL, CHIPPED_PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("damaged_pendorite_anvil", DAMAGED_PENDORITE_ANVIL, DAMAGED_PENDORITE_ANVIL_ITEM);
+
+        registerBYGAnvil("ametrine_anvil", AMETRINE_ANVIL, AMETRINE_ANVIL_ITEM);
+        registerBYGAnvil("chipped_ametrine_anvil", CHIPPED_AMETRINE_ANVIL, CHIPPED_AMETRINE_ANVIL_ITEM);
+        registerBYGAnvil("damaged_ametrine_anvil", DAMAGED_AMETRINE_ANVIL, DAMAGED_AMETRINE_ANVIL_ITEM);
     }
 
 }

@@ -4,10 +4,10 @@
     "item": "fabricanvils:minecraft/netherite_anvil"
   },
   "addition": {
-    "item": "byg:pendorite_block"
+    "item": "byg:ametrine_block"
   },
   "result": {
-    "item": "fabricanvils:byg/pendorite_anvil"
+    "item": "fabricanvils:byg/ametrine_anvil"
   },
   "fabric:load_conditions": [
     {

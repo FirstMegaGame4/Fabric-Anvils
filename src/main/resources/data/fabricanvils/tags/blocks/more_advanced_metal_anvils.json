@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:byg/pendorite_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:byg/ametrine_anvils",
+      "required": false
+    }
+  ]
+}

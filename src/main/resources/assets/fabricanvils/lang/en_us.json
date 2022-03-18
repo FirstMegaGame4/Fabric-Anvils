@@ -63,5 +63,9 @@
 
   "block.fabricanvils.byg.pendorite_anvil": "Pendorite Anvil",
   "block.fabricanvils.byg.chipped_pendorite_anvil": "Chipped Pendorite Anvil",
-  "block.fabricanvils.byg.damaged_pendorite_anvil": "Damaged Pendorite Anvil"
+  "block.fabricanvils.byg.damaged_pendorite_anvil": "Damaged Pendorite Anvil",
+
+  "block.fabricanvils.byg.ametrine_anvil": "Ametrine Anvil",
+  "block.fabricanvils.byg.chipped_ametrine_anvil": "Chipped Ametrine Anvil",
+  "block.fabricanvils.byg.damaged_ametrine_anvil": "Damaged Ametrine Anvil"
 }
