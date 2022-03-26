@@ -67,5 +67,11 @@
 
   "block.fabricanvils.byg.ametrine_anvil": "Ametrine Anvil",
   "block.fabricanvils.byg.chipped_ametrine_anvil": "Chipped Ametrine Anvil",
-  "block.fabricanvils.byg.damaged_ametrine_anvil": "Damaged Ametrine Anvil"
+  "block.fabricanvils.byg.damaged_ametrine_anvil": "Damaged Ametrine Anvil",
+
+  "block.fabricanvils.techreborn.rubber_anvil": "Rubber Anvil",
+
+  "block.fabricanvils.techreborn.tin_anvil": "Tin Anvil",
+  "block.fabricanvils.techreborn.chipped_tin_anvil": "Chipped Tin Anvil",
+  "block.fabricanvils.techreborn.damaged_tin_anvil": "Damaged Tin Anvil"
 }

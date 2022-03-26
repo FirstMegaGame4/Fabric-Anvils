@@ -29,6 +29,8 @@ public class FabricAnvilsMain implements ModInitializer {
 
 		if (FabricLoader.getInstance().isModLoaded("byg")) FABlocks.registerBYGBlocks();
 
+		if (FabricLoader.getInstance().isModLoaded("techreborn")) FABlocks.registerTechRebornBlocks();
+
 	}
 
 }

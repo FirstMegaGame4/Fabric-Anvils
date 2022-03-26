@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/tin_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_tin_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_tin_anvil",
+      "required": false
+    }
+  ]
+}

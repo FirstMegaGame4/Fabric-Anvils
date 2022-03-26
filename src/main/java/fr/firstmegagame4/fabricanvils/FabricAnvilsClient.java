@@ -2,6 +2,7 @@ package fr.firstmegagame4.fabricanvils;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FABYGBlocks;
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.FATechRebornBlocks;
 import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -36,6 +37,12 @@ public class FabricAnvilsClient implements ClientModInitializer {
             FAUtils.setTranslucent(FABYGBlocks.AMETRINE_ANVIL);
             FAUtils.setTranslucent(FABYGBlocks.CHIPPED_AMETRINE_ANVIL);
             FAUtils.setTranslucent(FABYGBlocks.DAMAGED_AMETRINE_ANVIL);
+        }
+
+        if (FabricLoader.getInstance().isModLoaded("techreborn")) {
+            FAUtils.setCutout(FATechRebornBlocks.TIN_ANVIL);
+            FAUtils.setCutout(FATechRebornBlocks.CHIPPED_TIN_ANVIL);
+            FAUtils.setCutout(FATechRebornBlocks.DAMAGED_TIN_ANVIL);
         }
 
         ClientPlayNetworking.registerGlobalReceiver(FAUtils.FAIdentifier("anvilxplimit"), (client, handler, buf, responseSender) -> {

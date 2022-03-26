@@ -124,6 +124,10 @@
     {
       "id": "fabricanvils:byg/embur_anvil",
       "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/rubber_anvil",
+      "required": false
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#fabricanvils:minecraft/copper_anvils"
+    "#fabricanvils:minecraft/copper_anvils",
+    {
+      "id": "#fabricanvils:techreborn/tin_anvils",
+      "required": false
+    }
   ]
 }

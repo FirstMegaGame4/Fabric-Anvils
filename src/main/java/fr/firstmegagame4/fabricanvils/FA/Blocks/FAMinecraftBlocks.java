@@ -151,8 +151,6 @@ public class FAMinecraftBlocks {
     public static final BlockItem DAMAGED_NETHERITE_ANVIL_ITEM = new BlockItem(DAMAGED_NETHERITE_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
-
-
     public static void registerMinecraftAnvil(String blockId, Block block, BlockItem blockItem) {
         FAUtils.registerAnvil("minecraft", blockId, block, blockItem);
     }
