@@ -298,7 +298,18 @@ public class FABYGBlocks {
         registerBYGAnvil("pendorite_anvil", PENDORITE_ANVIL, PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("chipped_pendorite_anvil", CHIPPED_PENDORITE_ANVIL, CHIPPED_PENDORITE_ANVIL_ITEM);
         registerBYGAnvil("damaged_pendorite_anvil", DAMAGED_PENDORITE_ANVIL, DAMAGED_PENDORITE_ANVIL_ITEM);
+    }
 
+    public static void registerRenderLayers() {
+        FAUtils.setCutout(CHIPPED_AMETRINE_ANVIL);
+        FAUtils.setCutout(DAMAGED_AMETRINE_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_PENDORITE_ANVIL);
+        FAUtils.setCutout(DAMAGED_PENDORITE_ANVIL);
+
+        FAUtils.setTranslucent(AMETRINE_ANVIL);
+        FAUtils.setTranslucent(CHIPPED_AMETRINE_ANVIL);
+        FAUtils.setTranslucent(DAMAGED_AMETRINE_ANVIL);
     }
 
 }

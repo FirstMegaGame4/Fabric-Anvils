@@ -52,7 +52,6 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
     }
 
     protected void onTakeOutput(PlayerEntity player, ItemStack stack) {
-
         this.input.setStack(0, ItemStack.EMPTY);
         this.input.setStack(1, ItemStack.EMPTY);
 

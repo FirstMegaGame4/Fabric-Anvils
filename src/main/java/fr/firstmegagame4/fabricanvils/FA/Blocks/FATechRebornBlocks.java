@@ -3,6 +3,8 @@ package fr.firstmegagame4.fabricanvils.FA.Blocks;
 import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
 import fr.firstmegagame4.fabricanvils.anvils.WoodenAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.techreborn.LeadAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.techreborn.SilverAnvil;
 import fr.firstmegagame4.fabricanvils.anvils.techreborn.TinAnvil;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -21,20 +23,65 @@ public class FATechRebornBlocks {
 
     public static final Block TIN_ANVIL = new TinAnvil(FabricBlockSettings.of(Material.METAL)
             .hardness(5.0F)
-            .sounds(BlockSoundGroup.METAL));
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
     public static final BlockItem TIN_ANVIL_ITEM = new BlockItem(TIN_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
     public static final Block CHIPPED_TIN_ANVIL = new TinAnvil(FabricBlockSettings.of(Material.METAL)
             .hardness(5.0F)
-            .sounds(BlockSoundGroup.METAL));
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
     public static final BlockItem CHIPPED_TIN_ANVIL_ITEM = new BlockItem(CHIPPED_TIN_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
     public static final Block DAMAGED_TIN_ANVIL = new TinAnvil(FabricBlockSettings.of(Material.METAL)
-            .hardness(3.0F)
-            .sounds(BlockSoundGroup.METAL));
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
     public static final BlockItem DAMAGED_TIN_ANVIL_ITEM = new BlockItem(DAMAGED_TIN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block SILVER_ANVIL = new SilverAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem SILVER_ANVIL_ITEM = new BlockItem(SILVER_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_SILVER_ANVIL = new SilverAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_SILVER_ANVIL_ITEM = new BlockItem(CHIPPED_SILVER_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_SILVER_ANVIL = new SilverAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_SILVER_ANVIL_ITEM = new BlockItem(DAMAGED_SILVER_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block LEAD_ANVIL = new LeadAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem LEAD_ANVIL_ITEM = new BlockItem(LEAD_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_LEAD_ANVIL = new LeadAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_LEAD_ANVIL_ITEM = new BlockItem(CHIPPED_LEAD_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_LEAD_ANVIL = new LeadAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_LEAD_ANVIL_ITEM = new BlockItem(DAMAGED_LEAD_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
     public static void registerTechRebornAnvil(String blockId, Block block, BlockItem blockItem) {
@@ -47,6 +94,25 @@ public class FATechRebornBlocks {
         registerTechRebornAnvil("tin_anvil", TIN_ANVIL, TIN_ANVIL_ITEM);
         registerTechRebornAnvil("chipped_tin_anvil", CHIPPED_TIN_ANVIL, CHIPPED_TIN_ANVIL_ITEM);
         registerTechRebornAnvil("damaged_tin_anvil", DAMAGED_TIN_ANVIL, DAMAGED_TIN_ANVIL_ITEM);
+
+        registerTechRebornAnvil("silver_anvil", SILVER_ANVIL, SILVER_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_silver_anvil", CHIPPED_SILVER_ANVIL, CHIPPED_SILVER_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_silver_anvil", DAMAGED_SILVER_ANVIL, DAMAGED_SILVER_ANVIL_ITEM);
+
+        registerTechRebornAnvil("lead_anvil", LEAD_ANVIL, LEAD_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_lead_anvil", CHIPPED_LEAD_ANVIL, CHIPPED_LEAD_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_lead_anvil", DAMAGED_LEAD_ANVIL, DAMAGED_LEAD_ANVIL_ITEM);
+    }
+
+    public static void registerRenderLayers() {
+        FAUtils.setCutout(CHIPPED_TIN_ANVIL);
+        FAUtils.setCutout(DAMAGED_TIN_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_SILVER_ANVIL);
+        FAUtils.setCutout(DAMAGED_SILVER_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_LEAD_ANVIL);
+        FAUtils.setCutout(DAMAGED_LEAD_ANVIL);
     }
 
 }

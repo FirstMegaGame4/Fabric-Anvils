@@ -1,4 +1,13 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    {
+      "id": "#fabricanvils:techreborn/silver_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/lead_anvils",
+      "required": false
+    }
+  ]
 }

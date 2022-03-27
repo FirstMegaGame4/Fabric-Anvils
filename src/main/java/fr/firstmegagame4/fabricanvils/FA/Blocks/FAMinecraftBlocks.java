@@ -183,4 +183,14 @@ public class FAMinecraftBlocks {
         registerMinecraftAnvil("damaged_netherite_anvil", DAMAGED_NETHERITE_ANVIL, DAMAGED_NETHERITE_ANVIL_ITEM);
     }
 
+    public static void registerRenderLayers() {
+        FAUtils.setCutout(DAMAGED_GOLDEN_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_DIAMOND_ANVIL);
+        FAUtils.setCutout(DAMAGED_DIAMOND_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_NETHERITE_ANVIL);
+        FAUtils.setCutout(DAMAGED_NETHERITE_ANVIL);
+    }
+
 }
