@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/sapphire_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_sapphire_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_sapphire_anvil",
+      "required": false
+    }
+  ]
+}

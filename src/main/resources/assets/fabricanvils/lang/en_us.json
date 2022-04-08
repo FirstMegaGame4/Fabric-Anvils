@@ -81,5 +81,13 @@
 
   "block.fabricanvils.techreborn.lead_anvil": "Lead Anvil",
   "block.fabricanvils.techreborn.chipped_lead_anvil": "Chipped Lead Anvil",
-  "block.fabricanvils.techreborn.damaged_lead_anvil": "Damaged Lead Anvil"
+  "block.fabricanvils.techreborn.damaged_lead_anvil": "Damaged Lead Anvil",
+
+  "block.fabricanvils.techreborn.refined_iron_anvil": "Refined Iron Anvil",
+  "block.fabricanvils.techreborn.chipped_refined_iron_anvil": "Chipped Refined Iron Anvil",
+  "block.fabricanvils.techreborn.damaged_refined_iron_anvil": "Damaged Refined Iron Anvil",
+
+  "block.fabricanvils.techreborn.sapphire_anvil": "Sapphire Anvil",
+  "block.fabricanvils.techreborn.chipped_sapphire_anvil": "Chipped Sapphire Anvil",
+  "block.fabricanvils.techreborn.damaged_sapphire_anvil": "Damaged Sapphire Anvil"
 }

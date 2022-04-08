@@ -8,6 +8,14 @@
     {
       "id": "#fabricanvils:techreborn/lead_anvils",
       "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/refined_iron_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/sapphire_anvils",
+      "required": false
     }
   ]
 }

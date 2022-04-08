@@ -3,9 +3,7 @@ package fr.firstmegagame4.fabricanvils.FA.Blocks;
 import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import fr.firstmegagame4.fabricanvils.FabricAnvilsMain;
 import fr.firstmegagame4.fabricanvils.anvils.WoodenAnvil;
-import fr.firstmegagame4.fabricanvils.anvils.techreborn.LeadAnvil;
-import fr.firstmegagame4.fabricanvils.anvils.techreborn.SilverAnvil;
-import fr.firstmegagame4.fabricanvils.anvils.techreborn.TinAnvil;
+import fr.firstmegagame4.fabricanvils.anvils.techreborn.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -88,6 +86,48 @@ public class FATechRebornBlocks {
         FAUtils.registerAnvil("techreborn", blockId, block, blockItem);
     }
 
+    public static final Block REFINED_IRON_ANVIL = new RefinedIronAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem REFINED_IRON_ANVIL_ITEM = new BlockItem(REFINED_IRON_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_REFINED_IRON_ANVIL = new RefinedIronAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_REFINED_IRON_ANVIL_ITEM = new BlockItem(CHIPPED_REFINED_IRON_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_REFINED_IRON_ANVIL = new RefinedIronAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_REFINED_IRON_ANVIL_ITEM = new BlockItem(DAMAGED_REFINED_IRON_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block SAPPHIRE_ANVIL = new SapphireAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem SAPPHIRE_ANVIL_ITEM = new BlockItem(SAPPHIRE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_SAPPHIRE_ANVIL = new SapphireAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_SAPPHIRE_ANVIL_ITEM = new BlockItem(CHIPPED_SAPPHIRE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_SAPPHIRE_ANVIL = new SapphireAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_SAPPHIRE_ANVIL_ITEM = new BlockItem(DAMAGED_SAPPHIRE_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
     public static void register() {
         registerTechRebornAnvil("rubber_anvil", RUBBER_ANVIL, RUBBER_ANVIL_ITEM);
 
@@ -102,6 +142,14 @@ public class FATechRebornBlocks {
         registerTechRebornAnvil("lead_anvil", LEAD_ANVIL, LEAD_ANVIL_ITEM);
         registerTechRebornAnvil("chipped_lead_anvil", CHIPPED_LEAD_ANVIL, CHIPPED_LEAD_ANVIL_ITEM);
         registerTechRebornAnvil("damaged_lead_anvil", DAMAGED_LEAD_ANVIL, DAMAGED_LEAD_ANVIL_ITEM);
+
+        registerTechRebornAnvil("refined_iron_anvil", REFINED_IRON_ANVIL, REFINED_IRON_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_refined_iron_anvil", CHIPPED_REFINED_IRON_ANVIL, CHIPPED_REFINED_IRON_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_refined_iron_anvil", DAMAGED_REFINED_IRON_ANVIL, DAMAGED_REFINED_IRON_ANVIL_ITEM);
+
+        registerTechRebornAnvil("sapphire_anvil", SAPPHIRE_ANVIL, SAPPHIRE_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_sapphire_anvil", CHIPPED_SAPPHIRE_ANVIL, CHIPPED_SAPPHIRE_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_sapphire_anvil", DAMAGED_SAPPHIRE_ANVIL, DAMAGED_SAPPHIRE_ANVIL_ITEM);
     }
 
     public static void registerRenderLayers() {
@@ -113,6 +161,12 @@ public class FATechRebornBlocks {
 
         FAUtils.setCutout(CHIPPED_LEAD_ANVIL);
         FAUtils.setCutout(DAMAGED_LEAD_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_REFINED_IRON_ANVIL);
+        FAUtils.setCutout(DAMAGED_REFINED_IRON_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_SAPPHIRE_ANVIL);
+        FAUtils.setCutout(DAMAGED_SAPPHIRE_ANVIL);
     }
 
 }

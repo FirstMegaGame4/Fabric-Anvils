@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/refined_iron_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_refined_iron_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_refined_iron_anvil",
+      "required": false
+    }
+  ]
+}
