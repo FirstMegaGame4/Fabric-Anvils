@@ -105,5 +105,21 @@
 
   "block.fabricanvils.techreborn.yellow_garnet_anvil": "Yellow Garnet Anvil",
   "block.fabricanvils.techreborn.chipped_yellow_garnet_anvil": "Chipped Yellow Garnet Anvil",
-  "block.fabricanvils.techreborn.damaged_yellow_garnet_anvil": "Damaged Yellow Garnet Anvil"
+  "block.fabricanvils.techreborn.damaged_yellow_garnet_anvil": "Damaged Yellow Garnet Anvil",
+
+  "block.fabricanvils.techreborn.zinc_anvil": "Zinc Anvil",
+  "block.fabricanvils.techreborn.chipped_zinc_anvil": "Chipped Zinc Anvil",
+  "block.fabricanvils.techreborn.damaged_zinc_anvil": "Damaged Zinc Anvil",
+
+  "block.fabricanvils.techreborn.steel_anvil": "Steel Anvil",
+  "block.fabricanvils.techreborn.chipped_steel_anvil": "Chipped Steel Anvil",
+  "block.fabricanvils.techreborn.damaged_steel_anvil": "Damaged Steel Anvil",
+
+  "block.fabricanvils.techreborn.bronze_anvil": "Bronze Anvil",
+  "block.fabricanvils.techreborn.chipped_bronze_anvil": "Chipped Bronze Anvil",
+  "block.fabricanvils.techreborn.damaged_bronze_anvil": "Damaged Bronze Anvil",
+
+  "block.fabricanvils.techreborn.brass_anvil": "Brass Anvil",
+  "block.fabricanvils.techreborn.chipped_brass_anvil": "Chipped Brass Anvil",
+  "block.fabricanvils.techreborn.damaged_brass_anvil": "Damaged Brass Anvil"
 }

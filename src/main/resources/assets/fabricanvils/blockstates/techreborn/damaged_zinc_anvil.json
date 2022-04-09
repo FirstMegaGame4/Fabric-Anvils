@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fabricanvils:block/techreborn/damaged_zinc_anvil"
+    },
+    "facing=east":  {
+      "model": "fabricanvils:block/techreborn/damaged_zinc_anvil",
+      "y":  90
+    },
+    "facing=south": {
+      "model": "fabricanvils:block/techreborn/damaged_zinc_anvil",
+      "y": 180
+    },
+    "facing=west":  {
+      "model": "fabricanvils:block/techreborn/damaged_zinc_anvil",
+      "y": 270
+    }
+  }
+}

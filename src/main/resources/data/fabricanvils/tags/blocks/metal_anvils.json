@@ -22,7 +22,24 @@
       "required": false
     },
     {
-      "id": "#fabricanvils:techreborn/peridot_anvils"
+      "id": "#fabricanvils:techreborn/peridot_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/zinc_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/steel_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/bronze_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/brass_anvils",
+      "required": false
     }
   ]
 }

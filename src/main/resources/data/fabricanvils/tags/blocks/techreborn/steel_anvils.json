@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/steel_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_steel_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_steel_anvil",
+      "required": false
+    }
+  ]
+}

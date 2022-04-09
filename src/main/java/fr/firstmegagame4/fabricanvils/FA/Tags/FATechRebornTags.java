@@ -15,4 +15,8 @@ public class FATechRebornTags {
     public static final TagKey<Block> PERIDOT_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/peridot_anvils"));
     public static final TagKey<Block> RED_GARNET_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/red_garnet_anvils"));
     public static final TagKey<Block> YELLOW_GARNET_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/yellow_garnet_anvils"));
+    public static final TagKey<Block> ZINC_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/zinc_anvils"));
+    public static final TagKey<Block> STEEL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/steel_anvils"));
+    public static final TagKey<Block> BRONZE_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/bronze_anvils"));
+    public static final TagKey<Block> BRASS_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/brass_anvils"));
 }

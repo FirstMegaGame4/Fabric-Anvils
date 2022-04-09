@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/brass_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_brass_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_brass_anvil",
+      "required": false
+    }
+  ]
+}
