@@ -39,10 +39,6 @@ public class BaseAnvil extends AnvilBlock {
         entity.setHurtEntities(2.0F, 40);
     }
 
-    static {
-        TITLE = new TranslatableText("container.repair");
-    }
-
     public SoundEvent getForgeSound() {
         return SoundEvents.BLOCK_METAL_PLACE;
     }
@@ -54,4 +50,9 @@ public class BaseAnvil extends AnvilBlock {
     public float getChanceBreak() {
         return 0.12F;
     }
+
+    static {
+        TITLE = new TranslatableText("container.repair");
+    }
+
 }

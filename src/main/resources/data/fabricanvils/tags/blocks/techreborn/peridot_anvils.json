@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/peridot_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_peridot_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_peridot_anvil",
+      "required": false
+    }
+  ]
+}

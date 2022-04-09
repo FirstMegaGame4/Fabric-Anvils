@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/ruby_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_ruby_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_ruby_anvil",
+      "required": false
+    }
+  ]
+}

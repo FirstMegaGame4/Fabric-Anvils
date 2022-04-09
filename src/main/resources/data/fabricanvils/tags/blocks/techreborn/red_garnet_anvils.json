@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/red_garnet_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_red_garnet_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_red_garnet_anvil",
+      "required": false
+    }
+  ]
+}

@@ -16,6 +16,13 @@
     {
       "id": "#fabricanvils:techreborn/sapphire_anvils",
       "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/ruby_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/peridot_anvils"
     }
   ]
 }

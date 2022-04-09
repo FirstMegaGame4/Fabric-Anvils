@@ -5,6 +5,14 @@
     {
       "id": "#fabricanvils:techreborn/tin_anvils",
       "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/red_garnet_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/yellow_garnet_anvils",
+      "required": false
     }
   ]
 }

@@ -89,5 +89,21 @@
 
   "block.fabricanvils.techreborn.sapphire_anvil": "Sapphire Anvil",
   "block.fabricanvils.techreborn.chipped_sapphire_anvil": "Chipped Sapphire Anvil",
-  "block.fabricanvils.techreborn.damaged_sapphire_anvil": "Damaged Sapphire Anvil"
+  "block.fabricanvils.techreborn.damaged_sapphire_anvil": "Damaged Sapphire Anvil",
+
+  "block.fabricanvils.techreborn.ruby_anvil": "Ruby Anvil",
+  "block.fabricanvils.techreborn.chipped_ruby_anvil": "Chipped Ruby Anvil",
+  "block.fabricanvils.techreborn.damaged_ruby_anvil": "Damaged Ruby Anvil",
+
+  "block.fabricanvils.techreborn.peridot_anvil": "Peridot Anvil",
+  "block.fabricanvils.techreborn.chipped_peridot_anvil": "Chipped Peridot Anvil",
+  "block.fabricanvils.techreborn.damaged_peridot_anvil": "Damaged Peridot Anvil",
+
+  "block.fabricanvils.techreborn.red_garnet_anvil": "Red Garnet Anvil",
+  "block.fabricanvils.techreborn.chipped_red_garnet_anvil": "Chipped Red Garnet Anvil",
+  "block.fabricanvils.techreborn.damaged_red_garnet_anvil": "Damaged Red Garnet Anvil",
+
+  "block.fabricanvils.techreborn.yellow_garnet_anvil": "Yellow Garnet Anvil",
+  "block.fabricanvils.techreborn.chipped_yellow_garnet_anvil": "Chipped Yellow Garnet Anvil",
+  "block.fabricanvils.techreborn.damaged_yellow_garnet_anvil": "Damaged Yellow Garnet Anvil"
 }
