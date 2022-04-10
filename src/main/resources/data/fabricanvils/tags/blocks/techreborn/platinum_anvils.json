@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/platinum_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_platinum_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_platinum_anvil",
+      "required": false
+    }
+  ]
+}

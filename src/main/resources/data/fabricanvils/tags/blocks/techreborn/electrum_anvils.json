@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/electrum_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_electrum_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_electrum_anvil",
+      "required": false
+    }
+  ]
+}

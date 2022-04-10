@@ -121,5 +121,37 @@
 
   "block.fabricanvils.techreborn.brass_anvil": "Brass Anvil",
   "block.fabricanvils.techreborn.chipped_brass_anvil": "Chipped Brass Anvil",
-  "block.fabricanvils.techreborn.damaged_brass_anvil": "Damaged Brass Anvil"
+  "block.fabricanvils.techreborn.damaged_brass_anvil": "Damaged Brass Anvil",
+
+  "block.fabricanvils.techreborn.nickel_anvil": "Nickel Anvil",
+  "block.fabricanvils.techreborn.chipped_nickel_anvil": "Chipped Nickel Anvil",
+  "block.fabricanvils.techreborn.damaged_nickel_anvil": "Damaged Nickel Anvil",
+
+  "block.fabricanvils.techreborn.invar_anvil": "Invar Anvil",
+  "block.fabricanvils.techreborn.chipped_invar_anvil": "Chipped Invar Anvil",
+  "block.fabricanvils.techreborn.damaged_invar_anvil": "Damaged Invar Anvil",
+
+  "block.fabricanvils.techreborn.electrum_anvil": "Electrum Anvil",
+  "block.fabricanvils.techreborn.chipped_electrum_anvil": "Chipped Electrum Anvil",
+  "block.fabricanvils.techreborn.damaged_electrum_anvil": "Damaged Electrum Anvil",
+
+  "block.fabricanvils.techreborn.platinum_anvil": "Platinum Anvil",
+  "block.fabricanvils.techreborn.chipped_platinum_anvil": "Chipped Platinum Anvil",
+  "block.fabricanvils.techreborn.damaged_platinum_anvil": "Damaged Platinum Anvil",
+
+  "block.fabricanvils.techreborn.chromium_anvil": "Chromium Anvil",
+  "block.fabricanvils.techreborn.chipped_chromium_anvil": "Chipped Chromium Anvil",
+  "block.fabricanvils.techreborn.damaged_chromium_anvil": "Damaged Chromium Anvil",
+
+  "block.fabricanvils.techreborn.iridium_anvil": "Iridium Anvil",
+  "block.fabricanvils.techreborn.chipped_iridium_anvil": "Chipped Iridium Anvil",
+  "block.fabricanvils.techreborn.damaged_iridium_anvil": "Damaged Iridium Anvil",
+
+  "block.fabricanvils.techreborn.aluminium_anvil": "Aluminium Anvil",
+  "block.fabricanvils.techreborn.chipped_aluminium_anvil": "Chipped Aluminium Anvil",
+  "block.fabricanvils.techreborn.damaged_aluminium_anvil": "Damaged Aluminium Anvil",
+
+  "block.fabricanvils.techreborn.titanium_anvil": "Titanium Anvil",
+  "block.fabricanvils.techreborn.chipped_titanium_anvil": "Chipped Titanium Anvil",
+  "block.fabricanvils.techreborn.damaged_titanium_anvil": "Damaged Titanium Anvil"
 }

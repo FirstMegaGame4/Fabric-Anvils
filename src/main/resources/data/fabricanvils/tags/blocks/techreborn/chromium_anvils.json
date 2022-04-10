@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/chromium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_chromium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_chromium_anvil",
+      "required": false
+    }
+  ]
+}

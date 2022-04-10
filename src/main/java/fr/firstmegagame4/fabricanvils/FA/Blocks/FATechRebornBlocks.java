@@ -291,6 +291,174 @@ public class FATechRebornBlocks {
     public static final BlockItem DAMAGED_BRASS_ANVIL_ITEM = new BlockItem(DAMAGED_BRASS_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+    public static final Block NICKEL_ANVIL = new NickelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem NICKEL_ANVIL_ITEM = new BlockItem(NICKEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_NICKEL_ANVIL = new NickelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_NICKEL_ANVIL_ITEM = new BlockItem(CHIPPED_NICKEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_NICKEL_ANVIL = new NickelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_NICKEL_ANVIL_ITEM = new BlockItem(DAMAGED_NICKEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block INVAR_ANVIL = new InvarAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem INVAR_ANVIL_ITEM = new BlockItem(INVAR_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_INVAR_ANVIL = new InvarAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_INVAR_ANVIL_ITEM = new BlockItem(CHIPPED_INVAR_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_INVAR_ANVIL = new InvarAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_INVAR_ANVIL_ITEM = new BlockItem(DAMAGED_INVAR_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block ELECTRUM_ANVIL = new ElectrumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem ELECTRUM_ANVIL_ITEM = new BlockItem(ELECTRUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_ELECTRUM_ANVIL = new ElectrumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_ELECTRUM_ANVIL_ITEM = new BlockItem(CHIPPED_ELECTRUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_ELECTRUM_ANVIL = new ElectrumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_ELECTRUM_ANVIL_ITEM = new BlockItem(DAMAGED_ELECTRUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block PLATINUM_ANVIL = new PlatinumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem PLATINUM_ANVIL_ITEM = new BlockItem(PLATINUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_PLATINUM_ANVIL = new PlatinumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_PLATINUM_ANVIL_ITEM = new BlockItem(CHIPPED_PLATINUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_PLATINUM_ANVIL = new PlatinumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_PLATINUM_ANVIL_ITEM = new BlockItem(DAMAGED_PLATINUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHROMIUM_ANVIL = new ChromiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHROMIUM_ANVIL_ITEM = new BlockItem(CHROMIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_CHROMIUM_ANVIL = new ChromiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_CHROMIUM_ANVIL_ITEM = new BlockItem(CHIPPED_CHROMIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_CHROMIUM_ANVIL = new ChromiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_CHROMIUM_ANVIL_ITEM = new BlockItem(DAMAGED_CHROMIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block IRIDIUM_ANVIL = new IridiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem IRIDIUM_ANVIL_ITEM = new BlockItem(IRIDIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_IRIDIUM_ANVIL = new IridiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_IRIDIUM_ANVIL_ITEM = new BlockItem(CHIPPED_IRIDIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_IRIDIUM_ANVIL = new IridiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_IRIDIUM_ANVIL_ITEM = new BlockItem(DAMAGED_IRIDIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block ALUMINIUM_ANVIL = new AluminiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem ALUMINIUM_ANVIL_ITEM = new BlockItem(ALUMINIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_ALUMINIUM_ANVIL = new AluminiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_ALUMINIUM_ANVIL_ITEM = new BlockItem(CHIPPED_ALUMINIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_ALUMINIUM_ANVIL = new AluminiumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_ALUMINIUM_ANVIL_ITEM = new BlockItem(DAMAGED_ALUMINIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block TITANIUM_ANVIL = new TitaniumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem TITANIUM_ANVIL_ITEM = new BlockItem(TITANIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_TITANIUM_ANVIL = new TitaniumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_TITANIUM_ANVIL_ITEM = new BlockItem(CHIPPED_TITANIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_TITANIUM_ANVIL = new TitaniumAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_TITANIUM_ANVIL_ITEM = new BlockItem(DAMAGED_TITANIUM_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
     public static void registerTechRebornAnvil(String blockId, Block block, BlockItem blockItem) {
         FAUtils.registerAnvil("techreborn", blockId, block, blockItem);
     }
@@ -349,6 +517,38 @@ public class FATechRebornBlocks {
         registerTechRebornAnvil("brass_anvil", BRASS_ANVIL, BRASS_ANVIL_ANVIL);
         registerTechRebornAnvil("chipped_brass_anvil", CHIPPED_BRASS_ANVIL, CHIPPED_BRASS_ANVIL_ITEM);
         registerTechRebornAnvil("damaged_brass_anvil", DAMAGED_BRASS_ANVIL, DAMAGED_BRASS_ANVIL_ITEM);
+
+        registerTechRebornAnvil("nickel_anvil", NICKEL_ANVIL, NICKEL_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_nickel_anvil", CHIPPED_NICKEL_ANVIL, CHIPPED_NICKEL_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_nickel_anvil", DAMAGED_NICKEL_ANVIL, DAMAGED_NICKEL_ANVIL_ITEM);
+
+        registerTechRebornAnvil("invar_anvil", INVAR_ANVIL, INVAR_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_invar_anvil", CHIPPED_INVAR_ANVIL, CHIPPED_INVAR_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_invar_anvil", DAMAGED_INVAR_ANVIL, DAMAGED_INVAR_ANVIL_ITEM);
+
+        registerTechRebornAnvil("electrum_anvil", ELECTRUM_ANVIL, ELECTRUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_electrum_anvil", CHIPPED_ELECTRUM_ANVIL, CHIPPED_ELECTRUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_electrum_anvil", DAMAGED_ELECTRUM_ANVIL, DAMAGED_ELECTRUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("platinum_anvil", PLATINUM_ANVIL, PLATINUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_platinum_anvil", CHIPPED_PLATINUM_ANVIL, CHIPPED_PLATINUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_platinum_anvil", DAMAGED_PLATINUM_ANVIL, DAMAGED_PLATINUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("chromium_anvil", CHROMIUM_ANVIL, CHROMIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_chromium_anvil", CHIPPED_CHROMIUM_ANVIL, CHIPPED_CHROMIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_chromium_anvil", DAMAGED_CHROMIUM_ANVIL, DAMAGED_CHROMIUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("iridium_anvil", IRIDIUM_ANVIL, IRIDIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_iridium_anvil", CHIPPED_IRIDIUM_ANVIL, CHIPPED_IRIDIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_iridium_anvil", DAMAGED_IRIDIUM_ANVIL, DAMAGED_IRIDIUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("aluminium_anvil", ALUMINIUM_ANVIL, ALUMINIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_aluminium_anvil", CHIPPED_ALUMINIUM_ANVIL, CHIPPED_ALUMINIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_aluminium_anvil", DAMAGED_ALUMINIUM_ANVIL, DAMAGED_ALUMINIUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("titanium_anvil", TITANIUM_ANVIL, TITANIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_titanium_anvil", CHIPPED_TITANIUM_ANVIL, CHIPPED_TITANIUM_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_titanium_anvil", DAMAGED_TITANIUM_ANVIL, DAMAGED_TITANIUM_ANVIL_ITEM);
     }
 
     public static void registerRenderLayers() {
@@ -390,6 +590,30 @@ public class FATechRebornBlocks {
 
         FAUtils.setCutout(CHIPPED_BRASS_ANVIL);
         FAUtils.setCutout(DAMAGED_BRASS_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_NICKEL_ANVIL);
+        FAUtils.setCutout(DAMAGED_NICKEL_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_INVAR_ANVIL);
+        FAUtils.setCutout(DAMAGED_INVAR_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_ELECTRUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_ELECTRUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_PLATINUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_PLATINUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_CHROMIUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_CHROMIUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_IRIDIUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_IRIDIUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_ALUMINIUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_ALUMINIUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_TITANIUM_ANVIL);
+        FAUtils.setCutout(DAMAGED_TITANIUM_ANVIL);
     }
 
 }

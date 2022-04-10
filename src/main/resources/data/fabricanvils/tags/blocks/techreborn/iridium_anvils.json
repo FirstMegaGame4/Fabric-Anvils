@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/iridium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_iridium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_iridium_anvil",
+      "required": false
+    }
+  ]
+}

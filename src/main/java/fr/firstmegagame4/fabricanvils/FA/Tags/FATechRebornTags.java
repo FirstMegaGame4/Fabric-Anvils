@@ -19,4 +19,12 @@ public class FATechRebornTags {
     public static final TagKey<Block> STEEL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/steel_anvils"));
     public static final TagKey<Block> BRONZE_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/bronze_anvils"));
     public static final TagKey<Block> BRASS_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/brass_anvils"));
+    public static final TagKey<Block> NICKEL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/nickel_anvils"));
+    public static final TagKey<Block> INVAR_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/invar_anvils"));
+    public static final TagKey<Block> ELECTRUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/electrum_anvils"));
+    public static final TagKey<Block> PLATINUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/platinum_anvils"));
+    public static final TagKey<Block> CHROMIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/chromium_anvils"));
+    public static final TagKey<Block> IRIDIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/iridium_anvils"));
+    public static final TagKey<Block> ALUMINIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/aluminium_anvils"));
+    public static final TagKey<Block> TITANIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/titanium_anvils"));
 }

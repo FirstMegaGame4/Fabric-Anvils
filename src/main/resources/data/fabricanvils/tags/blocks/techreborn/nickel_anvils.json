@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/nickel_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_nickel_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_nickel_anvil",
+      "required": false
+    }
+  ]
+}

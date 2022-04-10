@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_anvil",
+  "textures": {
+    "top": "techreborn:block/storage/aluminum_storage_block",
+    "particle": "techreborn:block/storage/aluminum_storage_block",
+    "body": "techreborn:block/storage/aluminum_storage_block"
+  }
+}

@@ -40,6 +40,22 @@
     {
       "id": "#fabricanvils:techreborn/brass_anvils",
       "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/nickel_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/invar_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/electrum_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/platinum_anvils",
+      "required": false
     }
   ]
 }

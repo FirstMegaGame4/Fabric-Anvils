@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/titanium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_titanium_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_titanium_anvil",
+      "required": false
+    }
+  ]
+}
