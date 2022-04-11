@@ -459,6 +459,90 @@ public class FATechRebornBlocks {
     public static final BlockItem DAMAGED_TITANIUM_ANVIL_ITEM = new BlockItem(DAMAGED_TITANIUM_ANVIL,
             new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
 
+    public static final Block TUNGSTEN_ANVIL = new TungstenAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem TUNGSTEN_ANVIL_ITEM = new BlockItem(TUNGSTEN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_TUNGSTEN_ANVIL = new TungstenAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_TUNGSTEN_ANVIL_ITEM = new BlockItem(CHIPPED_TUNGSTEN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_TUNGSTEN_ANVIL = new TungstenAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_TUNGSTEN_ANVIL_ITEM = new BlockItem(DAMAGED_TUNGSTEN_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block HOT_TUNGSTENSTEEL_ANVIL = new HotTungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem HOT_TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(HOT_TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_HOT_TUNGSTENSTEEL_ANVIL = new HotTungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_HOT_TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(CHIPPED_HOT_TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_HOT_TUNGSTENSTEEL_ANVIL = new HotTungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_HOT_TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(DAMAGED_HOT_TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block TUNGSTENSTEEL_ANVIL = new TungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_TUNGSTENSTEEL_ANVIL = new TungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(CHIPPED_TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_TUNGSTENSTEEL_ANVIL = new TungstensteelAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_TUNGSTENSTEEL_ANVIL_ITEM = new BlockItem(DAMAGED_TUNGSTENSTEEL_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block ADVANCED_ALLOY_ANVIL = new AdvancedAlloyAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem ADVANCED_ALLOY_ANVIL_ITEM = new BlockItem(ADVANCED_ALLOY_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block CHIPPED_ADVANCED_ALLOW_ANVIL = new AdvancedAlloyAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem CHIPPED_ADVANCED_ALLOW_ANVIL_ITEM = new BlockItem(CHIPPED_ADVANCED_ALLOW_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
+    public static final Block DAMAGED_ADVANCED_ALLOW_ANVIL = new AdvancedAlloyAnvil(FabricBlockSettings.of(Material.METAL)
+            .hardness(5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .requiresTool());
+    public static final BlockItem DAMAGED_ADVANCED_ALLOW_ANVIL_ITEM = new BlockItem(DAMAGED_ADVANCED_ALLOW_ANVIL,
+            new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+
     public static void registerTechRebornAnvil(String blockId, Block block, BlockItem blockItem) {
         FAUtils.registerAnvil("techreborn", blockId, block, blockItem);
     }
@@ -549,6 +633,22 @@ public class FATechRebornBlocks {
         registerTechRebornAnvil("titanium_anvil", TITANIUM_ANVIL, TITANIUM_ANVIL_ITEM);
         registerTechRebornAnvil("chipped_titanium_anvil", CHIPPED_TITANIUM_ANVIL, CHIPPED_TITANIUM_ANVIL_ITEM);
         registerTechRebornAnvil("damaged_titanium_anvil", DAMAGED_TITANIUM_ANVIL, DAMAGED_TITANIUM_ANVIL_ITEM);
+
+        registerTechRebornAnvil("tungsten_anvil", TUNGSTEN_ANVIL, TUNGSTEN_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_tungsten_anvil", CHIPPED_TUNGSTEN_ANVIL, CHIPPED_TUNGSTEN_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_tungsten_anvil", DAMAGED_TUNGSTEN_ANVIL, DAMAGED_TUNGSTEN_ANVIL_ITEM);
+
+        registerTechRebornAnvil("hot_tungstensteel_anvil", HOT_TUNGSTENSTEEL_ANVIL, HOT_TUNGSTENSTEEL_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_hot_tungstensteel_anvil", CHIPPED_HOT_TUNGSTENSTEEL_ANVIL, CHIPPED_HOT_TUNGSTENSTEEL_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_hot_tungstensteel_anvil", DAMAGED_HOT_TUNGSTENSTEEL_ANVIL, DAMAGED_HOT_TUNGSTENSTEEL_ANVIL_ITEM);
+
+        registerTechRebornAnvil("tungstensteel_anvil", TUNGSTENSTEEL_ANVIL, TUNGSTENSTEEL_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_tungstensteel_anvil", CHIPPED_TUNGSTENSTEEL_ANVIL, CHIPPED_TUNGSTENSTEEL_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_tungstensteel_anvil", DAMAGED_TUNGSTENSTEEL_ANVIL, DAMAGED_TUNGSTENSTEEL_ANVIL_ITEM);
+
+        registerTechRebornAnvil("advanced_alloy_anvil", ADVANCED_ALLOY_ANVIL, ADVANCED_ALLOY_ANVIL_ITEM);
+        registerTechRebornAnvil("chipped_advanced_alloy_anvil", CHIPPED_ADVANCED_ALLOW_ANVIL, CHIPPED_ADVANCED_ALLOW_ANVIL_ITEM);
+        registerTechRebornAnvil("damaged_advanced_alloy_anvil", DAMAGED_ADVANCED_ALLOW_ANVIL, DAMAGED_ADVANCED_ALLOW_ANVIL_ITEM);
     }
 
     public static void registerRenderLayers() {
@@ -614,6 +714,18 @@ public class FATechRebornBlocks {
 
         FAUtils.setCutout(CHIPPED_TITANIUM_ANVIL);
         FAUtils.setCutout(DAMAGED_TITANIUM_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_TUNGSTEN_ANVIL);
+        FAUtils.setCutout(DAMAGED_TUNGSTEN_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_HOT_TUNGSTENSTEEL_ANVIL);
+        FAUtils.setCutout(DAMAGED_HOT_TUNGSTENSTEEL_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_TUNGSTENSTEEL_ANVIL);
+        FAUtils.setCutout(DAMAGED_TUNGSTENSTEEL_ANVIL);
+
+        FAUtils.setCutout(CHIPPED_ADVANCED_ALLOW_ANVIL);
+        FAUtils.setCutout(DAMAGED_ADVANCED_ALLOW_ANVIL);
     }
 
 }

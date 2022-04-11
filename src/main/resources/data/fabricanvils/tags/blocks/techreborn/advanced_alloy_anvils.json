@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/advanced_alloy_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_advanced_alloy_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_advanced_alloy_anvil",
+      "required": false
+    }
+  ]
+}

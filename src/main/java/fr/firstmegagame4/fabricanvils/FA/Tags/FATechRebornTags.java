@@ -27,4 +27,8 @@ public class FATechRebornTags {
     public static final TagKey<Block> IRIDIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/iridium_anvils"));
     public static final TagKey<Block> ALUMINIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/aluminium_anvils"));
     public static final TagKey<Block> TITANIUM_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/titanium_anvils"));
+    public static final TagKey<Block> TUNGSTEN_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/tungsten_anvils"));
+    public static final TagKey<Block> HOT_TUNGSTENSTEEL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/hot_tungstensteel_anvils"));
+    public static final TagKey<Block> TUNGSTENSTEEL_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/tungstensteel_anvils"));
+    public static final TagKey<Block> ADVANCED_ALLOY_ANVILS = TagKey.of(Registry.BLOCK_KEY, FAUtils.FAIdentifier("techreborn/advanced_alloy_anvils"));
 }

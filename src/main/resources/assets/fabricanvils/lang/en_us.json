@@ -153,5 +153,21 @@
 
   "block.fabricanvils.techreborn.titanium_anvil": "Titanium Anvil",
   "block.fabricanvils.techreborn.chipped_titanium_anvil": "Chipped Titanium Anvil",
-  "block.fabricanvils.techreborn.damaged_titanium_anvil": "Damaged Titanium Anvil"
+  "block.fabricanvils.techreborn.damaged_titanium_anvil": "Damaged Titanium Anvil",
+
+  "block.fabricanvils.techreborn.tungsten_anvil": "Tungsten Anvil",
+  "block.fabricanvils.techreborn.chipped_tungsten_anvil": "Chipped Tungsten Anvil",
+  "block.fabricanvils.techreborn.damaged_tungsten_anvil": "Damaged Tungsten Anvil",
+
+  "block.fabricanvils.techreborn.hot_tungstensteel_anvil": "Hot Tungstensteel Anvil",
+  "block.fabricanvils.techreborn.chipped_hot_tungstensteel_anvil": "Chipped Hot Tungstensteel Anvil",
+  "block.fabricanvils.techreborn.damaged_hot_tungstensteel_anvil": "Damaged Hot Tungstensteel Anvil",
+
+  "block.fabricanvils.techreborn.tungstensteel_anvil": "Tungstensteel Anvil",
+  "block.fabricanvils.techreborn.chipped_tungstensteel_anvil": "Chipped Tungstensteel Anvil",
+  "block.fabricanvils.techreborn.damaged_tungstensteel_anvil": "Damaged Tungstensteel Anvil",
+
+  "block.fabricanvils.techreborn.advanced_alloy_anvil": "Advanced Alloy Anvil",
+  "block.fabricanvils.techreborn.chipped_advanced_alloy_anvil": "Chipped Advanced Alloy Anvil",
+  "block.fabricanvils.techreborn.damaged_advanced_alloy_anvil": "Damaged Advanced Alloy Anvil"
 }

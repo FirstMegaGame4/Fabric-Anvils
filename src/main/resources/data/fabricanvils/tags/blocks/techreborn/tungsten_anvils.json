@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:techreborn/tungsten_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/chipped_tungsten_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:techreborn/damaged_tungsten_anvil",
+      "required": false
+    }
+  ]
+}

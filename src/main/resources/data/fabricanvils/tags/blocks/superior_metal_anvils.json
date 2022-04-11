@@ -17,6 +17,10 @@
     {
       "id": "#fabricanvils:techreborn/titanium_anvils",
       "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/tungsten_anvils",
+      "required": false
     }
   ]
 }
