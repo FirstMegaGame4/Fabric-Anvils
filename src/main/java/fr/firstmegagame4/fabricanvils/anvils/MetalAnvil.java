@@ -5,12 +5,12 @@ import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class MetalAnvil extends BaseAnvil {
+public class MetalAnvil extends CustomAnvil {
 
     public static boolean destroyByFalling;
 
     public MetalAnvil(Settings settings) {
-        super(settings);
+        super(settings.requiresTool());
     }
 
     public void damageAnvil(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity, BlockState landingState) {

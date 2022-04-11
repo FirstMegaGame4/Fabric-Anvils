@@ -2,12 +2,15 @@ package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.AdvancedMetalAnvil;
-import fr.firstmegagame4.fabricanvils.screenhandlers.minecraft.NetheriteAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.AdvancedMetalAnvilScreenHandler;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -16,21 +19,19 @@ import org.jetbrains.annotations.Nullable;
 
 public class NetheriteAnvil extends AdvancedMetalAnvil {
 
-    public NetheriteAnvil(Settings settings) {
-        super(settings);
+    public NetheriteAnvil() {
+        super(FabricBlockSettings.of(Material.METAL).strength(50.0F, 1200F).sounds(BlockSoundGroup.NETHERITE));
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         super.onDestroyedOnLanding(world, pos, fallingBlockEntity);
-        this.damageAnvil(world, pos, fallingBlockEntity, NetheriteAnvil.getLandingState(fallingBlockEntity.getBlockState()));
+        this.damageAnvil(world, pos, fallingBlockEntity, this.getStateOnLanding(fallingBlockEntity.getBlockState()));
     }
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new NetheriteAnvilScreenHandler(
-                this.getForgeSound(),
-                this.getBreakSound(),
-                this.getChanceBreak(),
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new AdvancedMetalAnvilScreenHandler(
+                this,
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -39,7 +40,7 @@ public class NetheriteAnvil extends AdvancedMetalAnvil {
     }
 
     @Nullable
-    public static BlockState getLandingState(BlockState fallingState) {
+    public BlockState getStateOnLanding(BlockState fallingState) {
         if (fallingState.isOf(FAMinecraftBlocks.NETHERITE_ANVIL)) {
             return FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }

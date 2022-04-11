@@ -1,8 +1,10 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
+import org.jetbrains.annotations.Nullable;
 
-public class FragileMetalAnvil extends MetalAnvil {
+public abstract class FragileMetalAnvil extends MetalAnvil {
 
     public FragileMetalAnvil(Settings settings) {
         super(settings);

@@ -2,33 +2,34 @@ package fr.firstmegagame4.fabricanvils.anvils.techreborn;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FATechRebornBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.AdvancedMetalAnvil;
-import fr.firstmegagame4.fabricanvils.screenhandlers.techreborn.HotTungstensteelAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.AdvancedMetalAnvilScreenHandler;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class HotTungstensteelAnvil extends AdvancedMetalAnvil {
 
-    public HotTungstensteelAnvil(Settings settings) {
-        super(settings.luminance((state) -> 15));
+    public HotTungstensteelAnvil() {
+        super(FabricBlockSettings.of(Material.METAL).hardness(5.0F).sounds(BlockSoundGroup.METAL).luminance((state) -> 15));
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         super.onDestroyedOnLanding(world, pos, fallingBlockEntity);
-        this.damageAnvil(world, pos, fallingBlockEntity, HotTungstensteelAnvil.getLandingState(fallingBlockEntity.getBlockState()));
+        this.damageAnvil(world, pos, fallingBlockEntity, this.getStateOnLanding(fallingBlockEntity.getBlockState()));
     }
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new HotTungstensteelAnvilScreenHandler(
-                this.getForgeSound(),
-                this.getBreakSound(),
-                this.getChanceBreak(),
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new AdvancedMetalAnvilScreenHandler(
+                this,
                 syncId,
                 inventory,
                 ScreenHandlerContext.create(world, pos)),
@@ -37,7 +38,7 @@ public class HotTungstensteelAnvil extends AdvancedMetalAnvil {
     }
 
     @Nullable
-    public static BlockState getLandingState(BlockState fallingState) {
+    public BlockState getStateOnLanding(BlockState fallingState) {
         if (fallingState.isOf(FATechRebornBlocks.HOT_TUNGSTENSTEEL_ANVIL)) {
             return FATechRebornBlocks.CHIPPED_HOT_TUNGSTENSTEEL_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }

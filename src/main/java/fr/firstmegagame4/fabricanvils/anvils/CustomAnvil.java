@@ -1,5 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
+import fr.firstmegagame4.fabricanvils.AnvilItem;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
@@ -10,13 +11,21 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-public class BaseAnvil extends AnvilBlock {
+public class CustomAnvil extends AnvilBlock {
 
     protected static final Text TITLE;
 
-    public BaseAnvil(Settings settings) {
+    protected final AnvilItem blockItem;
+
+    public CustomAnvil(Settings settings) {
         super(settings);
+        this.blockItem = new AnvilItem(this);
+    }
+
+    public AnvilItem getItem() {
+        return this.blockItem;
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
@@ -49,6 +58,11 @@ public class BaseAnvil extends AnvilBlock {
 
     public float getChanceBreak() {
         return 0.12F;
+    }
+
+    @Nullable
+    public BlockState getStateOnLanding(BlockState fallingState) {
+        return AnvilBlock.getLandingState(fallingState);
     }
 
     static {
