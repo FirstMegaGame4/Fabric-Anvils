@@ -20,6 +20,7 @@ Here are the FabricAnvils anvils, made with minecraft materials:
 ___
 ## Mod Integrations
 ### 1.1.0 : [Oh The Biomes You'll Go Refabricated](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric) Integration
+### 1.2.0 : [Tech Reborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) Integration
 ___
 ## Can I use this mod in my Fabric ModPack?
 ### Yes you can.
