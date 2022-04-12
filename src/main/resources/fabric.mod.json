@@ -24,6 +24,10 @@
     ],
     "client": [
       "fr.firstmegagame4.fabricanvils.FabricAnvilsClient"
+    ],
+    "rei": [
+      "fr.firstmegagame4.fabricanvils.plugin.FabricAnvilsClientPlugin",
+      "fr.firstmegagame4.fabricanvils.plugin.FabricAnvilsPlugin"
     ]
   },
   "mixins": [
