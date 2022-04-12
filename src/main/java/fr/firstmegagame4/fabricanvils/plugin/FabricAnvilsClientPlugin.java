@@ -37,7 +37,7 @@ public class FabricAnvilsClientPlugin implements REIClientPlugin {
 
                 if (Registry.ITEM.get(entry.getIdentifier()) instanceof AnvilItem anvilItem) {
                     CustomAnvil anvil = (CustomAnvil) anvilItem.getBlock();
-                    components.add(breakingChance.append(Text.of(": " + ((int) anvil.getChanceBreak()*100) + "%")));
+                    components.add(breakingChance.append(Text.of(": " + (anvil.getChanceBreak() * 100) + "%")));
                     components.add(experienceLimit.append(Text.of(": " + anvil.getXPLimit())));
                 }
                 else {

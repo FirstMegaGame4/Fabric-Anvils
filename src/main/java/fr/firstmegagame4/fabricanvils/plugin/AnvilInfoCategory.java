@@ -21,7 +21,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
     }
 
     @Override
-    public CategoryIdentifier getCategoryIdentifier() {
+    public CategoryIdentifier<DefaultAnvilInfoDisplay> getCategoryIdentifier() {
         return CategoryIdentifier.of(FAUtils.FAIdentifier("plugin/anvil_information"));
     }
 }
