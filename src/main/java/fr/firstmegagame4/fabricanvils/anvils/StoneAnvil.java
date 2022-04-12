@@ -1,7 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
-import fr.firstmegagame4.fabricanvils.screenhandlers.StoneAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -28,7 +27,7 @@ public class StoneAnvil extends CustomAnvil {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new StoneAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
                 this,
                 syncId,
                 inventory,
@@ -48,4 +47,9 @@ public class StoneAnvil extends CustomAnvil {
     public float getChanceBreak() {
         return 0.40F;
     }
+
+    public int getXPLimit() {
+        return 20;
+    }
+
 }

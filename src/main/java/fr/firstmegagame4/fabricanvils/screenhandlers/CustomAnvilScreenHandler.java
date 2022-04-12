@@ -6,7 +6,6 @@ import fr.firstmegagame4.fabricanvils.FabricAnvilsClient;
 import fr.firstmegagame4.fabricanvils.anvils.CustomAnvil;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -21,12 +20,12 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
     public CustomAnvil customAnvil;
     public static int xpLimit;
 
-    public CustomAnvilScreenHandler(CustomAnvil customAnvil, int xpLimit, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
+    public CustomAnvilScreenHandler(CustomAnvil customAnvil, int syncId, PlayerInventory inventory, ScreenHandlerContext context) {
         super(syncId, inventory, context);
         this.customAnvil = customAnvil;
         this.context.run(((world, blockPos) -> {
             if (world.getBlockState(blockPos).isIn(FATags.FABRICANVILS)) {
-                CustomAnvilScreenHandler.xpLimit = xpLimit;
+                CustomAnvilScreenHandler.xpLimit = customAnvil.getXPLimit();
             }
             else {
                 CustomAnvilScreenHandler.xpLimit = 40;
@@ -69,10 +68,6 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
             }
 
         });
-    }
-
-    public BlockState getLandingState(BlockState blockState) {
-        return AnvilBlock.getLandingState(blockState);
     }
 
 }

@@ -16,4 +16,7 @@ public class AdvancedMetalAnvil extends MetalAnvil {
         return 0.03F;
     }
 
+    public int getXPLimit() {
+        return 120;
+    }
 }

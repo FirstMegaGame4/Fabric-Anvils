@@ -2,7 +2,7 @@ package fr.firstmegagame4.fabricanvils.anvils.techreborn;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FATechRebornBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.MoreAdvancedMetalAnvil;
-import fr.firstmegagame4.fabricanvils.screenhandlers.MoreAdvancedMetalAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -28,7 +28,7 @@ public class AdvancedAlloyAnvil extends MoreAdvancedMetalAnvil {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new MoreAdvancedMetalAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
                 this,
                 syncId,
                 inventory,

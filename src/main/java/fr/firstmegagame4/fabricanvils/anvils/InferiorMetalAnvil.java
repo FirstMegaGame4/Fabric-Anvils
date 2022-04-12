@@ -16,4 +16,8 @@ public class InferiorMetalAnvil extends MetalAnvil {
         return 0.25F;
     }
 
+    public int getXPLimit() {
+        return 30;
+    }
+
 }

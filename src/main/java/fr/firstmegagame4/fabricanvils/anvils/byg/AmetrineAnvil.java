@@ -2,7 +2,7 @@ package fr.firstmegagame4.fabricanvils.anvils.byg;
 
 import fr.firstmegagame4.fabricanvils.FA.Blocks.FABYGBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.MoreAdvancedMetalAnvil;
-import fr.firstmegagame4.fabricanvils.screenhandlers.MoreAdvancedMetalAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -31,7 +31,7 @@ public class AmetrineAnvil extends MoreAdvancedMetalAnvil {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new MoreAdvancedMetalAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
                 this,
                 syncId,
                 inventory,

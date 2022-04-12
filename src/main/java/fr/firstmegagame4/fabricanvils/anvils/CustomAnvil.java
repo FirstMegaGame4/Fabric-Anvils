@@ -60,6 +60,10 @@ public class CustomAnvil extends AnvilBlock {
         return 0.12F;
     }
 
+    public int getXPLimit() {
+        return 40;
+    }
+
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
         return AnvilBlock.getLandingState(fallingState);

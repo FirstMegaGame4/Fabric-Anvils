@@ -1,8 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
-import org.jetbrains.annotations.Nullable;
 
 public abstract class FragileMetalAnvil extends MetalAnvil {
 
@@ -16,6 +14,10 @@ public abstract class FragileMetalAnvil extends MetalAnvil {
 
     public float getChanceBreak() {
         return 1.00F;
+    }
+
+    public int getXPLimit() {
+        return 100;
     }
 
 }

@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils;
 
-import fr.firstmegagame4.fabricanvils.screenhandlers.WoodenAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -13,6 +13,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class WoodenAnvil extends CustomAnvil {
+
     public WoodenAnvil(Settings settings) {
         super(settings);
     }
@@ -23,7 +24,7 @@ public class WoodenAnvil extends CustomAnvil {
 
     @Nullable
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new WoodenAnvilScreenHandler(
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CustomAnvilScreenHandler(
                 this,
                 syncId,
                 inventory,
@@ -43,4 +44,9 @@ public class WoodenAnvil extends CustomAnvil {
     public float getChanceBreak() {
         return 1.00F;
     }
+
+    public int getXPLimit() {
+        return 10;
+    };
+
 }

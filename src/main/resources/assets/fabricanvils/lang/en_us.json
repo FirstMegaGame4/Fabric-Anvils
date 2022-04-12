@@ -1,6 +1,13 @@
 {
   "itemGroup.fabricanvils.anvils": "Fabric Anvils",
 
+  "plugin.fabricanvils.anvil_information": "Anvil Information",
+  "plugin.fabricanvils.anvil_information.breaking_chance": "Breaking Chance",
+  "plugin.fabricanvils.anvil_information.experience_limit": "Experience Limit",
+  "plugin.fabricanvils.anvil_information.intact_anvil": "Intact Anvil",
+  "plugin.fabricanvils.anvil_information.chipped_anvil": "Chipped Anvil",
+  "plugin.fabricanvils.anvil_information.damaged_anvil": "Damaged Anvil",
+
   "block.fabricanvils.minecraft.oak_anvil": "Oak Anvil",
   "block.fabricanvils.minecraft.spruce_anvil": "Spruce Anvil",
   "block.fabricanvils.minecraft.birch_anvil": "Birch Anvil",

@@ -9,7 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 
-public class AnvilInfoCategory implements DisplayCategory {
+public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDisplay> {
     @Override
     public Renderer getIcon() {
         return EntryStacks.of(Items.ANVIL);
@@ -22,6 +22,6 @@ public class AnvilInfoCategory implements DisplayCategory {
 
     @Override
     public CategoryIdentifier getCategoryIdentifier() {
-        return CategoryIdentifier.of(FAUtils.FAIdentifier("anvil_information"));
+        return CategoryIdentifier.of(FAUtils.FAIdentifier("plugin/anvil_information"));
     }
 }
