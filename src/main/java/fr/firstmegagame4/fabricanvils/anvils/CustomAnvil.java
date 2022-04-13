@@ -69,6 +69,11 @@ public class CustomAnvil extends AnvilBlock {
         return AnvilBlock.getLandingState(fallingState);
     }
 
+    @Deprecated
+    public static BlockState getLandingState(BlockState state) {
+        return AnvilBlock.getLandingState(state);
+    }
+
     static {
         TITLE = new TranslatableText("container.repair");
     }

@@ -7,6 +7,11 @@
   "plugin.fabricanvils.anvil_information.intact_anvil": "Intact Anvil",
   "plugin.fabricanvils.anvil_information.chipped_anvil": "Chipped Anvil",
   "plugin.fabricanvils.anvil_information.damaged_anvil": "Damaged Anvil",
+  "plugin.fabricanvils.anvil_information.anvil_states": "Anvil States",
+  "plugin.fabricanvils.anvil_information.next_anvil_state": "Next Anvil State",
+  "plugin.fabricanvils.anvil_information.previous_anvil_state": "Previous Anvil State",
+  "plugin.fabricanvils.anvil_information.first_anvil_state": "This anvil state is the first state of the anvil.",
+  "plugin.fabricanvils.anvil_information.last_anvil_state": "This anvil state is the last state of the anvil.",
 
   "block.fabricanvils.minecraft.oak_anvil": "Oak Anvil",
   "block.fabricanvils.minecraft.spruce_anvil": "Spruce Anvil",

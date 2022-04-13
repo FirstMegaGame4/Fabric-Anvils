@@ -16,7 +16,7 @@ public class FabricAnvilsMain implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("fabricanvils");
 	public static final ItemGroup FABRICANVILS_GROUP = FabricItemGroupBuilder.build(
-			new Identifier(FAUtils.modIndentifier, "anvils"),
+			new Identifier(FAUtils.modIdentifier, "anvils"),
 			() -> new ItemStack(FAMinecraftBlocks.BIRCH_ANVIL.getItem())
 	);
 
