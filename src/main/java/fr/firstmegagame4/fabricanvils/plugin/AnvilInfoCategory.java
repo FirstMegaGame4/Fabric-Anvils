@@ -12,6 +12,9 @@ import me.shedaniel.rei.api.client.registry.display.DisplayCategory;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.util.EntryStacks;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Items;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
@@ -54,20 +57,45 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
     }
 
     @Override
+    @SuppressWarnings("UnstableApiUsage")
     public List<Widget> setupDisplay(DefaultAnvilInfoDisplay display, Rectangle bounds) {
         List<Widget> widgets = Lists.newArrayList();
 
         EntryStack<?> entry = display.getEntries().get(0);
 
-        AnvilItem anvilItem = (AnvilItem) Registry.ITEM.get(display.getEntries().get(0).getIdentifier());
-        CustomAnvil anvil = (CustomAnvil) anvilItem.getBlock();
-
-        CustomAnvil nextAnvilBlock = FAUtils.nextAnvil(anvil);
-        CustomAnvil previousAnvilBlock = FAUtils.previousAnvil(anvil);
+        BlockItem blockItem = (BlockItem) Registry.ITEM.get(entry.getIdentifier());
 
         String[] anvilPath = Objects.requireNonNull(entry.getIdentifier()).getPath().split("/");
         String anvilId;
         if (anvilPath.length != 1) anvilId = anvilPath[1]; else anvilId = anvilPath[0];
+
+        Block anvil;
+        Block nextAnvilBlock;
+        Block previousAnvilBlock;
+
+        if (blockItem instanceof AnvilItem) {
+            AnvilItem anvilItem = (AnvilItem) Registry.ITEM.get(entry.getIdentifier());
+            anvil = anvilItem.getBlock();
+            nextAnvilBlock = FAUtils.nextAnvil((CustomAnvil) anvil);
+            previousAnvilBlock = FAUtils.previousAnvil((CustomAnvil) anvil);
+        }
+        else {
+            if (anvilId.startsWith("chipped")) {
+                anvil = Blocks.CHIPPED_ANVIL;
+                previousAnvilBlock = Blocks.ANVIL;
+                nextAnvilBlock = Blocks.DAMAGED_ANVIL;
+            }
+            else if (anvilId.startsWith("damaged")) {
+                anvil = Blocks.DAMAGED_ANVIL;
+                previousAnvilBlock = Blocks.CHIPPED_ANVIL;
+                nextAnvilBlock = null;
+            }
+            else {
+                anvil = Blocks.ANVIL;
+                previousAnvilBlock = null;
+                nextAnvilBlock = Blocks.CHIPPED_ANVIL;
+            }
+        }
 
         MutableText breakingChance = new TranslatableText("plugin.fabricanvils.anvil_information.breaking_chance");
         MutableText experienceLimit = new TranslatableText("plugin.fabricanvils.anvil_information.experience_limit");
@@ -86,16 +114,16 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
         widgets.add(Widgets.createLabel(anvilStatesPoint, new TranslatableText("plugin.fabricanvils.anvil_information.anvil_states")));
 
         widgets.add(Widgets.createResultSlotBackground(anvilSlotPoint));
-        widgets.add(Widgets.createSlot(anvilSlotPoint).disableBackground().entry(EntryStacks.of(anvilItem)));
+        widgets.add(Widgets.createSlot(anvilSlotPoint).disableBackground().entry(EntryStacks.of(blockItem)));
 
         if (previousAnvilBlock != null) {
             widgets.add(Widgets.createArrow(previousAnvilArrowPoint));
-            widgets.add(Widgets.createSlot(previousAnvilSlotPoint).entry(EntryStacks.of(previousAnvilBlock.getItem())));
+            widgets.add(Widgets.createSlot(previousAnvilSlotPoint).entry(EntryStacks.of(previousAnvilBlock)));
         }
 
         if (nextAnvilBlock != null) {
             widgets.add(Widgets.createArrow(nextAnvilArrowPoint));
-            widgets.add(Widgets.createSlot(nextAnvilSlotPoint).entry(EntryStacks.of(nextAnvilBlock.getItem())));
+            widgets.add(Widgets.createSlot(nextAnvilSlotPoint).entry(EntryStacks.of(nextAnvilBlock)));
         }
 
         widgets.add(Widgets.createRecipeBase(new Rectangle(bounds.x, bounds.y + 58, bounds.width, bounds.height/2-2)));
@@ -108,8 +136,19 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
         else if (anvilId.startsWith("damaged")) widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.damaged_anvil")).leftAligned());
         else widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.intact_anvil")).leftAligned());
 
-        widgets.add(Widgets.createLabel(breakingChancePoint, breakingChance.append(Text.of(": " + (anvil.getChanceBreak() * 100) + "%"))).leftAligned());
-        widgets.add(Widgets.createLabel(experienceLimitPoint, experienceLimit.append(Text.of(": " + anvil.getXPLimit()))).leftAligned());
+        float breakChance;
+        int xpLimit;
+        if (anvil instanceof CustomAnvil customAnvil) {
+            breakChance = customAnvil.getChanceBreak() * 100;
+            xpLimit = customAnvil.getXPLimit();
+        }
+        else {
+            breakChance = 0.12F;
+            xpLimit = 40;
+        }
+
+        widgets.add(Widgets.createLabel(breakingChancePoint, breakingChance.append(Text.of(": " + breakChance + "%"))).leftAligned());
+        widgets.add(Widgets.createLabel(experienceLimitPoint, experienceLimit.append(Text.of(": " + xpLimit))).leftAligned());
 
         return widgets;
     }

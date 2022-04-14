@@ -7,9 +7,12 @@ import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;
 import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.client.registry.entry.EntryRegistry;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.util.registry.Registry;
 
 import java.util.Collections;
+import java.util.Objects;
 
 public class FabricAnvilsClientPlugin implements REIClientPlugin {
     public static final CategoryIdentifier<DefaultAnvilInfoDisplay> ANVIL_INFO = CategoryIdentifier.of(FAUtils.FAIdentifier("plugin/anvil_information"));
@@ -17,12 +20,20 @@ public class FabricAnvilsClientPlugin implements REIClientPlugin {
     @Override
     public void registerCategories(CategoryRegistry registry) {
         registry.add(new AnvilInfoCategory());
+        registry.removePlusButton(new AnvilInfoCategory().getCategoryIdentifier());
     }
 
     @Override
     public void registerDisplays(DisplayRegistry registry) {
         EntryRegistry.getInstance().getEntryStacks().filter(entry -> Registry.ITEM.get(entry.getIdentifier()) instanceof AnvilItem).forEach(
-            entry -> registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(Registry.ITEM.get(entry.getIdentifier()).getDefaultStack())))
+            entry -> {
+                registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(Registry.ITEM.get(entry.getIdentifier()).getDefaultStack())));
+                if (Objects.requireNonNull(entry.getIdentifier()).getPath().equals("minecraft/damaged_copper_anvil")) {
+                    for (Item item: new Item[] {Items.ANVIL, Items.CHIPPED_ANVIL, Items.DAMAGED_ANVIL}) {
+                        registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(item.getDefaultStack())));
+                    }
+                }
+            }
         );
     }
 }
