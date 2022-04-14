@@ -1,6 +1,7 @@
 package fr.firstmegagame4.fabricanvils.mixin;
 
 import fr.firstmegagame4.fabricanvils.FabricAnvilsClient;
+import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +22,7 @@ public class AnvilBlockMixin {
     private void injectXPLimitReload(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
         if (state.isIn(BlockTags.ANVIL)) {
             if (FabricAnvilsClient.xpLimitOnClient) FabricAnvilsClient.anvilXpLimit = 40;
+            CustomAnvilScreenHandler.xpLimit = 40;
         }
     }
 }

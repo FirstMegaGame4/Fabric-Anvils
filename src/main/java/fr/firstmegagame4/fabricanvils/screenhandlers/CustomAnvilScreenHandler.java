@@ -27,9 +27,6 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
             if (world.getBlockState(blockPos).isIn(FATags.FABRICANVILS)) {
                 CustomAnvilScreenHandler.xpLimit = customAnvil.getXPLimit();
             }
-            else {
-                CustomAnvilScreenHandler.xpLimit = 40;
-            }
         }));
     }
 
