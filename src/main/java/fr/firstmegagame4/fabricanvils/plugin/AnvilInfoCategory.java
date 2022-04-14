@@ -97,7 +97,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
             }
         }
 
-        MutableText breakingChance = new TranslatableText("plugin.fabricanvils.anvil_information.breaking_chance");
+        MutableText damagingChance = new TranslatableText("plugin.fabricanvils.anvil_information.damaging_chance");
         MutableText experienceLimit = new TranslatableText("plugin.fabricanvils.anvil_information.experience_limit");
 
         Point point = new Point(bounds.x + 8, bounds.y + 8);
@@ -129,25 +129,25 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
         widgets.add(Widgets.createRecipeBase(new Rectangle(bounds.x, bounds.y + 58, bounds.width, bounds.height/2-2)));
 
         Point anvilStatusPoint = new Point(point.x, anvilSlotPoint.y + 42);
-        Point breakingChancePoint = new Point(point.x, anvilStatusPoint.y + 16);
-        Point experienceLimitPoint = new Point(point.x, breakingChancePoint.y + 16);
+        Point damagingChancePoint = new Point(point.x, anvilStatusPoint.y + 16);
+        Point experienceLimitPoint = new Point(point.x, damagingChancePoint.y + 16);
 
         if (anvilId.startsWith("chipped")) widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.chipped_anvil")).leftAligned());
         else if (anvilId.startsWith("damaged")) widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.damaged_anvil")).leftAligned());
         else widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.intact_anvil")).leftAligned());
 
-        float breakChance;
+        float damageChance;
         int xpLimit;
         if (anvil instanceof CustomAnvil customAnvil) {
-            breakChance = customAnvil.getChanceBreak() * 100;
+            damageChance = customAnvil.getDamagingChance() * 100;
             xpLimit = customAnvil.getXPLimit();
         }
         else {
-            breakChance = 0.12F;
+            damageChance = 12.0F;
             xpLimit = 40;
         }
 
-        widgets.add(Widgets.createLabel(breakingChancePoint, breakingChance.append(Text.of(": " + breakChance + "%"))).leftAligned());
+        widgets.add(Widgets.createLabel(damagingChancePoint, damagingChance.append(Text.of(": " + damageChance + "%"))).leftAligned());
         widgets.add(Widgets.createLabel(experienceLimitPoint, experienceLimit.append(Text.of(": " + xpLimit))).leftAligned());
 
         return widgets;

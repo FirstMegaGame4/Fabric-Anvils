@@ -4,9 +4,10 @@
   "package": "fr.firstmegagame4.fabricanvils.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "AnvilMixin",
+    "AnvilBlockMixin",
     "AnvilScreenHandlerMixin",
-    "FallingBlockEntityMixin"
+    "FallingBlockEntityMixin",
+    "ForgingScreenHandlerMixin"
   ],
   "client": [
     "AnvilScreenMixin"

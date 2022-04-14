@@ -49,12 +49,10 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
     }
 
     protected void onTakeOutput(PlayerEntity player, ItemStack stack) {
-        this.input.setStack(0, ItemStack.EMPTY);
-        this.input.setStack(1, ItemStack.EMPTY);
-
+        super.onTakeOutput(player, stack);
         this.context.run((world, pos) -> {
             BlockState blockState = world.getBlockState(pos);
-            if (!player.getAbilities().creativeMode && blockState.isIn(FATags.FABRICANVILS) && player.getRandom().nextFloat() < this.customAnvil.getChanceBreak()) {
+            if (!player.getAbilities().creativeMode && blockState.isIn(FATags.FABRICANVILS) && player.getRandom().nextFloat() < this.customAnvil.getDamagingChance()) {
                 BlockState blockState2 = this.customAnvil.getStateOnLanding(blockState);
                 if (blockState2 == null) {
                     world.removeBlock(pos, false);
@@ -66,7 +64,6 @@ public class CustomAnvilScreenHandler extends AnvilScreenHandler {
             } else {
                 world.playSound(null, pos, this.customAnvil.getForgeSound(), SoundCategory.BLOCKS, 10F, 1F);
             }
-
         });
     }
 

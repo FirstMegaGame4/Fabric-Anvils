@@ -12,7 +12,7 @@ public abstract class FragileMetalAnvil extends MetalAnvil {
         entity.setHurtEntities(1.50F, 30);
     }
 
-    public float getChanceBreak() {
+    public float getDamagingChance() {
         return 1.00F;
     }
 

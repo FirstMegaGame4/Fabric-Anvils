@@ -12,7 +12,7 @@ public class AdvancedMetalAnvil extends MetalAnvil {
         entity.setHurtEntities(4.0F, 60);
     }
 
-    public float getChanceBreak() {
+    public float getDamagingChance() {
         return 0.03F;
     }
 

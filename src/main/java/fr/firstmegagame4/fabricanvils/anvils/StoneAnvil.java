@@ -44,7 +44,7 @@ public class StoneAnvil extends CustomAnvil {
         return SoundEvents.BLOCK_STONE_BREAK;
     }
 
-    public float getChanceBreak() {
+    public float getDamagingChance() {
         return 0.40F;
     }
 

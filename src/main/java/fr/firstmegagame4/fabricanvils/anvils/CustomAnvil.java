@@ -56,7 +56,7 @@ public class CustomAnvil extends AnvilBlock {
         return SoundEvents.BLOCK_METAL_BREAK;
     }
 
-    public float getChanceBreak() {
+    public float getDamagingChance() {
         return 0.12F;
     }
 

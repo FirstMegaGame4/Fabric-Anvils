@@ -41,12 +41,12 @@ public class WoodenAnvil extends CustomAnvil {
         return SoundEvents.BLOCK_WOOD_BREAK;
     }
 
-    public float getChanceBreak() {
+    public float getDamagingChance() {
         return 1.00F;
     }
 
     public int getXPLimit() {
         return 10;
-    };
+    }
 
 }
