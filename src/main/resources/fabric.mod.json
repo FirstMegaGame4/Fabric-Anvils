@@ -43,6 +43,6 @@
   "suggests": {
     "roughlyenoughitems": ">=8.0.442",
     "byg": "~1.4",
-    "techreborn": "=>5.1.0"
+    "techreborn": ">=5.1.0"
   }
 }
