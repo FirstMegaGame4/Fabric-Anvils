@@ -25,7 +25,7 @@
     "client": [
       "fr.firstmegagame4.fabricanvils.FabricAnvilsClient"
     ],
-    "rei": [
+    "rei_client": [
       "fr.firstmegagame4.fabricanvils.plugin.FabricAnvilsClientPlugin",
       "fr.firstmegagame4.fabricanvils.plugin.FabricAnvilsPlugin"
     ]
@@ -41,7 +41,7 @@
     "java": ">=17"
   },
   "suggests": {
-    "roughlyenoughitems": ">=8.0.442",
+    "roughlyenoughitems": ">=9.0.472",
     "byg": "~1.4",
     "techreborn": ">=5.1.0"
   }
