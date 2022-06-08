@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.MinecraftBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.AdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -41,11 +41,11 @@ public class NetheriteAnvil extends AdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FAMinecraftBlocks.NETHERITE_ANVIL)) {
-            return FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(MinecraftBlocks.NETHERITE_ANVIL)) {
+            return MinecraftBlocks.CHIPPED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FAMinecraftBlocks.CHIPPED_NETHERITE_ANVIL)) {
-            return FAMinecraftBlocks.DAMAGED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(MinecraftBlocks.CHIPPED_NETHERITE_ANVIL)) {
+            return MinecraftBlocks.DAMAGED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.byg;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FABYGBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.BYGBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.MoreAdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -42,11 +42,11 @@ public class AmetrineAnvil extends MoreAdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FABYGBlocks.AMETRINE_ANVIL)) {
-            return FABYGBlocks.CHIPPED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(BYGBlocks.AMETRINE_ANVIL)) {
+            return BYGBlocks.CHIPPED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FABYGBlocks.CHIPPED_AMETRINE_ANVIL)) {
-            return FABYGBlocks.DAMAGED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(BYGBlocks.CHIPPED_AMETRINE_ANVIL)) {
+            return BYGBlocks.DAMAGED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

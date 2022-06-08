@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.techreborn;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FATechRebornBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.TechRebornBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.SuperiorMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,11 +39,11 @@ public class TungstenAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FATechRebornBlocks.TUNGSTEN_ANVIL)) {
-            return FATechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.TUNGSTEN_ANVIL)) {
+            return TechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FATechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL)) {
-            return FATechRebornBlocks.DAMAGED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL)) {
+            return TechRebornBlocks.DAMAGED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

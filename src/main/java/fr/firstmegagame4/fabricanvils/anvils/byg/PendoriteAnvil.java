@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.byg;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FABYGBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.BYGBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.EvenMoreAdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,11 +39,11 @@ public class PendoriteAnvil extends EvenMoreAdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FABYGBlocks.PENDORITE_ANVIL)) {
-            return FABYGBlocks.CHIPPED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(BYGBlocks.PENDORITE_ANVIL)) {
+            return BYGBlocks.CHIPPED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FABYGBlocks.CHIPPED_PENDORITE_ANVIL)) {
-            return FABYGBlocks.DAMAGED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(BYGBlocks.CHIPPED_PENDORITE_ANVIL)) {
+            return BYGBlocks.DAMAGED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

@@ -18,7 +18,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Items;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.registry.Registry;
 import org.apache.commons.compress.utils.Lists;
 
@@ -33,7 +32,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
 
     @Override
     public Text getTitle() {
-        return new TranslatableText("plugin.fabricanvils.anvil_information");
+        return Text.translatable("plugin.fabricanvils.anvil_information");
     }
 
     @Override
@@ -97,8 +96,8 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
             }
         }
 
-        MutableText damagingChance = new TranslatableText("plugin.fabricanvils.anvil_information.damaging_chance");
-        MutableText experienceLimit = new TranslatableText("plugin.fabricanvils.anvil_information.experience_limit");
+        MutableText damagingChance = Text.translatable("plugin.fabricanvils.anvil_information.damaging_chance");
+        MutableText experienceLimit = Text.translatable("plugin.fabricanvils.anvil_information.experience_limit");
 
         Point point = new Point(bounds.x + 8, bounds.y + 8);
 
@@ -111,7 +110,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
 
         widgets.add(Widgets.createRecipeBase(new Rectangle(bounds.x, bounds.y, bounds.width, bounds.height/2-2)));
 
-        widgets.add(Widgets.createLabel(anvilStatesPoint, new TranslatableText("plugin.fabricanvils.anvil_information.anvil_states")));
+        widgets.add(Widgets.createLabel(anvilStatesPoint, Text.translatable("plugin.fabricanvils.anvil_information.anvil_states")));
 
         widgets.add(Widgets.createResultSlotBackground(anvilSlotPoint));
         widgets.add(Widgets.createSlot(anvilSlotPoint).disableBackground().entry(EntryStacks.of(blockItem)));
@@ -132,9 +131,9 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
         Point damagingChancePoint = new Point(point.x, anvilStatusPoint.y + 16);
         Point experienceLimitPoint = new Point(point.x, damagingChancePoint.y + 16);
 
-        if (anvilId.startsWith("chipped")) widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.chipped_anvil")).leftAligned());
-        else if (anvilId.startsWith("damaged")) widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.damaged_anvil")).leftAligned());
-        else widgets.add(Widgets.createLabel(anvilStatusPoint, new TranslatableText("plugin.fabricanvils.anvil_information.intact_anvil")).leftAligned());
+        if (anvilId.startsWith("chipped")) widgets.add(Widgets.createLabel(anvilStatusPoint, Text.translatable("plugin.fabricanvils.anvil_information.chipped_anvil")).leftAligned());
+        else if (anvilId.startsWith("damaged")) widgets.add(Widgets.createLabel(anvilStatusPoint, Text.translatable("plugin.fabricanvils.anvil_information.damaged_anvil")).leftAligned());
+        else widgets.add(Widgets.createLabel(anvilStatusPoint, Text.translatable("plugin.fabricanvils.anvil_information.intact_anvil")).leftAligned());
 
         float damageChance;
         int xpLimit;

@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.minecraft;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FAMinecraftBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.MinecraftBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.FragileMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,8 +39,8 @@ public class GoldenAnvil extends FragileMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FAMinecraftBlocks.GOLDEN_ANVIL)) {
-            return FAMinecraftBlocks.DAMAGED_GOLDEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(MinecraftBlocks.GOLDEN_ANVIL)) {
+            return MinecraftBlocks.DAMAGED_GOLDEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

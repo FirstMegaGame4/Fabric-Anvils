@@ -3,6 +3,7 @@ package fr.firstmegagame4.fabricanvils.FA;
 import fr.firstmegagame4.fabricanvils.AnvilItem;
 import fr.firstmegagame4.fabricanvils.anvils.CustomAnvil;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.render.RenderLayer;
@@ -20,6 +21,10 @@ public class FAUtils {
 
     public static Identifier FAIdentifier(String path) {
         return new Identifier(modIdentifier, path);
+    }
+
+    public static boolean isModLoaded(String modIdentifier) {
+        return FabricLoader.getInstance().isModLoaded(modIdentifier);
     }
 
     public static void setCutout(Block block) {

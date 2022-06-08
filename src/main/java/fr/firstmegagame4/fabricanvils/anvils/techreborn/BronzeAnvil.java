@@ -1,6 +1,6 @@
 package fr.firstmegagame4.fabricanvils.anvils.techreborn;
 
-import fr.firstmegagame4.fabricanvils.FA.Blocks.FATechRebornBlocks;
+import fr.firstmegagame4.fabricanvils.FA.Blocks.TechRebornBlocks;
 import fr.firstmegagame4.fabricanvils.anvils.MetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,11 +39,11 @@ public class BronzeAnvil extends MetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(FATechRebornBlocks.BRONZE_ANVIL)) {
-            return FATechRebornBlocks.CHIPPED_BRONZE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.BRONZE_ANVIL)) {
+            return TechRebornBlocks.CHIPPED_BRONZE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(FATechRebornBlocks.CHIPPED_BRONZE_ANVIL)) {
-            return FATechRebornBlocks.DAMAGED_BRONZE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_BRONZE_ANVIL)) {
+            return TechRebornBlocks.DAMAGED_BRONZE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }
