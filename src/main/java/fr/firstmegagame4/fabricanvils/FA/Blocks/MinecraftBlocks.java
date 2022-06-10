@@ -15,8 +15,10 @@ public class MinecraftBlocks implements BlocksInit {
     public static CustomAnvil JUNGLE_ANVIL;
     public static CustomAnvil ACACIA_ANVIL;
     public static CustomAnvil DARK_OAK_ANVIL;
+    public static CustomAnvil MANGROVE_ANVIL;
     public static CustomAnvil CRIMSON_ANVIL;
     public static CustomAnvil WARPED_ANVIL;
+
     public static CustomAnvil STONE_ANVIL;
 
     public static CustomAnvil GOLDEN_ANVIL;
@@ -47,6 +49,7 @@ public class MinecraftBlocks implements BlocksInit {
         JUNGLE_ANVIL = new NormalWoodAnvil();
         ACACIA_ANVIL = new NormalWoodAnvil();
         DARK_OAK_ANVIL = new NormalWoodAnvil();
+        MANGROVE_ANVIL = new NormalWoodAnvil();
         CRIMSON_ANVIL = new NetherWoodAnvil();
         WARPED_ANVIL = new NetherWoodAnvil();
 
@@ -77,6 +80,7 @@ public class MinecraftBlocks implements BlocksInit {
         this.registerModAnvil("jungle_anvil", JUNGLE_ANVIL);
         this.registerModAnvil("acacia_anvil", ACACIA_ANVIL);
         this.registerModAnvil("dark_oak_anvil", DARK_OAK_ANVIL);
+        this.registerModAnvil("mangrove_anvil", MANGROVE_ANVIL);
         this.registerModAnvil("crimson_anvil", CRIMSON_ANVIL);
         this.registerModAnvil("warped_anvil", WARPED_ANVIL);
 
