@@ -1,8 +1,8 @@
 {
   "parent": "fabricanvils:block/template_wooden_anvil",
   "textures": {
-    "top": "byg:block/green_enchanted_log",
-    "particle": "byg:block/green_enchanted_planks",
-    "body": "byg:block/green_enchanted_planks"
+    "top": "byg:block/green_enchanted/log",
+    "particle": "byg:block/green_enchanted/planks",
+    "body": "byg:block/green_enchanted/planks"
   }
 }

@@ -7,14 +7,14 @@
   ],
   "key": {
     "W": {
-      "item": "byg:mangrove_wood"
+      "item": "byg:ether_wood"
     },
     "P": {
-      "item": "byg:mangrove_planks"
+      "item": "byg:ether_planks"
     }
   },
   "result": {
-    "item": "fabricanvils:byg/mangrove_anvil"
+    "item": "fabricanvils:byg/ether_wood_anvil"
   },
   "fabric:load_conditions": [
     {

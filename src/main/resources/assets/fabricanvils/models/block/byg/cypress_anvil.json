@@ -1,8 +1,8 @@
 {
   "parent": "fabricanvils:block/template_wooden_anvil",
   "textures": {
-    "top": "byg:block/cypress_log",
-    "particle": "byg:block/cypress_planks",
-    "body": "byg:block/cypress_planks"
+    "top": "byg:block/cypress/log",
+    "particle": "byg:block/cypress/planks",
+    "body": "byg:block/cypress/planks"
   }
 }

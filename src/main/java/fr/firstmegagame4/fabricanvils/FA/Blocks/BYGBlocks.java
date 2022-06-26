@@ -15,7 +15,7 @@ public class BYGBlocks implements BlocksInit {
     public static CustomAnvil CIKA_ANVIL;
     public static CustomAnvil CYPRESS_ANVIL;
     public static CustomAnvil EBONY_ANVIL;
-    public static CustomAnvil ETHER_WOODEN_ANVIL;
+    public static CustomAnvil ETHER_WOOD_ANVIL;
     public static CustomAnvil FIR_ANVIL;
     public static CustomAnvil GREEN_ENCHANTED_ANVIL;
     public static CustomAnvil HOLLY_ANVIL;
@@ -23,7 +23,7 @@ public class BYGBlocks implements BlocksInit {
     public static CustomAnvil JACARANDA_ANVIL;
     public static CustomAnvil LAMENT_ANVIL;
     public static CustomAnvil MAHOGANY_ANVIL;
-    public static CustomAnvil MANGROVE_ANVIL;
+    public static CustomAnvil WHITE_MANGROVE_ANVIL;
     public static CustomAnvil MAPLE_ANVIL;
     public static CustomAnvil NIGHTSHADE_ANVIL;
     public static CustomAnvil PALM_ANVIL;
@@ -63,7 +63,7 @@ public class BYGBlocks implements BlocksInit {
         CIKA_ANVIL = new NormalWoodAnvil();
         CYPRESS_ANVIL = new NormalWoodAnvil();
         EBONY_ANVIL = new NormalWoodAnvil();
-        ETHER_WOODEN_ANVIL = new NormalWoodAnvil();
+        ETHER_WOOD_ANVIL = new NormalWoodAnvil();
         FIR_ANVIL = new NormalWoodAnvil();
         GREEN_ENCHANTED_ANVIL = new NormalWoodAnvil();
         HOLLY_ANVIL = new NormalWoodAnvil();
@@ -71,7 +71,6 @@ public class BYGBlocks implements BlocksInit {
         JACARANDA_ANVIL = new NormalWoodAnvil();
         LAMENT_ANVIL = new NetherWoodAnvil();
         MAHOGANY_ANVIL = new NormalWoodAnvil();
-        MANGROVE_ANVIL = new NormalWoodAnvil();
         MAPLE_ANVIL = new NormalWoodAnvil();
         NIGHTSHADE_ANVIL = new NormalWoodAnvil();
         PALM_ANVIL = new NormalWoodAnvil();
@@ -79,6 +78,7 @@ public class BYGBlocks implements BlocksInit {
         RAINBOW_EUCALYPTUS_ANVIL = new NormalWoodAnvil();
         REDWOOD_ANVIL = new NormalWoodAnvil();
         SKYRIS_ANVIL = new NormalWoodAnvil();
+        WHITE_MANGROVE_ANVIL = new NormalWoodAnvil();
         WILLOW_ANVIL = new NormalWoodAnvil();
         WITCH_HAZEL_ANVIL = new NormalWoodAnvil();
         ZELKOVA_ANVIL = new NormalWoodAnvil();
@@ -108,7 +108,7 @@ public class BYGBlocks implements BlocksInit {
         this.registerModAnvil("cika_anvil", CIKA_ANVIL);
         this.registerModAnvil("cypress_anvil", CYPRESS_ANVIL);
         this.registerModAnvil("ebony_anvil", EBONY_ANVIL);
-        this.registerModAnvil("ether_wooden_anvil", ETHER_WOODEN_ANVIL);
+        this.registerModAnvil("ether_wood_anvil", ETHER_WOOD_ANVIL);
         this.registerModAnvil("fir_anvil", FIR_ANVIL);
         this.registerModAnvil("green_enchanted_anvil", GREEN_ENCHANTED_ANVIL);
         this.registerModAnvil("holly_anvil", HOLLY_ANVIL);
@@ -116,7 +116,6 @@ public class BYGBlocks implements BlocksInit {
         this.registerModAnvil("jacaranda_anvil", JACARANDA_ANVIL);
         this.registerModAnvil("lament_anvil", LAMENT_ANVIL);
         this.registerModAnvil("mahogany_anvil", MAHOGANY_ANVIL);
-        this.registerModAnvil("mangrove_anvil", MANGROVE_ANVIL);
         this.registerModAnvil("maple_anvil", MAPLE_ANVIL);
         this.registerModAnvil("nightshade_anvil", NIGHTSHADE_ANVIL);
         this.registerModAnvil("palm_anvil", PALM_ANVIL);
@@ -124,6 +123,7 @@ public class BYGBlocks implements BlocksInit {
         this.registerModAnvil("rainbow_eucalyptus_anvil", RAINBOW_EUCALYPTUS_ANVIL);
         this.registerModAnvil("redwood_anvil", REDWOOD_ANVIL);
         this.registerModAnvil("skyris_anvil", SKYRIS_ANVIL);
+        this.registerModAnvil("white_mangrove_anvil", WHITE_MANGROVE_ANVIL);
         this.registerModAnvil("willow_anvil", WILLOW_ANVIL);
         this.registerModAnvil("witch_hazel_anvil", WITCH_HAZEL_ANVIL);
         this.registerModAnvil("zelkova_anvil", ZELKOVA_ANVIL);

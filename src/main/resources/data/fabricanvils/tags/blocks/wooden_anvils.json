@@ -43,7 +43,7 @@
       "required": false
     },
     {
-      "id": "fabricanvils:byg/ether_wooden_anvil",
+      "id": "fabricanvils:byg/ether_wood_anvil",
       "required": false
     },
     {
@@ -75,10 +75,6 @@
       "required": false
     },
     {
-      "id": "fabricanvils:byg/mangrove_anvil",
-      "required": false
-    },
-    {
       "id": "fabricanvils:byg/maple_anvil",
       "required": false
     },
@@ -104,6 +100,10 @@
     },
     {
       "id": "fabricanvils:byg/skyris_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:byg/white_mangrove_anvil",
       "required": false
     },
     {

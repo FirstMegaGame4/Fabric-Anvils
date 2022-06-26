@@ -42,7 +42,7 @@
   },
   "suggests": {
     "roughlyenoughitems": ">=9.0.472",
-    "byg": "~1.4",
+    "byg": ">=2.0.0.4",
     "techreborn": ">=5.3.0"
   }
 }
