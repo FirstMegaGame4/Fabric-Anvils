@@ -1,6 +1,3 @@
-
-# 1.19 Version Under Development
-___
 # Fabric Anvils
 
 [![CurseForge Downloads](https://cf.way2muchnoise.eu/593701.svg)](https://www.curseforge.com/minecraft/mc-mods/fabric-anvils)
@@ -10,7 +7,7 @@ ___
 [![Modrinth Version](https://modrinth-utils.vercel.app/api/badge/versions?id=xROWgFZO&logo=true&last=true)](https://www.modrinth.com/mod/fabric-anvils/versions)
 [![CurseForge Version](https://cf.way2muchnoise.eu/versions/593701.svg)](https://www.curseforge.com/minecraft/mc-mods/fabric-anvils/files)
 
-## Only for Fabric 1.18.2 - No Forge Ports
+## For Fabric/Quilt 1.18.2 and 1.19 - No Forge Ports
 
 **At the moment, I don't plan to port this mod to Forge.**
 ___
