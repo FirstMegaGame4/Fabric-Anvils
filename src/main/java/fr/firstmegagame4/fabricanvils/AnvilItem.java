@@ -6,6 +6,6 @@ import net.minecraft.item.BlockItem;
 
 public class AnvilItem extends BlockItem {
     public AnvilItem(Block block) {
-        super(block, new FabricItemSettings().group(FabricAnvilsMain.FABRICANVILS_GROUP));
+        super(block, new FabricItemSettings());
     }
 }

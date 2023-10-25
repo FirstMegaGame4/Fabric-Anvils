@@ -5,7 +5,7 @@ import fr.firstmegagame4.fabricanvils.anvils.AdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Material;
+import net.minecraft.block.MapColor;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -20,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 public class NetheriteAnvil extends AdvancedMetalAnvil {
 
     public NetheriteAnvil() {
-        super(FabricBlockSettings.of(Material.METAL).strength(50.0F, 1200F).sounds(BlockSoundGroup.NETHERITE));
+        super(FabricBlockSettings.create().mapColor(MapColor.BLACK).strength(50.0F, 1200F).sounds(BlockSoundGroup.NETHERITE));
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {

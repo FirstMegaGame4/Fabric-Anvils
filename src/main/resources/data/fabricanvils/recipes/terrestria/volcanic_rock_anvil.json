@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    " C ",
+    "CCC"
+  ],
+  "key": {
+    "D": {
+      "item": "terrestria:basalt"
+    },
+    "C": {
+      "item": "terrestria:basalt_cobblestone"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:terrestria/volcanic_rock_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria"
+      ]
+    }
+  ]
+}

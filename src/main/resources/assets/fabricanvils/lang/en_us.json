@@ -182,5 +182,19 @@
 
   "block.fabricanvils.techreborn.advanced_alloy_anvil": "Advanced Alloy Anvil",
   "block.fabricanvils.techreborn.chipped_advanced_alloy_anvil": "Chipped Advanced Alloy Anvil",
-  "block.fabricanvils.techreborn.damaged_advanced_alloy_anvil": "Damaged Advanced Alloy Anvil"
+  "block.fabricanvils.techreborn.damaged_advanced_alloy_anvil": "Damaged Advanced Alloy Anvil",
+
+  "block.fabricanvils.cinderscapes.scorched_anvil": "Scorched Anvil",
+  "block.fabricanvils.cinderscapes.umbral_anvil": "Umbral Anvil",
+
+  "block.fabricanvils.terrestria.cypress_anvil": "Cypress Anvil",
+  "block.fabricanvils.terrestria.hemlock_anvil": "Hemlock Anvil",
+  "block.fabricanvils.terrestria.japanese_maple_anvil": "Japanese Maple Anvil",
+  "block.fabricanvils.terrestria.rainbow_eucalyptus_anvil": "Rainbow Eucalyptus Anvil",
+  "block.fabricanvils.terrestria.redwood_anvil": "Redwood Anvil",
+  "block.fabricanvils.terrestria.rubber_anvil": "Rubber Anvil",
+  "block.fabricanvils.terrestria.volcanic_rock_anvil": "Volcanic Rock Anvil",
+  "block.fabricanvils.terrestria.willow_anvil": "Willow Anvil",
+
+  "block.fabricanvils.traverse.fir_anvil": "Fir Anvil"
 }
