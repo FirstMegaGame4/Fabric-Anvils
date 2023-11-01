@@ -16,7 +16,7 @@ public class FAContentHandler {
         FAContentHandler.CONTENTS.add(holder);
     }
 
-    public static void registerModIntegrationContents(Consumer<ModIntegrationContentHandler> handler) {
+    public static void registerModIntegrationContentHandlers(Consumer<ModIntegrationContentHandler> handler) {
         handler.accept(new ModIntegrationContentHandler());
     }
 

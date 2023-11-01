@@ -17,7 +17,7 @@ public class FabricAnvilsMain implements ModInitializer {
 
 		FAContentHandler.registerContentHolder(new MinecraftBlocks());
 
-		FAContentHandler.registerModIntegrationContents(handler -> {
+		FAContentHandler.registerModIntegrationContentHandlers(handler -> {
 			handler.put(new BYGBlocks());
 			handler.put(new TechRebornBlocks());
 			handler.put(new CinderscapesBlocks());
