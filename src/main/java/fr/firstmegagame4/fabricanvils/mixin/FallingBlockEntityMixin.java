@@ -1,7 +1,7 @@
 package fr.firstmegagame4.fabricanvils.mixin;
 
-import fr.firstmegagame4.fabricanvils.FA.FATags;
-import fr.firstmegagame4.fabricanvils.anvils.MetalAnvil;
+import fr.firstmegagame4.fabricanvils.init.FATags;
+import fr.firstmegagame4.fabricanvils.anvil.MetalAnvil;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.damage.DamageSource;

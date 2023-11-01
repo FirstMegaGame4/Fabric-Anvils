@@ -1,8 +1,8 @@
 package fr.firstmegagame4.fabricanvils.mixin;
 
-import fr.firstmegagame4.fabricanvils.FA.FATags;
+import fr.firstmegagame4.fabricanvils.init.FATags;
 import fr.firstmegagame4.fabricanvils.FabricAnvilsClient;
-import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
+import fr.firstmegagame4.fabricanvils.screen.CustomAnvilScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
