@@ -5,7 +5,6 @@ import fr.firstmegagame4.fabricanvils.anvils.MoreAdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Material;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -21,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 public class AmetrineAnvil extends MoreAdvancedMetalAnvil {
 
     public AmetrineAnvil() {
-        super(FabricBlockSettings.of(Material.GLASS).hardness(3.0F).sounds(BlockSoundGroup.GLASS));
+        super(FabricBlockSettings.create().hardness(3.0F).sounds(BlockSoundGroup.GLASS));
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
@@ -52,7 +51,7 @@ public class AmetrineAnvil extends MoreAdvancedMetalAnvil {
     }
 
     @Override
-    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
+    public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
         return true;
     }
 

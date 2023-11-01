@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HHH",
+    " P ",
+    "PPP"
+  ],
+  "key": {
+    "H": {
+      "item": "cinderscapes:scorched_hyphae"
+    },
+    "P": {
+      "item": "cinderscapes:scorched_planks"
+    }
+  },
+  "result": {
+    "item": "fabricanvils:cinderscapes/scorched_anvil"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes"
+      ]
+    }
+  ]
+}

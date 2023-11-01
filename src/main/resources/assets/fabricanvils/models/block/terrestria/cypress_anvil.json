@@ -1,0 +1,8 @@
+{
+  "parent": "fabricanvils:block/template_wooden_anvil",
+  "textures": {
+    "top": "terrestria:block/cypress_log",
+    "particle": "terrestria:block/cypress_planks",
+    "body": "terrestria:block/cypress_planks"
+  }
+}

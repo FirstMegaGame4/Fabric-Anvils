@@ -4,16 +4,13 @@ import fr.firstmegagame4.fabricanvils.AnvilItem;
 import fr.firstmegagame4.fabricanvils.FA.FAUtils;
 import me.shedaniel.math.Rectangle;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
-import me.shedaniel.rei.api.client.registry.category.ButtonArea;
 import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;
 import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.client.registry.entry.EntryRegistry;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.util.registry.Registry;
-
-import java.awt.*;
+import net.minecraft.registry.Registries;
 import java.util.Collections;
 import java.util.Objects;
 
@@ -28,9 +25,9 @@ public class FabricAnvilsClientPlugin implements REIClientPlugin {
 
     @Override
     public void registerDisplays(DisplayRegistry registry) {
-        EntryRegistry.getInstance().getEntryStacks().filter(entry -> Registry.ITEM.get(entry.getIdentifier()) instanceof AnvilItem).forEach(
+        EntryRegistry.getInstance().getEntryStacks().filter(entry -> Registries.ITEM.get(entry.getIdentifier()) instanceof AnvilItem).forEach(
             entry -> {
-                registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(Registry.ITEM.get(entry.getIdentifier()).getDefaultStack())));
+                registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(Registries.ITEM.get(entry.getIdentifier()).getDefaultStack())));
                 if (Objects.requireNonNull(entry.getIdentifier()).getPath().equals("minecraft/damaged_copper_anvil")) {
                     for (Item item: new Item[] {Items.ANVIL, Items.CHIPPED_ANVIL, Items.DAMAGED_ANVIL}) {
                         registry.add(new DefaultAnvilInfoDisplay(Collections.singletonList(item.getDefaultStack())));

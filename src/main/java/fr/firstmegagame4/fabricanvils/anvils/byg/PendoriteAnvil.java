@@ -5,7 +5,7 @@ import fr.firstmegagame4.fabricanvils.anvils.EvenMoreAdvancedMetalAnvil;
 import fr.firstmegagame4.fabricanvils.screenhandlers.CustomAnvilScreenHandler;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Material;
+import net.minecraft.block.MapColor;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -18,7 +18,7 @@ import org.jetbrains.annotations.Nullable;
 public class PendoriteAnvil extends EvenMoreAdvancedMetalAnvil {
 
     public PendoriteAnvil() {
-        super(FabricBlockSettings.of(Material.METAL).sounds(BlockSoundGroup.METAL).hardness(3.0F));
+        super(FabricBlockSettings.create().mapColor(MapColor.IRON_GRAY).sounds(BlockSoundGroup.METAL).hardness(3.0F));
     }
 
     public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {

@@ -16,9 +16,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import net.minecraft.util.registry.Registry;
 import org.apache.commons.compress.utils.Lists;
 
 import java.util.List;
@@ -56,13 +56,12 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
     }
 
     @Override
-    @SuppressWarnings("UnstableApiUsage")
     public List<Widget> setupDisplay(DefaultAnvilInfoDisplay display, Rectangle bounds) {
         List<Widget> widgets = Lists.newArrayList();
 
         EntryStack<?> entry = display.getEntries().get(0);
 
-        BlockItem blockItem = (BlockItem) Registry.ITEM.get(entry.getIdentifier());
+        BlockItem blockItem = (BlockItem) Registries.ITEM.get(entry.getIdentifier());
 
         String[] anvilPath = Objects.requireNonNull(entry.getIdentifier()).getPath().split("/");
         String anvilId;
@@ -73,7 +72,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
         Block previousAnvilBlock;
 
         if (blockItem instanceof AnvilItem) {
-            AnvilItem anvilItem = (AnvilItem) Registry.ITEM.get(entry.getIdentifier());
+            AnvilItem anvilItem = (AnvilItem) Registries.ITEM.get(entry.getIdentifier());
             anvil = anvilItem.getBlock();
             nextAnvilBlock = FAUtils.nextAnvil((CustomAnvil) anvil);
             previousAnvilBlock = FAUtils.previousAnvil((CustomAnvil) anvil);

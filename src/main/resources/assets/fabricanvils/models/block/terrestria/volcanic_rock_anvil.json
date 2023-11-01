@@ -1,0 +1,11 @@
+{
+  "parent": "fabricanvils:block/template_stone_anvil",
+  "textures": {
+    "top_up": "terrestria:block/basalt",
+    "top_down": "terrestria:block/basalt",
+    "top_small_side": "terrestria:block/basalt",
+    "top_large_side": "terrestria:block/basalt",
+    "body": "terrestria:block/basalt_cobblestone",
+    "particle": "terrestria:block/basalt_cobblestone"
+  }
+}
