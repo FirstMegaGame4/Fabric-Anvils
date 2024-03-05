@@ -41,11 +41,11 @@ public class NetheriteAnvil extends AdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(MinecraftBlocks.MinecraftContent.NETHERITE_ANVIL)) {
-            return MinecraftBlocks.MinecraftContent.CHIPPED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(MinecraftBlocks.NETHERITE_ANVIL.get())) {
+            return MinecraftBlocks.CHIPPED_NETHERITE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(MinecraftBlocks.MinecraftContent.CHIPPED_NETHERITE_ANVIL)) {
-            return MinecraftBlocks.MinecraftContent.DAMAGED_NETHERITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(MinecraftBlocks.CHIPPED_NETHERITE_ANVIL.get())) {
+            return MinecraftBlocks.DAMAGED_NETHERITE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

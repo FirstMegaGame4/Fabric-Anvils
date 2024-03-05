@@ -39,8 +39,8 @@ public class GoldenAnvil extends FragileMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(MinecraftBlocks.MinecraftContent.GOLDEN_ANVIL)) {
-            return MinecraftBlocks.MinecraftContent.DAMAGED_GOLDEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(MinecraftBlocks.GOLDEN_ANVIL.get())) {
+            return MinecraftBlocks.DAMAGED_GOLDEN_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

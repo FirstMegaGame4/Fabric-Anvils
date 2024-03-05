@@ -39,11 +39,11 @@ public class RedGarnetAnvil extends InferiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.RED_GARNET_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_RED_GARNET_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.RED_GARNET_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_RED_GARNET_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_RED_GARNET_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_RED_GARNET_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_RED_GARNET_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_RED_GARNET_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

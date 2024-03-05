@@ -39,11 +39,11 @@ public class RefinedIronAnvil extends MetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.REFINED_IRON_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_REFINED_IRON_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.REFINED_IRON_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_REFINED_IRON_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_REFINED_IRON_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_REFINED_IRON_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_REFINED_IRON_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_REFINED_IRON_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

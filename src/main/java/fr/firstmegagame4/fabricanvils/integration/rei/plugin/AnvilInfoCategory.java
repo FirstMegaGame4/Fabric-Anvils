@@ -1,5 +1,6 @@
 package fr.firstmegagame4.fabricanvils.integration.rei.plugin;
 
+import fr.firstmegagame4.fabricanvils.FabricAnvils;
 import fr.firstmegagame4.fabricanvils.init.item.AnvilItem;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import fr.firstmegagame4.fabricanvils.anvil.CustomAnvil;
@@ -37,7 +38,7 @@ public class AnvilInfoCategory implements DisplayCategory<DefaultAnvilInfoDispla
 
     @Override
     public CategoryIdentifier<DefaultAnvilInfoDisplay> getCategoryIdentifier() {
-        return CategoryIdentifier.of(FAUtils.FAIdentifier("plugin/anvil_information"));
+        return CategoryIdentifier.of(FabricAnvils.createId("plugin/anvil_information"));
     }
 
     @Override

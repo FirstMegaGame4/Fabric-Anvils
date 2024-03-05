@@ -4,10 +4,11 @@ import fr.firstmegagame4.fabricanvils.content.FAContentHandler;
 import fr.firstmegagame4.fabricanvils.init.block.*;
 import fr.firstmegagame4.fabricanvils.init.item.FAItemGroup;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class FabricAnvilsMain implements ModInitializer {
+public class FabricAnvils implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("fabricanvils");
 
@@ -29,5 +30,13 @@ public class FabricAnvilsMain implements ModInitializer {
 
 		// No new items can be registered to the item group after this call.
 		FAItemGroup.register();
+	}
+
+	public static String id() {
+		return "fabricanvils";
+	}
+
+	public static Identifier createId(String path) {
+		return new Identifier(FabricAnvils.id(), path);
 	}
 }

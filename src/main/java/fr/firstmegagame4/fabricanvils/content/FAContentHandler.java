@@ -23,14 +23,17 @@ public class FAContentHandler {
     public static void init() {
         FAContentHandler.CONTENTS.stream()
             .filter(holder -> FabricLoader.getInstance().isModLoaded(holder.getModId()))
-            .forEach(holder -> holder.getContent().init().register());
+            .forEach(holder -> {
+                holder.init();
+                holder.register();
+            });
     }
 
     @Environment(EnvType.CLIENT)
     public static void initClient() {
         FAContentHandler.CONTENTS.stream()
             .filter(holder -> FabricLoader.getInstance().isModLoaded(holder.getModId()))
-            .forEach(holder -> holder.getContent().registerClient());
+            .forEach(ContentHolder::registerClient);
     }
 
     public static class ModIntegrationContentHandler {

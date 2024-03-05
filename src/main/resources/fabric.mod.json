@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "fr.firstmegagame4.fabricanvils.FabricAnvilsMain"
+      "fr.firstmegagame4.fabricanvils.FabricAnvils"
     ],
     "client": [
       "fr.firstmegagame4.fabricanvils.FabricAnvilsClient"

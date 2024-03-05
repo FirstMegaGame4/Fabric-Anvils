@@ -39,11 +39,11 @@ public class IridiumAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.IRIDIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_IRIDIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.IRIDIUM_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_IRIDIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_IRIDIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_IRIDIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_IRIDIUM_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_IRIDIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

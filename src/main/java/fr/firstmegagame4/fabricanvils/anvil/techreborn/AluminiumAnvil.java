@@ -39,11 +39,11 @@ public class AluminiumAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.ALUMINIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_ALUMINIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.ALUMINIUM_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_ALUMINIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_ALUMINIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_ALUMINIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_ALUMINIUM_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_ALUMINIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

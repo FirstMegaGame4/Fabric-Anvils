@@ -39,11 +39,11 @@ public class InvarAnvil extends MetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.INVAR_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_INVAR_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.INVAR_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_INVAR_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_INVAR_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_INVAR_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_INVAR_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_INVAR_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

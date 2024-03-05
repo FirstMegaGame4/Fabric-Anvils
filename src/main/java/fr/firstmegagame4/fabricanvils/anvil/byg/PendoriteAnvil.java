@@ -39,11 +39,11 @@ public class PendoriteAnvil extends EvenMoreAdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(BYGBlocks.BYGContent.PENDORITE_ANVIL)) {
-            return BYGBlocks.BYGContent.CHIPPED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(BYGBlocks.PENDORITE_ANVIL.get())) {
+            return BYGBlocks.CHIPPED_PENDORITE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(BYGBlocks.BYGContent.CHIPPED_PENDORITE_ANVIL)) {
-            return BYGBlocks.BYGContent.DAMAGED_PENDORITE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(BYGBlocks.CHIPPED_PENDORITE_ANVIL.get())) {
+            return BYGBlocks.DAMAGED_PENDORITE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

@@ -14,67 +14,66 @@ import org.jetbrains.annotations.Nullable;
 
 public class CustomAnvil extends AnvilBlock {
 
-    protected static final Text TITLE;
+	protected static final Text TITLE;
 
-    protected final AnvilItem blockItem;
+	protected final AnvilItem blockItem;
 
-    public CustomAnvil(Settings settings) {
-        super(settings);
-        this.blockItem = new AnvilItem(this);
-    }
+	public CustomAnvil(Settings settings) {
+		super(settings);
+		this.blockItem = new AnvilItem(this);
+	}
 
-    public AnvilItem getItem() {
-        return this.blockItem;
-    }
+	public AnvilItem getItem() {
+		return this.blockItem;
+	}
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        this.playLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockState).getPlaceSound());
-    }
+	public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
+		this.playLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockState).getPlaceSound());
+	}
 
-    public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
-        this.playDestroyLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockEntity.getBlockState()).getBreakSound());
-    }
+	public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
+		this.playDestroyLandingAnvilSound(world, pos, this.getSoundGroup(fallingBlockEntity.getBlockState()).getBreakSound());
+	}
 
-    protected void playLandingAnvilSound(World world, BlockPos pos, SoundEvent soundEvent) {
-        world.playSound(null, pos, soundEvent, SoundCategory.BLOCKS, 10F, 1F);
-    }
+	protected void playLandingAnvilSound(World world, BlockPos pos, SoundEvent soundEvent) {
+		world.playSound(null, pos, soundEvent, SoundCategory.BLOCKS, 10F, 1F);
+	}
 
-    protected void playDestroyLandingAnvilSound(World world, BlockPos pos, SoundEvent soundEvent) {
-        world.playSound(null, pos, soundEvent, SoundCategory.BLOCKS, 25F, 1F);
-    }
+	protected void playDestroyLandingAnvilSound(World world, BlockPos pos, SoundEvent soundEvent) {
+		world.playSound(null, pos, soundEvent, SoundCategory.BLOCKS, 25F, 1F);
+	}
 
-    protected void configureFallingBlockEntity(FallingBlockEntity entity) {
-        entity.setHurtEntities(2.0F, 40);
-    }
+	protected void configureFallingBlockEntity(FallingBlockEntity entity) {
+		entity.setHurtEntities(2.0F, 40);
+	}
 
-    public SoundEvent getForgeSound() {
-        return SoundEvents.BLOCK_METAL_PLACE;
-    }
+	public SoundEvent getForgeSound() {
+		return SoundEvents.BLOCK_METAL_PLACE;
+	}
 
-    public SoundEvent getBreakSound() {
-        return SoundEvents.BLOCK_METAL_BREAK;
-    }
+	public SoundEvent getBreakSound() {
+		return SoundEvents.BLOCK_METAL_BREAK;
+	}
 
-    public float getDamagingChance() {
-        return 0.12F;
-    }
+	public float getDamagingChance() {
+		return 0.12F;
+	}
 
-    public int getXPLimit() {
-        return 40;
-    }
+	public int getXPLimit() {
+		return 40;
+	}
 
-    @Nullable
-    public BlockState getStateOnLanding(BlockState fallingState) {
-        return AnvilBlock.getLandingState(fallingState);
-    }
+	@Nullable
+	public BlockState getStateOnLanding(BlockState fallingState) {
+		return AnvilBlock.getLandingState(fallingState);
+	}
 
-    @Deprecated
-    public static BlockState getLandingState(BlockState state) {
-        return AnvilBlock.getLandingState(state);
-    }
+	@Deprecated
+	public static BlockState getLandingState(BlockState state) {
+		return AnvilBlock.getLandingState(state);
+	}
 
-    static {
-        TITLE = Text.translatable("container.repair");
-    }
-
+	static {
+		TITLE = Text.translatable("container.repair");
+	}
 }

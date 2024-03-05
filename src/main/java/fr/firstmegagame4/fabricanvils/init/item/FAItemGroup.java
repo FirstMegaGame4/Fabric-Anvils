@@ -1,5 +1,6 @@
 package fr.firstmegagame4.fabricanvils.init.item;
 
+import fr.firstmegagame4.fabricanvils.FabricAnvils;
 import fr.firstmegagame4.fabricanvils.init.block.MinecraftBlocks;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -20,28 +21,29 @@ import java.util.Set;
 
 public class FAItemGroup {
 
-    private static final Set<Item> ITEMS = new HashSet<>();
-    private static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(FAUtils.modIdentifier, "anvils"));
+	private static final Set<Item> ITEMS = new HashSet<>();
 
-    public static void registerItem(Item item) {
-        Objects.requireNonNull(item, "item must not be null");
+	private static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, FabricAnvils.createId("anvils"));
 
-        ITEMS.add(item);
-    }
+	public static void registerItem(Item item) {
+		Objects.requireNonNull(item, "item must not be null");
 
-    public static void registerItem(Block block) {
-        Objects.requireNonNull(block, "block must not be null");
+		ITEMS.add(item);
+	}
 
-        registerItem(block.asItem());
-    }
+	public static void registerItem(Block block) {
+		Objects.requireNonNull(block, "block must not be null");
 
-    public static void register() {
-        Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
-                .displayName(Text.literal("Fabric Anvils"))
-                .icon(() -> MinecraftBlocks.MinecraftContent.BIRCH_ANVIL.asItem().getDefaultStack())
-                .entries((context, entries) -> {
-                    ITEMS.stream().sorted(Comparator.comparing((item) -> item.getName().getString())).forEach(entries::add);
-                }).build()
-        );
-    }
+		registerItem(block.asItem());
+	}
+
+	public static void register() {
+		Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
+			.displayName(Text.literal("Fabric Anvils"))
+			.icon(() -> MinecraftBlocks.BIRCH_ANVIL.get().asItem().getDefaultStack())
+			.entries((context, entries) -> {
+				ITEMS.stream().sorted(Comparator.comparing((item) -> item.getName().getString())).forEach(entries::add);
+			}).build()
+		);
+	}
 }

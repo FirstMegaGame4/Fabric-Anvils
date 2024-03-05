@@ -39,11 +39,11 @@ public class TungstenAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.TUNGSTEN_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.TUNGSTEN_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_TUNGSTEN_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_TUNGSTEN_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_TUNGSTEN_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_TUNGSTEN_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

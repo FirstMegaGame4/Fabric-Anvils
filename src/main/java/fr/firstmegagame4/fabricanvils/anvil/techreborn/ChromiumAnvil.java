@@ -39,11 +39,11 @@ public class ChromiumAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHROMIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.CHIPPED_CHROMIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(TechRebornBlocks.CHROMIUM_ANVIL.get())) {
+            return TechRebornBlocks.CHIPPED_CHROMIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(TechRebornBlocks.TechRebornContent.CHIPPED_CHROMIUM_ANVIL)) {
-            return TechRebornBlocks.TechRebornContent.DAMAGED_CHROMIUM_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(TechRebornBlocks.CHIPPED_CHROMIUM_ANVIL.get())) {
+            return TechRebornBlocks.DAMAGED_CHROMIUM_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

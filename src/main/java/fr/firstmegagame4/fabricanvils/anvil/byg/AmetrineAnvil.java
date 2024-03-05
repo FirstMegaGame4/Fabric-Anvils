@@ -41,11 +41,11 @@ public class AmetrineAnvil extends MoreAdvancedMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(BYGBlocks.BYGContent.AMETRINE_ANVIL)) {
-            return BYGBlocks.BYGContent.CHIPPED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(BYGBlocks.AMETRINE_ANVIL.get())) {
+            return BYGBlocks.CHIPPED_AMETRINE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(BYGBlocks.BYGContent.CHIPPED_AMETRINE_ANVIL)) {
-            return BYGBlocks.BYGContent.DAMAGED_AMETRINE_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(BYGBlocks.CHIPPED_AMETRINE_ANVIL.get())) {
+            return BYGBlocks.DAMAGED_AMETRINE_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }

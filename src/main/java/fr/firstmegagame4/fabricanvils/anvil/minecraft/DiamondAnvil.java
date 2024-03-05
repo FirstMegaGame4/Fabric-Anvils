@@ -39,11 +39,11 @@ public class DiamondAnvil extends SuperiorMetalAnvil {
 
     @Nullable
     public BlockState getStateOnLanding(BlockState fallingState) {
-        if (fallingState.isOf(MinecraftBlocks.MinecraftContent.DIAMOND_ANVIL)) {
-            return MinecraftBlocks.MinecraftContent.CHIPPED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        if (fallingState.isOf(MinecraftBlocks.DIAMOND_ANVIL.get())) {
+            return MinecraftBlocks.CHIPPED_DIAMOND_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
-        else if (fallingState.isOf(MinecraftBlocks.MinecraftContent.CHIPPED_DIAMOND_ANVIL)) {
-            return MinecraftBlocks.MinecraftContent.DAMAGED_DIAMOND_ANVIL.getDefaultState().with(FACING, fallingState.get(FACING));
+        else if (fallingState.isOf(MinecraftBlocks.CHIPPED_DIAMOND_ANVIL.get())) {
+            return MinecraftBlocks.DAMAGED_DIAMOND_ANVIL.get().getDefaultState().with(FACING, fallingState.get(FACING));
         }
         else return null;
     }
