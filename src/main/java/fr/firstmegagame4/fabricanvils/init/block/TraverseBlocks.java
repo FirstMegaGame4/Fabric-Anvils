@@ -3,6 +3,7 @@ package fr.firstmegagame4.fabricanvils.init.block;
 import fr.firstmegagame4.fabricanvils.anvil.CustomAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.NormalWoodAnvil;
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 
 public class TraverseBlocks implements ContentHolder {
@@ -12,6 +13,11 @@ public class TraverseBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "traverse";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return ContentHolder.DEFAULT_RULE;
 	}
 
 	@Override

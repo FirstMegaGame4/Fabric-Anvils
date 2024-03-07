@@ -3,7 +3,7 @@
   "id": "fabricanvils",
   "version": "${version}",
   "name": "Fabric Anvils",
-  "description": "This mod add many new types of anvils !",
+  "description": "This mod add many new types of anvils!",
   "icon": "assets/fabricanvils/icon.png",
   "authors": [
     "FirstMegaGame4"
@@ -27,6 +27,9 @@
     "rei_common": [
       "fr.firstmegagame4.fabricanvils.integration.rei.plugin.FabricAnvilsClientPlugin",
       "fr.firstmegagame4.fabricanvils.integration.rei.plugin.FabricAnvilsPlugin"
+    ],
+    "fabric-datagen": [
+      "fr.firstmegagame4.fabricanvils.FabricAnvilsDataGenerator"
     ]
   },
   "mixins": [

@@ -3,6 +3,7 @@ package fr.firstmegagame4.fabricanvils.init.block;
 import fr.firstmegagame4.fabricanvils.anvil.CustomAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.NetherWoodAnvil;
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 
 public class CinderscapesBlocks implements ContentHolder {
@@ -13,6 +14,11 @@ public class CinderscapesBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "cinderscapes";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return ContentHolder.DEFAULT_RULE;
 	}
 
 	@Override

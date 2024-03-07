@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "terrestria:rainbow_eucalyptus_wood"
+    },
+    "S": {
+      "item": "terrestria:rainbow_eucalyptus_planks"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    "SSS"
+  ],
+  "result": {
+    "item": "fabricanvils:terrestria/rainbow_eucalyptus_anvil"
+  }
+}

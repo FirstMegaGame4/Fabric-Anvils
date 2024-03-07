@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "cinderscapes:scorched_wood"
+    },
+    "S": {
+      "item": "cinderscapes:scorched_planks"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    "SSS"
+  ],
+  "result": {
+    "item": "fabricanvils:cinderscapes/scorched_anvil"
+  }
+}

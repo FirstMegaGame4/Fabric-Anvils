@@ -1,10 +1,12 @@
 package fr.firstmegagame4.fabricanvils.init.block;
 
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import fr.firstmegagame4.fabricanvils.anvil.*;
 import fr.firstmegagame4.fabricanvils.anvil.byg.AmetrineAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.byg.PendoriteAnvil;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class BYGBlocks implements ContentHolder {
 
@@ -52,6 +54,32 @@ public class BYGBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "byg";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return (anvil, name) -> {
+			if (anvil instanceof StoneAnvil) {
+				if (name.equals("dacite")) {
+					return Pair.of("dacite", "dacite_cobblestone");
+				}
+				else if (name.equals("scoria")) {
+					return Pair.of("scoria_stone", "scoria_cobblestone");
+				}
+				else {
+					return Pair.of("ether_stone", "cobbled_ether_stone");
+				}
+			}
+			else if (anvil instanceof AmetrineAnvil) {
+				return null;
+			}
+			else if (anvil instanceof PendoriteAnvil) {
+				return null;
+			}
+			else {
+				return ContentHolder.DEFAULT_RULE.apply(anvil, name);
+			}
+		};
 	}
 
 	@Override

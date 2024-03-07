@@ -4,7 +4,9 @@ import fr.firstmegagame4.fabricanvils.anvil.CustomAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.NormalWoodAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.StoneAnvil;
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class TerrestriaBlocks implements ContentHolder {
 
@@ -21,6 +23,18 @@ public class TerrestriaBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "terrestria";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return (anvil, name) -> {
+			if (anvil instanceof StoneAnvil) {
+				return Pair.of("basalt", "basalt_cobblestone");
+			}
+			else {
+				return ContentHolder.DEFAULT_RULE.apply(anvil, name);
+			}
+		};
 	}
 
 	@Override

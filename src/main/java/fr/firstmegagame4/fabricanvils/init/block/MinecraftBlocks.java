@@ -1,12 +1,14 @@
 package fr.firstmegagame4.fabricanvils.init.block;
 
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import fr.firstmegagame4.fabricanvils.anvil.*;
 import fr.firstmegagame4.fabricanvils.anvil.minecraft.CopperAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.minecraft.DiamondAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.minecraft.GoldenAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.minecraft.NetheriteAnvil;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class MinecraftBlocks implements ContentHolder {
 
@@ -40,6 +42,24 @@ public class MinecraftBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "minecraft";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return (anvil, name) -> {
+			if (anvil instanceof StoneAnvil) {
+				return Pair.of("smooth_stone", "cobblestone");
+			}
+			else if (anvil instanceof DiamondAnvil) {
+				return Pair.of("diamond_block", "diamond");
+			}
+			else if (anvil instanceof NetheriteAnvil) {
+				return null;
+			}
+			else {
+				return ContentHolder.DEFAULT_RULE.apply(anvil, name);
+			}
+		};
 	}
 
 	@Override

@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "minecraft"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:birch_wood"
+    },
+    "S": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    "SSS"
+  ],
+  "result": {
+    "item": "fabricanvils:minecraft/birch_anvil"
+  }
+}

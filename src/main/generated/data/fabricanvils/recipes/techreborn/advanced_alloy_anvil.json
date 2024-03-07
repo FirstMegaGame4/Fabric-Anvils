@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "techreborn"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "techreborn:advanced_alloy_storage_block"
+    },
+    "S": {
+      "item": "techreborn:advanced_alloy_ingot"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    "SSS"
+  ],
+  "result": {
+    "item": "fabricanvils:techreborn/advanced_alloy_anvil"
+  }
+}

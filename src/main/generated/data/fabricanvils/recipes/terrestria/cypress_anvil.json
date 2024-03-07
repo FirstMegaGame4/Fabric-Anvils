@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "terrestria:cypress_wood"
+    },
+    "S": {
+      "item": "terrestria:cypress_planks"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    "SSS"
+  ],
+  "result": {
+    "item": "fabricanvils:terrestria/cypress_anvil"
+  }
+}

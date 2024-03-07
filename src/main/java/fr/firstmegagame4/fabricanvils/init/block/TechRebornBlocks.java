@@ -1,10 +1,13 @@
 package fr.firstmegagame4.fabricanvils.init.block;
 
+import fr.firstmegagame4.fabricanvils.anvil.WoodenAnvil;
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
+import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import fr.firstmegagame4.fabricanvils.anvil.CustomAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.NormalWoodAnvil;
 import fr.firstmegagame4.fabricanvils.anvil.techreborn.*;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class TechRebornBlocks implements ContentHolder {
 
@@ -113,6 +116,18 @@ public class TechRebornBlocks implements ContentHolder {
 	@Override
 	public String getModId() {
 		return "techreborn";
+	}
+
+	@Override
+	public InputGetterRule getRule() {
+		return (anvil, name) -> {
+			if (anvil instanceof WoodenAnvil) {
+				return Pair.of(name + "_wood", name + "_planks");
+			}
+			else {
+				return Pair.of(name + "_storage_block", name + "_ingot");
+			}
+		};
 	}
 
 	public void register() {
