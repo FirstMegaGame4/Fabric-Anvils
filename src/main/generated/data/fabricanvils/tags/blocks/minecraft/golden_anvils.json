@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/golden_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/damaged_golden_anvil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/dark_oak_anvil",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/crimson_anvil",
+      "required": false
+    }
+  ]
+}

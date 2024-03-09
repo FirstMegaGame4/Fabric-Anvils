@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:minecraft/diamond_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/chromium_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/iridium_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/aluminium_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/tungsten_anvils",
+      "required": false
+    }
+  ]
+}

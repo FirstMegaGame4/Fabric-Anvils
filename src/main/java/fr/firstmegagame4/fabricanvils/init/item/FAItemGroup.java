@@ -2,7 +2,6 @@ package fr.firstmegagame4.fabricanvils.init.item;
 
 import fr.firstmegagame4.fabricanvils.FabricAnvils;
 import fr.firstmegagame4.fabricanvils.init.block.MinecraftBlocks;
-import fr.firstmegagame4.fabricanvils.init.FAUtils;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -12,18 +11,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
-import java.util.Comparator;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 public class FAItemGroup {
 
-	private static final Set<Item> ITEMS = new HashSet<>();
+	private static final List<Item> ITEMS = new ArrayList<>();
 
-	private static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, FabricAnvils.createId("anvils"));
+	private static final RegistryKey<ItemGroup> FABRIC_ANVILS = RegistryKey.of(RegistryKeys.ITEM_GROUP, FabricAnvils.createId("anvils"));
 
 	public static void registerItem(Item item) {
 		Objects.requireNonNull(item, "item must not be null");
@@ -38,12 +35,10 @@ public class FAItemGroup {
 	}
 
 	public static void register() {
-		Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
+		Registry.register(Registries.ITEM_GROUP, FABRIC_ANVILS, FabricItemGroup.builder()
 			.displayName(Text.literal("Fabric Anvils"))
-			.icon(() -> MinecraftBlocks.BIRCH_ANVIL.get().asItem().getDefaultStack())
-			.entries((context, entries) -> {
-				ITEMS.stream().sorted(Comparator.comparing((item) -> item.getName().getString())).forEach(entries::add);
-			}).build()
+			.icon(() -> MinecraftBlocks.BIRCH_ANVIL.get().getItem().getDefaultStack())
+			.entries((context, entries) -> ITEMS.forEach(entries::add)).build()
 		);
 	}
 }

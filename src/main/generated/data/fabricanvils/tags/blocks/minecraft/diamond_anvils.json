@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/diamond_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/chipped_diamond_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/damaged_diamond_anvil",
+      "required": false
+    }
+  ]
+}

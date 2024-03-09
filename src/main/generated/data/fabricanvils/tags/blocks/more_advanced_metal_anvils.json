@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:techreborn/advanced_alloy_anvils",
+      "required": false
+    }
+  ]
+}

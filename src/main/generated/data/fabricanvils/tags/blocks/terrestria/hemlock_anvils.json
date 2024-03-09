@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:terrestria/hemlock_anvil",
+      "required": false
+    }
+  ]
+}

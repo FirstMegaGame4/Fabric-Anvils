@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:traverse/fir_anvil",
+      "required": false
+    }
+  ]
+}

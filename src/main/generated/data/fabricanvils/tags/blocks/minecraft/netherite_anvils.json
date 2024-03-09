@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/netherite_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/chipped_netherite_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/damaged_netherite_anvil",
+      "required": false
+    }
+  ]
+}

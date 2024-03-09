@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:terrestria/redwood_anvil",
+      "required": false
+    }
+  ]
+}

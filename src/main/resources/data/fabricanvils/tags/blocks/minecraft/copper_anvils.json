@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "fabricanvils:minecraft/copper_anvil",
-    "fabricanvils:minecraft/chipped_copper_anvil",
-    "fabricanvils:minecraft/damaged_copper_anvil"
-  ]
-}

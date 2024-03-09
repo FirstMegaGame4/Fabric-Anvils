@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:minecraft/netherite_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/titanium_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/hot_tungstensteel_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/tungstensteel_anvils",
+      "required": false
+    }
+  ]
+}

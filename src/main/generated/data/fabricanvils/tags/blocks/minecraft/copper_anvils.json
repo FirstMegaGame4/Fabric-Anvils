@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/copper_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/chipped_copper_anvil",
+      "required": false
+    },
+    {
+      "id": "fabricanvils:minecraft/damaged_copper_anvil",
+      "required": false
+    }
+  ]
+}

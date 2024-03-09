@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:terrestria/rubber_anvil",
+      "required": false
+    }
+  ]
+}

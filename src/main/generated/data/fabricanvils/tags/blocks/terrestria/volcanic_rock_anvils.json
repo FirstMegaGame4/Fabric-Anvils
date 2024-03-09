@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:terrestria/volcanic_rock_anvil",
+      "required": false
+    }
+  ]
+}

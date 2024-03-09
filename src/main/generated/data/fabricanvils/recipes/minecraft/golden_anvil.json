@@ -11,10 +11,10 @@
   "category": "misc",
   "key": {
     "M": {
-      "item": "minecraft:golden_block"
+      "item": "minecraft:gold_block"
     },
     "S": {
-      "item": "minecraft:golden_ingot"
+      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:terrestria/volcanic_rock_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/stone_anvils",
+      "required": false
+    }
+  ]
+}

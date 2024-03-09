@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "fabricanvils:minecraft/netherite_anvil",
-    "fabricanvils:minecraft/chipped_netherite_anvil",
-    "fabricanvils:minecraft/damaged_netherite_anvil"
-  ]
-}

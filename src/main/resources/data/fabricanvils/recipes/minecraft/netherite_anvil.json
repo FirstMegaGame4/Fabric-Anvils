@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "fabricanvils:minecraft/diamond_anvil"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:netherite_block"
   },
+  "base": {
+    "item": "fabricanvils:minecraft/diamond_anvil"
+  },
   "result": {
     "item": "fabricanvils:minecraft/netherite_anvil"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
   }
 }

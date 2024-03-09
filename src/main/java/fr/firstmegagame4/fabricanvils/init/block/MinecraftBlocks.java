@@ -47,8 +47,19 @@ public class MinecraftBlocks implements ContentHolder {
 	@Override
 	public InputGetterRule getRule() {
 		return (anvil, name) -> {
-			if (anvil instanceof StoneAnvil) {
+			if (anvil instanceof NetherWoodAnvil) {
+				if (name.equals("crimson")) {
+					return Pair.of("crimson_hyphae", "crimson_planks");
+				}
+				else {
+					return Pair.of("warped_hyphae", "warped_planks");
+				}
+			}
+			else if (anvil instanceof StoneAnvil) {
 				return Pair.of("smooth_stone", "cobblestone");
+			}
+			else if (anvil instanceof GoldenAnvil) {
+				return Pair.of("gold_block", "gold_ingot");
 			}
 			else if (anvil instanceof DiamondAnvil) {
 				return Pair.of("diamond_block", "diamond");

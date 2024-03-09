@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "fabricanvils:minecraft/acacia_anvil",
+      "required": false
+    }
+  ]
+}

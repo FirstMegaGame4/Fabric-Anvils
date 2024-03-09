@@ -1,0 +1,85 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabricanvils:terrestria/cypress_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/hemlock_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/japanese_maple_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/rainbow_eucalyptus_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/redwood_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/rubber_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/willow_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:traverse/fir_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:cinderscapes/scorched_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:cinderscapes/umbral_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/oak_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/spruce_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/birch_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/jungle_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/acacia_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/dark_oak_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/mangrove_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/crimson_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:minecraft/warped_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:techreborn/rubber_anvils",
+      "required": false
+    }
+  ]
+}
