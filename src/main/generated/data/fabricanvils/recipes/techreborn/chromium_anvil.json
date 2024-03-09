@@ -11,10 +11,10 @@
   "category": "misc",
   "key": {
     "M": {
-      "item": "techreborn:chromium_storage_block"
+      "item": "techreborn:chrome_storage_block"
     },
     "S": {
-      "item": "techreborn:chromium_ingot"
+      "item": "techreborn:chrome_ingot"
     }
   },
   "pattern": [

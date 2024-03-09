@@ -2,43 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "#fabricanvils:terrestria/cypress_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/hemlock_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/japanese_maple_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/rainbow_eucalyptus_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/redwood_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/rubber_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:terrestria/willow_anvils",
-      "required": false
-    },
-    {
       "id": "#fabricanvils:traverse/fir_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:cinderscapes/scorched_anvils",
-      "required": false
-    },
-    {
-      "id": "#fabricanvils:cinderscapes/umbral_anvils",
       "required": false
     },
     {
@@ -78,7 +42,43 @@
       "required": false
     },
     {
+      "id": "#fabricanvils:terrestria/cypress_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/hemlock_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/japanese_maple_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/rainbow_eucalyptus_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/redwood_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/rubber_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:terrestria/willow_anvils",
+      "required": false
+    },
+    {
       "id": "#fabricanvils:techreborn/rubber_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:cinderscapes/scorched_anvils",
+      "required": false
+    },
+    {
+      "id": "#fabricanvils:cinderscapes/umbral_anvils",
       "required": false
     }
   ]

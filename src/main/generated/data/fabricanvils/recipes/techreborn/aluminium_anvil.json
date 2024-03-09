@@ -11,10 +11,10 @@
   "category": "misc",
   "key": {
     "M": {
-      "item": "techreborn:aluminium_storage_block"
+      "item": "techreborn:aluminum_storage_block"
     },
     "S": {
-      "item": "techreborn:aluminium_ingot"
+      "item": "techreborn:aluminum_ingot"
     }
   },
   "pattern": [

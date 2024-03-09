@@ -5,6 +5,7 @@ import fr.firstmegagame4.fabricanvils.anvil.NetherWoodAnvil;
 import fr.firstmegagame4.fabricanvils.content.ContentHolder;
 import fr.firstmegagame4.fabricanvils.content.InputGetterRule;
 import fr.firstmegagame4.fabricanvils.init.FAUtils;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class CinderscapesBlocks implements ContentHolder {
 
@@ -18,7 +19,19 @@ public class CinderscapesBlocks implements ContentHolder {
 
 	@Override
 	public InputGetterRule getRule() {
-		return ContentHolder.DEFAULT_RULE;
+		return (anvil, name) -> {
+			if (anvil instanceof NetherWoodAnvil) {
+				if (name.equals("scorched")) {
+					return Pair.of("scorched_hyphae", "scorched_planks");
+				}
+				else {
+					return Pair.of("umbral_hyphae", "umbral_planks");
+				}
+			}
+			else {
+				return ContentHolder.DEFAULT_RULE.apply(anvil, name);
+			}
+		};
 	}
 
 	@Override

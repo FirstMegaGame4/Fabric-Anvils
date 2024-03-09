@@ -124,6 +124,15 @@ public class TechRebornBlocks implements ContentHolder {
 			if (anvil instanceof WoodenAnvil) {
 				return Pair.of(name + "_wood", name + "_planks");
 			}
+			else if (name.equals("aluminium")) {
+				return Pair.of("aluminum_storage_block", "aluminum_ingot");
+			}
+			else if (name.equals("chromium")) {
+				return Pair.of("chrome_storage_block", "chrome_ingot");
+			}
+			else if (name.equals("red_garnet") || name.equals("peridot") || name.equals("sapphire") || name.equals("yellow_garnet") || name.equals("ruby")) {
+				return Pair.of(name + "_storage_block", name + "_gem");
+			}
 			else {
 				return Pair.of(name + "_storage_block", name + "_ingot");
 			}

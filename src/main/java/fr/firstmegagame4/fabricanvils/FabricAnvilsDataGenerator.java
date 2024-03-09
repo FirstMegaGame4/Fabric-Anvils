@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
@@ -40,6 +41,7 @@ public class FabricAnvilsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(FABlockLootTables::new);
 		pack.addProvider(FARecipes::new);
 		pack.addProvider(FATags::new);
+		pack.addProvider(FADefaultLang::new);
 	}
 
 	private static class FABlockLootTables extends FabricBlockLootTableProvider {
@@ -163,6 +165,44 @@ public class FabricAnvilsDataGenerator implements DataGeneratorEntrypoint {
 			else {
 				provider.apply("metal_anvils").addOptionalTag(anvils);
 			}
+		}
+	}
+
+	private static class FADefaultLang extends FabricLanguageProvider {
+
+		protected FADefaultLang(FabricDataOutput dataOutput) {
+			super(dataOutput);
+		}
+
+		@Override
+		public void generateTranslations(TranslationBuilder translationBuilder) {
+			translationBuilder.add("itemGroup.fabricanvils.anvils", "Fabric Anvils");
+			translationBuilder.add("plugin.fabricanvils.anvil_information", "Anvil Information");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.damaging_chance", "Damaging Chance");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.experience_limit", "Experience Limit");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.intact_anvil", "Intact Anvil");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.chipped_anvil", "Chipped Anvil");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.damaged_anvil", "Damaged Anvil");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.anvil_states", "Anvil States");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.next_anvil_state", "Next Anvil State");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.previous_anvil_state", "Previous Anvil State");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.first_anvil_state", "This anvil state is the first state of the anvil.");
+			translationBuilder.add("plugin.fabricanvils.anvil_information.last_anvil_state", "This anvil state is the last state of the anvil.");
+			for (ContentHolder holder : FAContentHandler.getContents()) {
+				for (FAUtils.PredicatedForBeing<CustomAnvil> anvil : holder.getContent()) {
+					translationBuilder.add(anvil.get(), this.pathToLang(Registries.BLOCK.getId(anvil.get()).getPath()));
+				}
+			}
+		}
+
+		private String pathToLang(String path) {
+			String[] strings = path.substring(path.lastIndexOf("/") + 1).split("_");
+			StringBuilder lang = new StringBuilder();
+			for (String string : strings) {
+				lang.append(String.valueOf(string.charAt(0)).toUpperCase()).append(string.substring(1)).append(" ");
+			}
+			lang.delete(lang.length() - 1, lang.length());
+			return lang.toString();
 		}
 	}
 }
